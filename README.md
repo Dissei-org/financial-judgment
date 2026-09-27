@@ -6,7 +6,7 @@ Dissei Financial Judgment examines how AI models turn financial evidence into we
 
 **Can a model identify what matters in a financial situation, connect the evidence to a conclusion, and distinguish what is supported from what remains uncertain?**
 
-This sample presents seven tasks from one Rung 3 anonymized transaction, across three dated evidence snapshots. It spans diagnosis, prediction, explanation, quantitative interpretation, counterfactual reasoning, comparison and strategy. Read [Financial judgment for LLMs](https://dissei.ai/guides/financial-judgment-for-llms) for our broader research perspective.
+This sample contains seven tasks drawn from a single real-world deal, **Rung 3 anonymized while preserving the core financial reasoning**. The full evaluated sample includes a carefully designed environment, supporting exhibits, task-specific rubrics and reference answers. Across three dated evidence snapshots, the tasks span diagnosis, prediction, explanation, quantitative interpretation, counterfactual reasoning, comparison and strategy. Read [Financial judgment for LLMs](https://dissei.ai/guides/financial-judgment-for-llms) for our broader research perspective.
 
 This repository contains the research README, not the runnable evaluation environment. Public question previews, methodology and recorded results are available on [Harbor](https://hub.harborframework.com/datasets/dissei/financial-judgment) and [Hugging Face](https://huggingface.co/datasets/Dissei-Data/Dissei-Financial-Judgment). Complete evaluation packages, including task-specific rubrics, a runner and supporting exhibits, are supplied separately under agreed terms.
 
