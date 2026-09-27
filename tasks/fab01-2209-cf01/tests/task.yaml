@@ -1,0 +1,559 @@
+slug: had-company-br-declined-to-roll-equity-and-provide-a-seller-not
+category: counterfactual
+anchor: 2022-09
+complexity: medium_analysis
+score_weight: 1.0
+tier_basis: decision_optimal_ex_ante
+fact_bindings:
+- F020
+- F021
+- F022
+- F023
+- F025
+- F030
+- F032
+- F039
+- F040
+- F041
+- F042
+- F043
+- F045
+- F047
+- F048
+- F049
+- F050
+- F057
+- F058
+- F060
+- F061
+- F062
+- F063
+- F064
+- F065
+question: Had Company BR declined to roll equity and provide a seller note, how would Company ED have
+  had to reshape the capital structure to close at the same price, and how would risk-sharing shift?
+prompt_template: 'Use the case materials below to answer the question. Base your analysis only on information
+  available by the anchor date.
+
+
+  Timeline:
+
+  {timeline}
+
+
+  Exhibits:
+
+  {exhibits}
+
+
+  Sources:
+
+  {sources}
+
+  '
+pld:
+  excellent: Provides a case-grounded counterfactual financing plan that preserves the purchase-price
+    premise, sizes the missing Company BR capital, tests replacement capacity against credit markets and
+    borrower risk, and explains the resulting redistribution of economic and execution risk.
+  adequate: Recognizes the missing seller-funded sources, proposes a plausible mix of replacement capital
+    and economic concessions, and explains the main risk-sharing consequences with some evidence from
+    the pre-anchor record.
+  inadequate: Gives a generic financing answer that notices one missing instrument or one risk shift but
+    does not size the problem, test financing feasibility, or connect the answer to Company CI-specific
+    evidence.
+  failing: Treats the counterfactual as a simple deletion or all-debt substitution, ignores the actual
+    deal structure, or relies on unsupported assumptions and post-anchor information.
+level_exemplars:
+  excellent: 'One possible top-tier response would start from the actual pre-anchor structure rather than
+    from a generic LBO template. The proposed deal had a $14.0 billion TEV (F041), $5.5BN of senior third-party
+    debt at roughly 4.0x leverage (F043), a $2.25BN seller note (F047), $2.0BN of Company ED and co-investor
+    convertible preferred with a 7% PIK rate and conversion at a 10% premium (F048), and common equity
+    split 60/40 between Company ED and Company BR (F042). Company BK declined both rollover and seller-credit
+    participation, Company ED would need to replace the seller note and Company BK as sources while keeping
+    the purchase price intact, not simply remove them from uses. The most plausible reshaping would lean
+    first on incremental sponsor and co-investor equity or preferred equity, potentially with a larger
+    Company ED-led preferred/common check and perhaps modified conversion or priority terms, because the
+    existing funded debt package was already a large all-senior structure and carried a first-lien net
+    leverage covenant below 6.5x EBITDA (F045). Some incremental debt might be possible, but the answer
+    would treat it as constrained and expensive, not as the default solution.
+
+
+    The response would also explain why the debt market made a pure releveraging answer fragile. CLOs
+    represented nearly two-thirds of institutional capital in the primary loan market (F039), while non-bank
+    institutional participation had fallen 89% from Q1 2021 to Q3 2022 (F040). Against that backdrop,
+    loading the entire missing Company BR capital into syndicated or direct loans would likely strain
+    syndication, pricing, covenant, and interest-burden tolerance. The undrawn $700 million ABL (F057,
+    F058) would be liquidity support rather than purchase-price financing. To close at the same nominal
+    price, Company ED would therefore need some combination of more sponsor/co-invest equity, more junior
+    preferred or structured equity, outside minority capital, or an economic concession such as deferred
+    consideration that mimicked the seller note without pretending it was third-party debt.
+
+
+    On risk-sharing, the response would make clear that Company BR''s withdrawal would reduce seller alignment
+    and transfer more operating and exit downside to Company ED, co-investors, and lenders. In the actual
+    structure, Company BR retained 40% common ownership (F050) and provided a seller note senior to preferred
+    equity (F047), so it remained exposed above creditors but alongside the equity story. Without that
+    participation, Company ED would own more of the downside and upside, lenders would face a less aligned
+    seller, and any new junior capital would demand compensation through priority, PIK accrual, governance,
+    or lower entry economics. The answer would also connect this shift to carve-out execution risk: Company
+    CI depended on Company BR for 156 different services (F030), so a seller that no longer had capital
+    at risk could be less economically aligned during separation. A strong answer would balance this against
+    Company CI defensive traits, including roughly 80% replacement demand (F022), about 85% revenue from
+    HVAC and refrigeration end markets (F023), product lives of 12-15 years (F025), and inflation pass-through
+    delays of 6-18 months on many contracts (F021).
+
+    '
+  adequate: 'One possible adequate response would say that Company ED could still try to close, but only
+    by replacing Company BR''s capital stack role with a mix of additional Company ED/co-investor capital,
+    junior preferred equity, and perhaps a smaller amount of incremental debt or deferred seller-like
+    consideration. The answer would identify that the actual structure did not merely have Company BR
+    as a passive seller: it included a $2.25BN seller note (F047) and Company BR common equity participation
+    for 40% ownership (F042, F050), while Company ED held the 60% common side (F042, F049). Company BK
+    refused both instruments, the transaction would have a real sources problem at the same purchase price,
+    so Company ED would need replacement financing rather than just deleting those rows.
+
+
+    The response would then make a reasonable feasibility judgment. It would note that the proposed third-party
+    debt was already $5.5BN of all senior debt at about 4.0x leverage (F043), with a first-lien net leverage
+    covenant below 6.5x EBITDA (F045). That makes a full debt replacement aggressive. The answer would
+    also use pre-anchor market conditions: CLOs were nearly two-thirds of institutional primary-market
+    capital (F039), and non-bank institutional participation had declined 89% from Q1 2021 to Q3 2022
+    (F040). Those facts support the view that direct lenders or banks might provide some capital, but
+    probably only at higher cost, tighter terms, or in a smaller amount than the lost Company BR participation.
+    The $700 million ABL could support liquidity but should not be treated as if it were drawn purchase
+    consideration (F057, F058).
+
+
+    On risk-sharing, an adequate answer would explain that Company BR''s refusal would leave less seller
+    skin in the game and put more downside onto Company ED, co-investors, any new preferred investors,
+    and lenders. The actual seller note was senior to preferred equity (F047), and Company BR''s rollover
+    made it share future common-equity outcomes (F042). Without those features, Company ED might need
+    to compensate new investors through seniority, PIK economics, conversion rights, governance, or a
+    lower effective price. The answer would mention that this mattered because Company CI was not a clean
+    public-company acquisition: it was a carve-out reliant on Company BR for 156 services (F030). It might
+    also point to Company CI defensiveness, including roughly 80% replacement demand (F022) and about
+    85% exposure to HVAC and refrigeration end markets (F023), while acknowledging inflation timing risk
+    from 6-18 month pass-through delays (F021). This would be enough to show the main mechanics and risk
+    shift, even if the response did not fully optimize each financing layer.
+
+    '
+  inadequate: 'One possible inadequate response would recognize that the deal would be harder Company
+    BK did not participate, but it would answer mostly in generalities. It might say Company ED should
+    "raise more debt and equity" and that risk would "shift to Company ED," but it would not clearly identify
+    the actual instruments that disappeared: the $2.25BN seller note (F047) and Company BR''s 40% common
+    participation (F042, F050). It might mention the $14.0 billion purchase price (F041) but fail to explain
+    that maintaining that price requires replacing sources, not reducing uses.
+
+
+    This response would also underdevelop feasibility. It might assume the full gap could be financed
+    by lenders even though the actual structure already had $5.5BN of senior debt at roughly 4.0x leverage
+    (F043), and it might ignore the covenant below 6.5x EBITDA (F045). It could cite rising rates or tighter
+    credit in vague terms, but it would not use the available evidence that non-bank institutional participation
+    had fallen 89% from Q1 2021 to Q3 2022 (F040) or that CLOs supplied nearly two-thirds of institutional
+    primary-market capital (F039). It might misuse the $700 million ABL (F057) as if drawing it at close
+    solved the acquisition financing instead of treating it as liquidity support.
+
+
+    The risk-sharing discussion would be thin. The answer might say Company BR would have "less risk"
+    without explaining that Company ED and co-investors would absorb more ownership exposure, that new
+    junior capital would demand priority or pricing, or that lenders would face a less aligned seller.
+    It might mention Company CI business quality, such as its replacement demand or HVAC exposure, but
+    without connecting those facts to why investors might still finance a reshaped structure. It might
+    also miss the carve-out issue that Company CI relied on Company BR for 156 services (F030), which
+    is central to why seller participation mattered beyond dollars.
+
+    '
+  failing: 'One possible failing response would treat the counterfactual as a simple accounting edit.
+    It might say Company ED could remove Company BR''s rollover and seller note and keep the same purchase
+    price without explaining where replacement sources would come from. Alternatively, it might assert
+    that banks could simply add the missing amount to the debt package, ignoring that the actual transaction
+    already had $5.5BN of senior debt at roughly 4.0x leverage (F043), a first-lien leverage covenant
+    below 6.5x EBITDA (F045), and difficult credit-market conditions.
+
+
+    A failing response would not identify the seller note as a $2.25BN instrument (F047) or Company BR''s
+    40% common ownership (F042, F050), and it would not distinguish senior debt, seller paper, preferred
+    equity, common equity, and the ABL. It might confuse the $700 million revolver (F057) with acquisition
+    proceeds even though it was expected to remain undrawn at closing (F058). Its risk-sharing claims
+    would be conclusory, such as "Company ED takes more risk," without explaining loss of seller alignment,
+    the altered priority stack, or the implications for lenders and new junior capital providers. It might
+    also ignore Company CI-specific risk, including reliance on Company BR for 156 services (F030), and
+    could use later developments as if they were known by September 30, 2022.
+
+    '
+criteria:
+- tier: critical
+  weight: 24
+  criterion: Recognizes the counterfactual as a replacement-capital problem at the existing transaction
+    price.
+  binds_to: F041
+  pass_condition: Treats Company BR's refusal as creating a sources gap that must be replaced or economically
+    restructured while preserving the purchase-price premise.
+  partial_condition: Recognizes that the deal becomes harder to finance, but frames the issue mainly as
+    a generic need for more money rather than a sources-and-uses replacement problem.
+  references:
+  - exhibits/10_sources_uses_for_proposed_Company CI_carve_out.json
+  - F041
+  - F064
+  - F065
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 12
+  criterion: Sizes the Company BR-funded sources that would disappear.
+  binds_to:
+  - F060
+  - F063
+  pass_condition: Identifies the missing seller note as $2,250 million (F060) and the missing Company
+    BK as $1,721 million (F063), or equivalently sizes them from the Sources & Uses table.
+  partial_condition: Identifies one of the two missing Company BR-funded sources with the right order
+    of magnitude, but omits or materially misstates the other.
+  references:
+  - exhibits/10_sources_uses_for_proposed_Company CI_carve_out.json
+  - F060
+  - F063
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 11
+  criterion: Tests incremental debt capacity against the actual proposed debt package.
+  binds_to:
+  - F043
+  - F045
+  pass_condition: Assesses replacement debt as constrained by the existing $5.5BN senior debt at approximately
+    4.0x leverage (F043) and the first-lien net leverage covenant below 6.5x EBITDA (F045).
+  partial_condition: Notes that more leverage would be risky or expensive, but does not anchor that judgment
+    in the actual debt stack or covenant.
+  references:
+  - exhibits/table_1_proposed_deal_structure_for_Company CI_carve_out.json
+  - F043
+  - F045
+  discriminates:
+  - excellent
+  - adequate
+- tier: important
+  weight: 10
+  criterion: Uses the pre-anchor credit-market backdrop to limit the plausibility of an all-debt solution.
+  binds_to:
+  - F039
+  - F040
+  pass_condition: Explains that lender appetite was constrained because CLOs supplied nearly two-thirds
+    of institutional primary-market capital (F039) and non-bank institutional participation had declined
+    89% from Q1 2021 to Q3 2022 (F040).
+  partial_condition: Mentions tight credit markets or rising rates, but does not connect market structure
+    or issuance contraction to the financing choice.
+  references:
+  - exhibits/9_us_leveraged_loan_volume_million_usd.json
+  - F039
+  - F040
+  discriminates:
+  - excellent
+  - adequate
+- tier: important
+  weight: 10
+  criterion: Identifies junior capital as the more credible replacement layer than simply levering the
+    company.
+  binds_to:
+  - F048
+  - F049
+  - F061
+  - F062
+  pass_condition: Prioritizes additional sponsor, co-investor, structured preferred, or similar junior
+    capital as the main replacement layer for the unavailable seller participation.
+  partial_condition: Mentions equity or preferred capital as one possibility, but treats it as interchangeable
+    with senior debt rather than as the more credible layer.
+  references:
+  - exhibits/table_1_proposed_deal_structure_for_Company CI_carve_out.json
+  - exhibits/10_sources_uses_for_proposed_Company CI_carve_out.json
+  - F048
+  - F049
+  - F061
+  - F062
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 10
+  criterion: Explains the shift in economic risk-sharing from Company BR to Company ED and replacement
+    capital providers.
+  binds_to:
+  - F042
+  - F047
+  - F050
+  pass_condition: Describes how eliminating Company BR's retained common exposure and seller note would
+    reduce seller alignment and transfer more downside and upside exposure to Company ED, co-investors,
+    lenders, or new junior investors.
+  partial_condition: States that Company ED would take more risk, but does not identify which stakeholders
+    lose or gain exposure in the capital stack.
+  references:
+  - exhibits/table_1_proposed_deal_structure_for_Company CI_carve_out.json
+  - exhibits/10_sources_uses_for_proposed_Company CI_carve_out.json
+  - F042
+  - F047
+  - F050
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 9
+  criterion: Accounts for carve-out execution risk when evaluating seller non-participation.
+  binds_to: F030
+  pass_condition: Connects the loss of Company BR capital at risk to Company CI reliance on Company BR
+    for 156 different services (F030), making transition support and separation execution more important
+    financing risks.
+  partial_condition: Mentions carve-out complexity or transition services, but does not connect that issue
+    to the counterfactual loss of seller alignment.
+  references:
+  - exhibits/4_Company CI_carve_out_deal_technical_diligence.json
+  - F030
+  discriminates:
+  - excellent
+  - adequate
+- tier: optional
+  weight: 5
+  criterion: Uses Company CI defensive demand profile to temper the financing downside.
+  binds_to:
+  - F022
+  - F023
+  pass_condition: Notes that replacement demand and HVAC/refrigeration exposure could help support investor
+    appetite despite the less aligned seller.
+  references:
+  - exhibits/2_Company CI_historical_financial_performance_million.json
+  - F022
+  - F023
+  discriminates:
+  - excellent
+  - adequate
+- tier: optional
+  weight: 4
+  criterion: Recognizes inflation pass-through and input-cost timing as a residual risk for new capital.
+  binds_to:
+  - F020
+  - F021
+  pass_condition: Flags that raw-material exposure and delayed contractual price adjustments could make
+    new junior capital or incremental debt demand higher return protection.
+  references:
+  - exhibits/2_Company CI_historical_financial_performance_million.json
+  - F020
+  - F021
+  discriminates:
+  - excellent
+  - adequate
+- tier: pitfall
+  weight: -3
+  criterion: Avoids using information dated after 2022-09-30 — does not assert as fact events that occurred
+    after end of 2022-09-30.
+  binds_to: 2022-09
+  references:
+  - timelines/2022-09.md
+  discriminates:
+  - inadequate
+  - failing
+- tier: pitfall
+  weight: -3
+  criterion: Avoids treating the undrawn revolver as acquisition financing or as a substitute for permanent
+    replacement capital.
+  binds_to: F058
+  references:
+  - exhibits/table_1_proposed_deal_structure_for_Company CI_carve_out.json
+  - F057
+  - F058
+  discriminates:
+  - inadequate
+  - failing
+- tier: pitfall
+  weight: -2
+  criterion: Avoids reclassifying the seller note as equivalent to third-party senior debt.
+  binds_to: F047
+  references:
+  - exhibits/table_1_proposed_deal_structure_for_Company CI_carve_out.json
+  - F047
+  discriminates:
+  - inadequate
+  - failing
+- tier: pitfall
+  weight: -2
+  criterion: Avoids assuming credit-market capacity was unconstrained merely because Company ED was a
+    large sponsor.
+  binds_to: F040
+  references:
+  - exhibits/9_us_leveraged_loan_volume_million_usd.json
+  - F040
+  discriminates:
+  - inadequate
+  - failing
+aggregation:
+  strategy: implicit
+  critical_tier_veto: true
+  contradiction_check:
+    enabled: true
+    prompt: Does any claim in the response contradict the reference answer?
+    judge: cheap
+verifiers_compile_hint:
+  pattern: Sequential([Gate(WeightedSum(critical)), JudgeRubric(graded)])
+  critical_indices:
+  - 0
+  graded_indices:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+reference_answer: 'If Company BR declines both to roll equity and to provide the seller note, the
+
+  transaction does not become cheaper — it becomes a replacement-capital problem.
+
+  The price is unchanged at $14.0 billion, total uses stay at $14,052 million, and
+
+  the question is only who funds the hole and on what terms. Framing it as a
+
+  reason to pay less, or as a reason the deal simply dies, misses what actually
+
+  changes: the sources table has to be rebuilt around the same number, and the
+
+  economics of who bears loss move with it.
+
+
+  The hole is the sum of the two seller-funded lines. The seller note is $2,250
+
+  million and Company BR''s 40% common equity is $1,721 million, so $3,971 million
+
+  of the $14,052 million of sources disappears — a little over 28% of the funding
+
+  — together with the $50 million of balance-sheet cash Company BR was to provide.
+
+  Everything below follows from having to replace roughly $4.0 billion.
+
+
+  Incremental third-party debt cannot carry that on its own. The proposed package
+
+  is $5.5 billion of senior debt at about 4.0x leverage, which implies an earnings
+
+  base near $1.4 billion; adding $4.0 billion of debt would take total borrowings
+
+  to roughly $9.5 billion, or about 6.9x the same earnings. That is far beyond the
+
+  leverage the package was sized around and sits against a first-lien net leverage
+
+  covenant set at 6.5x EBITDA. The structure is also already reaching: alongside a
+
+  $2.9 billion Term Loan A at SOFR+4.50% with 97.5 OID, it carries a $2.6 billion
+
+  direct loan at SOFR+6.75% with 96.6 OID — pricing and original issue discount
+
+  that show the arrangers were already paying up for the last turns of leverage.
+
+
+  The pre-anchor credit backdrop limits the all-debt answer further. At the anchor
+
+  the leveraged finance market is constrained rather than accommodating, which is
+
+  why so much of the package sits with a direct lender at private-credit pricing
+
+  in the first place. Assuming another $4 billion of senior capacity would be
+
+  assuming exactly the market condition the record says was absent, and the
+
+  sponsor''s size does not change that: capacity is priced by lenders against the
+
+  credit and the market, not granted on the strength of the buyer''s brand. An
+
+  undrawn revolver does not help either — a revolver is working-capital liquidity,
+
+  not permanent acquisition financing, and treating it as a funding source
+
+  confuses a committed facility for a use of proceeds.
+
+
+  The credible replacement is junior capital, not more leverage. The natural move
+
+  is to expand the layer that already exists: the $2.0 billion of convertible
+
+  preferred at a 7% PIK rate converting at a 10% premium, deepened with additional
+
+  co-invest and third-party structured equity, plus a larger sponsor common
+
+  cheque. That preserves debt service against an earnings base that has not grown,
+
+  at the cost of a heavier PIK burden accreting ahead of common and a larger
+
+  preference stack sitting in front of the sponsor''s own return.
+
+
+  The risk-sharing shift is the substantive answer. Today Company BR sits in two
+
+  places: $1,721 million of common equity taking first loss alongside the sponsor,
+
+  and a $2,250 million seller note that is 5% PIK and ranks senior to the
+
+  preferred but behind the third-party debt. That note is emphatically not
+
+  third-party senior debt — it is deferred, non-cash, seller-provided paper whose
+
+  subordination is part of what makes the senior package work. Remove both and the
+
+  first-loss position concentrates on Company ED and whatever new junior investors
+
+  step in; the preference stack ahead of common grows, so sponsor returns are
+
+  diluted and more sensitive to exit timing; and the deal loses a provider who was
+
+  economically motivated to see the separation succeed.
+
+
+  That last point matters for execution, not just for funding. Company BR''s
+
+  retained stake and its note aligned the seller with a carve-out that still has to
+
+  stand up functions the business consumed from its parent. A seller with no
+
+  continuing economic interest is a less committed counterparty through
+
+  transition, so new capital would price that execution risk on top of the
+
+  leverage question — which is part of why the replacement is unlikely to come at
+
+  the same cost as what it replaces.
+
+
+  Two factors temper the downside. Company CI''s demand is substantially
+
+  replacement-driven rather than discretionary, which supports a steadier earnings
+
+  base than the leverage arithmetic alone suggests and is exactly what a private
+
+  credit provider underwrites. Against that, input-cost inflation and the lag
+
+  before pricing catches up remain a live residual risk for any new capital: the
+
+  margin path is timing-sensitive, and a junior provider sitting behind $5.5
+
+  billion of senior debt absorbs that volatility first.
+
+
+  All of this is bounded by what is visible at September 2022. The record supports
+
+  the sizing, the structure and the direction of the risk shift; it does not
+
+  support claims about how financing conditions subsequently moved, whether such
+
+  replacement capital was in fact available, or the terms it would have carried.
+
+  The defensible conclusion is that the deal could still be closed at $14.0
+
+  billion, but only by replacing roughly $4.0 billion with junior capital rather
+
+  than debt, and the result would be a more expensive, more preference-heavy
+
+  structure in which Company ED and new investors absorb the loss position Company
+
+  BR had been sharing.'

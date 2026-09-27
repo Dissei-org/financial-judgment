@@ -1,0 +1,57 @@
+schema_version = "1.4"
+[[artifacts]]
+source = "/var/lib/dissei/episode"
+destination = "episode"
+
+[task]
+name = "dissei/financial-judgment-pr02"
+version = "2.0.0"
+description = "Judge, as of the anchor date, how a situation is likely to develop. Point-in-time financial analysis task, anchored at 2021-12, graded by rubric with an LLM judge."
+keywords = [ "finance", "private-credit", "financial-analysis", "point-in-time", "llm-judge", "predictive",]
+[[task.authors]]
+name = "Dissei"
+email = "tech@dissei.credit"
+
+[metadata]
+name = "Dissei"
+instance_id = "fab01-2112-pr02"
+language = "en"
+anchor = "2021-12"
+case = "company-ci-carveout"
+category = "predictive"
+complexity = "medium_analysis"
+identity_tier = "name_suppressed"
+tool_budget = 20
+release = "financial-judgment-full"
+release_version = "2.0.0"
+image_tag = "20260927-clean"
+image_platforms = [ "linux/amd64", "linux/arm64",]
+image_digest = "sha256:caf60288cbee25b23e266ad4ba4db4e18d6f4e8aea468e88727e60ca06601978"
+
+[environment]
+docker_image = "dissei/financial-judgment-2021-12:20260927-clean"
+workdir = "/workspace"
+cpus = 2
+memory_mb = 4096
+network_mode = "public"
+build_timeout_sec = 1200.0
+
+[agent]
+timeout_sec = 1800.0
+network_mode = "public"
+user = "agent"
+
+[verifier]
+timeout_sec = 900.0
+network_mode = "public"
+environment_mode = "separate"
+
+[judge]
+type = "mixed"
+reward_kind = "continuous"
+
+[verifier.environment]
+cpus = 2
+memory_mb = 4096
+network_mode = "public"
+build_timeout_sec = 1200.0

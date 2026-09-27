@@ -1,0 +1,299 @@
+slug: which-diligence-workstream-should-company-ed-treat-as-gating
+category: strategic
+anchor: 2022-09
+complexity: medium_analysis
+score_weight: 1.0
+tier_basis: decision_optimal_ex_ante
+fact_bindings:
+- F020
+- F021
+- F026
+- F030
+- F032
+- F041
+- F042
+- F043
+- F045
+- F052
+- F057
+- F058
+- F078
+- F081
+question: Which diligence workstream should Company ED treat as gating before signing the carve-out?
+prompt_template: 'You are advising Company ED at the September 2022 signing decision for the Company CI.
+  Use only the provided pre-anchor case materials to identify which diligence workstream should be treated
+  as gating before signing, and explain why that workstream should control the go/no-go decision.
+
+
+  Timeline:
+
+  {timeline}
+
+
+  Exhibits:
+
+  {exhibits}
+
+
+  Sources:
+
+  {sources}
+
+  '
+pld:
+  excellent: A top response makes a clear gating-workstream call, explains why that workstream is the
+    most signing-critical constraint using pre-anchor evidence, and weighs credible alternatives without
+    treating them as equal.
+  adequate: An adequate response makes a defensible gating-workstream call and supports it with enough
+    case evidence to show why it should control signing, while acknowledging the main adjacent risks.
+  inadequate: An inadequate response discusses relevant diligence areas but either avoids a clear gate,
+    relies on thin evidence, or misprioritizes risks that were already largely diligenced or structurally
+    mitigated.
+  failing: A failing response is generic, materially contradicts the case record, uses post-anchor information
+    as if known at signing, or gives no usable go/no-go diligence recommendation.
+level_exemplars:
+  excellent: 'One possible excellent response would make carve-out stand-up and TSA separation validation
+    the gating workstream. The reason is not that every other risk is minor, but that this is the workstream
+    most likely to turn an attractive industrial asset into a failed signing if it is not executable on
+    day one. Company CI was not a clean standalone company; it would rely on Company BR for 156 different
+    services (F030), so the diligence threshold should be a bottoms-up service-by-service view of what
+    must transfer, what must remain under TSA, who owns each function, what failure modes interrupt customers
+    or plants, and what standalone costs are truly embedded in the model.
+
+
+    The response would then contrast this gate with other major workstreams. Pricing and inflation are
+    serious because raw materials were about 60% of cost of goods sold (F020) and customer contracts delayed
+    pass-through by 6-18 months (F021), but that argues for stress testing margins and liquidity, not
+    necessarily for stopping signing if the pass-through mechanics are understood. Financing also matters
+    in a rising-rate market: the deal contemplated $5.5BN of third-party senior debt at about 4.0x leverage
+    (F043), a leverage covenant below 6.5x EBITDA (F045), 30-day SOFR of 2.42% at the anchor date (F052),
+    and an undrawn $700 million ABL (F057, F058). Still, the sponsor had a structured capital plan and
+    meaningful Company BR alignment through a 60/40 common equity split (F042) and Company BR''s retained
+    equity interest (F081). Operating cost savings are value-critical, including a $105 million plant
+    efficiency opportunity (F026), but upside can be repriced or reserved for; operational separation
+    failure can impair control, reporting, payroll, procurement, IT, and customer continuity immediately
+    after closing.
+
+
+    The conclusion would say Company ED should sign only if the carve-out workstream has verified executable
+    TSAs, named personnel, stand-up roadmap, costs, governance, and fallback plans, while using pricing,
+    recession, and financing diligence to calibrate price, covenants, and downside protections.
+
+    '
+  adequate: 'One possible adequate response would treat the carve-out stand-up workstream as the gate
+    before signing. Company CI appears to be a strong asset, with defensible market characteristics and
+    resilient replacement exposure, but Company ED is not just buying a freestanding compressor company.
+    It is buying a business that has to be separated from Company BR, and the diligence record shows why
+    that separation deserves go/no-go status. The clearest case-specific signal is that Company CI would
+    remain dependent on Company BR for 156 different services (F030). That makes the workstream binary
+    in a way that many other issues are not: if the service Product AF, TSA coverage, transferred personnel,
+    data, systems, finance processes, procurement, HR, and operational governance are not validated, closing
+    could create immediate execution risk even if the headline investment thesis is right.
+
+
+    The answer would still recognize the other diligence tracks. Pricing and inflation are important because
+    raw materials were about 60% of cost of goods sold (F020), and contract terms created a 6-18 month
+    lag before inflation could be passed through (F021). That should lead to margin sensitivity work and
+    downside covenant testing. Financing also cannot be ignored: the contemplated structure included $5.5BN
+    of third-party senior debt at about 4.0x leverage (F043), a first-lien leverage covenant below 6.5x
+    EBITDA (F045), and a rate backdrop where 30-day SOFR was 2.42% as of September 30, 2022 (F052). However,
+    the presence of an undrawn $700 million ABL at closing (F057, F058), Company BR''s retained 40% common
+    ownership (F042), and the sponsor''s common/preferred capital reduce the case for making financing
+    the single gate if commitments are available.
+
+
+    A practical recommendation would be to make signing conditional on the carve-out team proving the
+    separation plan is executable, costed, and governed, while using the commercial, inflation, and financing
+    findings to set price discipline, covenant cushion, TSA remedies, and post-close operating priorities.
+
+    '
+  inadequate: 'One possible inadequate response would say Company ED should focus mainly on market diligence
+    and the cyclicality of HVAC demand. It might correctly note that a recession was a meaningful risk,
+    with Company DC estimating about a 30% probability in the twelve months after September 2022 (F032),
+    and that higher rates made debt more expensive. It might also mention that Company CI business had
+    attractive replacement demand and that the purchase price was large at $14.0BN (F041). Those points
+    are relevant, but the answer would not explain why one diligence workstream should gate signing rather
+    than simply affect valuation.
+
+
+    This response would likely underuse the separation facts. It might say carve-out execution matters,
+    but only as one item in a long checklist, even though the case record shows a dependence on 156 Company
+    BR-provided services (F030). It might not distinguish value risks that can be adjusted in price or
+    structure from execution risks that can prevent the new company from operating properly after close.
+    It might also treat the cost-savings plan too casually, citing a $105 million efficiency opportunity
+    (F026) without asking whether standalone functions, TSAs, and personnel transfers are in place to
+    let those savings be captured.
+
+
+    The recommendation would be directionally on topic but weak: it would tell Company ED to do more work
+    on demand, rates, inflation, and operations, without establishing a signing gate or explaining why
+    the gate is specifically tied to separation readiness.
+
+    '
+  failing: 'One possible failing response would give a generic private equity answer such as "Company
+    ED should gate commercial diligence because revenue growth drives returns." It might repeat that Company
+    CI is a market leader and that replacement demand is attractive, but it would not make a case-specific
+    go/no-go recommendation. It could also assert facts not available by the September 2022 anchor, such
+    as later deal outcomes, later operating performance, or later capital-market conditions, and use them
+    to justify the recommendation.
+
+
+    A failing answer might ignore the central carve-out problem entirely, despite the disclosed reliance
+    on Company BR for 156 services (F030). It might also misuse the debt terms, for example treating the
+    undrawn $700 million ABL (F057, F058) as proof there is no financing risk, or confusing the first-lien
+    leverage covenant below 6.5x EBITDA (F045) with a liquidity covenant. It might list every diligence
+    area as equally important, provide no signing threshold, or say that all workstreams must be complete
+    without identifying which one should control the decision.
+
+
+    The result would not help the investment committee decide what must be true before signing. It would
+    either be a broad checklist, a hindsight story, or a recommendation unsupported by the case materials.
+
+    '
+criteria:
+- tier: critical
+  weight: 25
+  criterion: Makes a categorical gating-workstream recommendation.
+  binds_to: 2022-09
+  pass_condition: Commits categorically to a gating diligence workstream from {carve-out stand-up and
+    TSA separation readiness, pricing and inflation pass-through, capital-structure and financing certainty,
+    operating cost-savings validation}.
+  partial_condition: Names a plausible diligence priority but hedges across multiple workstreams or frames
+    the answer as a checklist rather than a gate.
+  references:
+  - timelines/2022-09.md
+  - exhibits/4_Company CI_carve_out_deal_technical_diligence.json
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 14
+  criterion: Explains why carve-out separation readiness has signing-gate character.
+  binds_to: F030
+  pass_condition: Uses Company CI reliance on 156 Company BR services (F030) to show why separation readiness
+    could determine whether the business can operate after close.
+  partial_condition: Mentions Company BR service dependence or TSAs but does not explain why that dependence
+    should control the signing decision.
+  references:
+  - exhibits/4_Company CI_carve_out_deal_technical_diligence.json
+  - F030
+  discriminates:
+  - excellent
+  - adequate
+- tier: important
+  weight: 11
+  criterion: Assesses pricing and inflation diligence as a major but modelable risk.
+  binds_to: 2022-09
+  pass_condition: Uses the documented long-term customer-contract pricing mechanics to explain why pricing
+    diligence should stress margins rather than automatically outrank separation readiness.
+  partial_condition: Recognizes inflation or pricing pressure but does not connect it to customer-contract
+    pricing mechanics or their implications for diligence priority.
+  references:
+  - exhibits/2_Company CI_historical_financial_performance_million.json
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 10
+  criterion: Weighs financing risk against the proposed debt package.
+  binds_to: F043
+  pass_condition: Interprets the $5.5BN third-party senior debt at about 4.0x leverage (F043) as an important
+    financing diligence constraint.
+  partial_condition: Mentions debt market risk or leverage but does not tie it to the proposed financing
+    package.
+  references:
+  - exhibits/table_1_proposed_deal_structure_for_Company CI_carve_out.json
+  - F043
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 10
+  criterion: Frames operational savings as upside requiring validation rather than the primary signing
+    gate.
+  binds_to: F026
+  pass_condition: Treats the plant-efficiency cost reduction opportunity as value-critical diligence that
+    should be validated within the investment case.
+  partial_condition: Mentions cost savings or operations diligence without distinguishing upside validation
+    from a signing gate.
+  references:
+  - exhibits/5_2022_2027_ebitda_bridge.json
+  - F026
+  discriminates:
+  - excellent
+  - adequate
+- tier: optional
+  weight: 4
+  criterion: Uses the market-share exhibit to support the asset-quality context.
+  binds_to: F078
+  pass_condition: Recognizes that the portion labeled Company CI corresponds to Company CI (F078) when
+    using the market-share exhibit to frame asset quality.
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F078
+  discriminates:
+  - excellent
+  - adequate
+- tier: optional
+  weight: 3
+  criterion: Incorporates sponsor-seller alignment into the gating judgment.
+  binds_to: F042
+  pass_condition: Uses the 60/40 common equity split between Company ED and Company BR (F042) to explain
+    why Company BR had continuing incentives around structure and execution.
+  references:
+  - exhibits/10_sources_uses_for_proposed_Company CI_carve_out.json
+  - F042
+  discriminates:
+  - excellent
+  - adequate
+- tier: pitfall
+  weight: -4
+  criterion: Avoids using information dated after 2022-09-30 — does not assert as fact events that occurred
+    after end of 2022-09-30.
+  binds_to: 2022-09
+  references:
+  - timelines/2022-09.md
+  discriminates:
+  - inadequate
+  - failing
+- tier: pitfall
+  weight: -3
+  criterion: Avoids treating every diligence stream as equally gating when the question asks for a signing-control
+    workstream.
+  binds_to: 2022-09
+  references:
+  - timelines/2022-09.md
+  discriminates:
+  - adequate
+  - inadequate
+- tier: pitfall
+  weight: -3
+  criterion: Avoids confusing the first-lien net leverage covenant with a liquidity covenant.
+  binds_to: F045
+  references:
+  - exhibits/table_1_proposed_deal_structure_for_Company CI_carve_out.json
+  - F045
+  discriminates:
+  - inadequate
+  - failing
+aggregation:
+  strategy: implicit
+  critical_tier_veto: true
+  contradiction_check:
+    enabled: true
+    prompt: Does any claim in the response contradict the reference answer?
+    judge: cheap
+verifiers_compile_hint:
+  pattern: Sequential([Gate(WeightedSum(critical)), JudgeRubric(graded)])
+  critical_indices:
+  - 0
+  graded_indices:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9

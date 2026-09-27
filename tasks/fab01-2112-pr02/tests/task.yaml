@@ -1,0 +1,282 @@
+slug: would-you-expect-company-ci-to-be-relatively-resilient-if-dema
+category: predictive
+anchor: 2021-12
+complexity: medium_analysis
+score_weight: 1.0
+tier_basis: outcome_aligned
+fact_bindings:
+- F005
+- F010
+- F021
+- F024
+- F077
+- F078
+question: Would you expect Company CI to be relatively resilient if demand conditions weakened after the
+  anchor?
+prompt_template: 'Use the case materials available at the anchor to answer the question. Do not use information
+  after the anchor.
+
+
+  Timeline:
+
+  {timeline}
+
+
+  Exhibits:
+
+  {exhibits}
+
+
+  Sources:
+
+  {sources}
+
+  '
+pld:
+  excellent: A response at this level makes a clear forecast and weighs Company CI-specific demand durability
+    against cyclical and operating vulnerabilities using only anchor-available evidence.
+  adequate: A response at this level reaches a defensible forecast and supports it with the main pre-anchor
+    evidence, while acknowledging at least one meaningful limitation.
+  inadequate: A response at this level is on topic but relies on thin, generic, or one-sided reasoning
+    that misses important evidence in the case materials.
+  failing: A response at this level does not provide a usable Company CI-specific forecast, misuses the
+    anchor, or bases the answer on unsupported assertions.
+level_exemplars:
+  excellent: 'One possible response at this level would expect Company CI to be relatively resilient,
+    but not immune, if demand weakened after the anchor. It would start from the visible segment evidence:
+    Exhibit 1 labels Company CI as Company CI and shows substantial North American positions across residential
+    HVAC, Product F, refrigeration, and transport. It would add that the ledger-supported case materials
+    identify Company CI as a leader in scroll compressors and controls. Those points support a forecast
+    that volumes and margins should hold up better than many more exposed industrial businesses because
+    customers appear to face meaningful substitution limits in several product categories.
+
+
+    The same answer would not treat resilience as certainty. It would use the long historical table to
+    show that Company CI had experienced revenue and EBITDA declines in downturn-like periods, so the
+    right prediction is relative resilience rather than no contraction. It would also flag the cost side:
+    the exhibit note attributes recent margin pressure to long-term OEM contracts with infrequent price
+    adjustment terms, so weaker demand combined with cost pressure could squeeze margins before pricing
+    catches up. The conclusion would be a balanced probabilistic call: Company CI should likely outperform
+    a more exposed industrial peer set in a demand slowdown, but the company still has earnings sensitivity
+    through volume, pricing lag, customer mix, and carve-out execution.
+
+    '
+  adequate: 'One possible response at this level would make a clear forecast that Company CI should be
+    somewhat more resilient than a typical cyclical industrial business if demand conditions weakened
+    after the anchor. The core reason is that the visible case materials show substantial positions in
+    North American HVAC, refrigeration, and transport categories. Exhibit 1 labels Company CI as Company
+    CI and shows meaningful segment positions across those categories, while the surrounding case materials
+    describe the business as a leader in scroll compressors and controls. A reasonable inference is that
+    customers would have fewer easy substitutes for key products, especially in residential compressors,
+    where the ledger identifies Company CI as the only domestic supplier.
+
+
+    The answer would still recognize limits. Exhibit 2 shows that the business has not been perfectly
+    stable across cycles; both revenue and adjusted EBITDA have declined in some historical years, including
+    periods that look like demand stress. That history makes a prediction of complete insulation too strong.
+    The answer would also mention margin exposure from infrequent contract repricing. If demand weakens
+    while cost inflation remains high, the company may have to absorb pressure before price adjustments
+    catch up. The better calibrated answer is therefore not "no downside," but "relative resilience with
+    earnings volatility." It should conclude that Company CI would probably withstand weaker demand better
+    than many discretionary industrial businesses because of category position and product leadership,
+    while still being exposed to cyclical volume declines and margin compression.
+
+    '
+  inadequate: 'One possible response at this level would answer that Company CI is probably resilient
+    but would support the view mostly with generic claims about HVAC being necessary or Company ED being
+    a sophisticated sponsor. It might mention that the company has a strong position, but it would not
+    engage closely with Exhibit 1 or the historical financial table. It might also ignore the distinction
+    between revenue resilience and EBITDA resilience, even though the case materials show that margins
+    can move meaningfully when costs and pricing timing are unfavorable.
+
+
+    This answer would be weak because it treats the conclusion as obvious. It would not wrestle with the
+    evidence that Company CI had prior revenue and EBITDA declines, and it might fail to explain why those
+    declines are consistent with a relative-resilience view rather than a recession-proof view. It may
+    also overlook raw-material exposure and contract repricing lag, both of which matter if demand softens
+    after the anchor. The final forecast may still be directionally plausible, but it would not give a
+    judge enough case-based reasoning to distinguish a considered prediction from a broad industrial-market
+    guess.
+
+    '
+  failing: 'One possible response at this level would either refuse to make a forecast or assert a conclusion
+    that is detached from the case materials. It might say Company CI would definitely collapse because
+    industrial demand is cyclical, or that it would have no downside because HVAC is essential, without
+    using the exhibits or the ledger-supported operating facts. It might also rely on later transaction
+    details, later macro data, or realized events after the anchor, which would make the answer unusable
+    for an anchor-time prediction.
+
+
+    Another failing response would confuse financing structure with demand resilience, treating leverage,
+    sponsor identity, or deal size as the main answer to a question about how the business might behave
+    if demand weakened. Those factors could matter to capital structure risk, but they do not by themselves
+    show whether Company CI products, customers, and margins would be resilient. A failing answer would
+    leave the reader without a grounded Company CI-specific view and would not separate relative resilience
+    from absolute immunity.
+
+    '
+criteria:
+- tier: critical
+  weight: 25
+  criterion: Makes a categorical forecast about Company CI relative demand resilience after the anchor.
+  binds_to: F077
+  pass_condition: Commits categorically to a most-likely resilience outcome from {relatively resilient,
+    not relatively resilient, indeterminate or mixed}.
+  partial_condition: Provides a directional view but hedges so heavily that the expected outcome is difficult
+    to identify.
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F077
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 12
+  criterion: Uses North American segment position as a source of demand durability.
+  binds_to: F077
+  pass_condition: Explains that Company CI segment-share evidence supports relative resilience by reducing
+    the apparent risk of rapid customer substitution.
+  partial_condition: Mentions segment share or market position but does not explain why it changes the
+    demand-risk forecast.
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F077
+  - F078
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 10
+  criterion: Connects product category exposure to demand relevance.
+  binds_to: F010
+  pass_condition: Interprets Company CI HVAC and refrigeration compressor and controls exposure as more
+    demand-relevant than a generic industrial product mix.
+  partial_condition: Identifies HVAC, refrigeration, compressors, or controls but leaves its relevance
+    to demand resilience implicit.
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F010
+  discriminates:
+  - excellent
+  - adequate
+- tier: important
+  weight: 10
+  criterion: Uses competitive position to support the resilience forecast.
+  binds_to: F077
+  pass_condition: Draws on Company CI North American segment-share evidence to infer some customer stickiness
+    or limited substitution risk.
+  partial_condition: Mentions market leadership or share without tying it to the probability of demand
+    resilience.
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F005
+  - F010
+  - F024
+  - F077
+  - F078
+  discriminates:
+  - excellent
+  - adequate
+- tier: important
+  weight: 10
+  criterion: Uses historical cyclicality to limit the resilience claim.
+  binds_to: 2021-12
+  pass_condition: Recognizes from the historical financial table that Company CI had prior revenue or
+    EBITDA contractions, so relative resilience is not the same as immunity.
+  partial_condition: Acknowledges possible cyclicality or downside but does not ground it in the historical
+    financial record.
+  references:
+  - exhibits/2_Company CI_historical_financial_performance_million.json
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 8
+  criterion: Identifies pricing-lag exposure as a margin risk in a weakening demand environment.
+  binds_to: F021
+  pass_condition: Explains that delayed contract price resets could pressure margins if demand weakens
+    while cost inflation remains difficult to pass through.
+  partial_condition: Mentions inflation or pricing pressure but does not connect the timing lag to the
+    resilience forecast.
+  references:
+  - exhibits/2_Company CI_historical_financial_performance_million.json
+  - F021
+  discriminates:
+  - adequate
+  - inadequate
+- tier: optional
+  weight: 5
+  criterion: Distinguishes demand resilience from financial or deal-structure resilience.
+  binds_to: 2021-12
+  pass_condition: Keeps the forecast focused on Company CI products, end markets, and operating performance
+    instead of substituting sponsor or financing considerations for demand analysis.
+  references:
+  - timelines/2021-12.md
+  discriminates:
+  - excellent
+  - adequate
+- tier: optional
+  weight: 4
+  criterion: Frames the conclusion probabilistically rather than absolutely.
+  binds_to: 2021-12
+  pass_condition: Presents the expected resilience as a relative judgment with plausible downside paths,
+    rather than as a guarantee of stable revenue or EBITDA.
+  references:
+  - exhibits/2_Company CI_historical_financial_performance_million.json
+  discriminates:
+  - excellent
+  - adequate
+- tier: pitfall
+  weight: -2
+  criterion: Avoids using information dated after 2021-12-31 — does not assert as fact events that occurred
+    after end of 2021-12-31.
+  binds_to: 2021-12
+  references:
+  - timelines/2021-12.md
+  discriminates:
+  - inadequate
+  - failing
+- tier: pitfall
+  weight: -2
+  criterion: Avoids treating relative resilience as recession-proof stability.
+  binds_to: F021
+  references:
+  - exhibits/2_Company CI_historical_financial_performance_million.json
+  - F021
+  discriminates:
+  - inadequate
+  - failing
+- tier: pitfall
+  weight: -2
+  criterion: Avoids basing the answer on unretrievable company-document source material rather than the
+    rendered timeline, exhibits, and sources.
+  binds_to: 2021-12
+  references:
+  - timelines/2021-12.md
+  discriminates:
+  - inadequate
+  - failing
+aggregation:
+  strategy: implicit
+  critical_tier_veto: true
+  contradiction_check:
+    enabled: true
+    prompt: Does any claim in the response contradict the reference answer?
+    judge: cheap
+verifiers_compile_hint:
+  pattern: Sequential([Gate(WeightedSum(critical)), JudgeRubric(graded)])
+  critical_indices:
+  - 0
+  graded_indices:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+outcome:
+  recoverable: false

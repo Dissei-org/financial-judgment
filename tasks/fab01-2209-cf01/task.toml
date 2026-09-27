@@ -1,0 +1,57 @@
+schema_version = "1.4"
+[[artifacts]]
+source = "/var/lib/dissei/episode"
+destination = "episode"
+
+[task]
+name = "dissei/financial-judgment-cf01"
+version = "2.0.0"
+description = "Reason about how the case would differ under a stated change. Point-in-time financial analysis task, anchored at 2022-09, graded by rubric with an LLM judge."
+keywords = [ "finance", "private-credit", "financial-analysis", "point-in-time", "llm-judge", "counterfactual",]
+[[task.authors]]
+name = "Dissei"
+email = "tech@dissei.credit"
+
+[metadata]
+name = "Dissei"
+instance_id = "fab01-2209-cf01"
+language = "en"
+anchor = "2022-09"
+case = "company-ci-carveout"
+category = "counterfactual"
+complexity = "medium_analysis"
+identity_tier = "name_suppressed"
+tool_budget = 20
+release = "financial-judgment-full"
+release_version = "2.0.0"
+image_tag = "20260927-clean"
+image_platforms = [ "linux/amd64", "linux/arm64",]
+image_digest = "sha256:84e489e63cfdfa9eb42a958133bf3a5fae4cf6df0eede82a01110597a0200fe5"
+
+[environment]
+docker_image = "dissei/financial-judgment-2022-09:20260927-clean"
+workdir = "/workspace"
+cpus = 2
+memory_mb = 4096
+network_mode = "public"
+build_timeout_sec = 1200.0
+
+[agent]
+timeout_sec = 1800.0
+network_mode = "public"
+user = "agent"
+
+[verifier]
+timeout_sec = 900.0
+network_mode = "public"
+environment_mode = "separate"
+
+[judge]
+type = "mixed"
+reward_kind = "continuous"
+
+[verifier.environment]
+cpus = 2
+memory_mb = 4096
+network_mode = "public"
+build_timeout_sec = 1200.0

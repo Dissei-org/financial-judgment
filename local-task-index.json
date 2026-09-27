@@ -1,0 +1,58 @@
+{
+  "dataset": "dissei/financial-judgment-full",
+  "dataset_content_digest": "sha256:b26326736f12baa916a4fc2b31493783907d9ab5dc40f25213474646b418145a",
+  "local_task_directory": "tasks",
+  "published": false,
+  "tasks": [
+    {
+      "content_digest": "sha256:182de8e2addb5e7bb1058d14714e2357292eb21bf40230d43ac263542ba09d1b",
+      "instance_id": "fab01-2112-dg04",
+      "name": "dissei/financial-judgment-dg04",
+      "path": "tasks/fab01-2112-dg04",
+      "version": "2.0.0"
+    },
+    {
+      "content_digest": "sha256:42fb548ee4889d45c5e668d9a62b5e1cb6e575ac133823d925191879f2b7dd9c",
+      "instance_id": "fab01-2112-pr02",
+      "name": "dissei/financial-judgment-pr02",
+      "path": "tasks/fab01-2112-pr02",
+      "version": "2.0.0"
+    },
+    {
+      "content_digest": "sha256:3c962c5ff3e9bd324e96db90ba910b4a37507844432442488f423784a407014d",
+      "instance_id": "fab01-2206-ex01",
+      "name": "dissei/financial-judgment-ex01",
+      "path": "tasks/fab01-2206-ex01",
+      "version": "2.0.0"
+    },
+    {
+      "content_digest": "sha256:9e5ebfdd6bbb9a0530d69756cbc718e5e9d1d0cf53ebaef4993a7e5b170c0a71",
+      "instance_id": "fab01-2206-qn02",
+      "name": "dissei/financial-judgment-qn02",
+      "path": "tasks/fab01-2206-qn02",
+      "version": "2.0.0"
+    },
+    {
+      "content_digest": "sha256:ff469e2b8870484e84bcef1d082e2ee7c3eec1c95e8b2a8e7354ff4149657abe",
+      "instance_id": "fab01-2209-cf01",
+      "name": "dissei/financial-judgment-cf01",
+      "path": "tasks/fab01-2209-cf01",
+      "version": "2.0.0"
+    },
+    {
+      "content_digest": "sha256:95e61b083e13f84a122a1a5dc9acb9a20d411a671384b5b0b309ab9eab0f9dd1",
+      "instance_id": "fab01-2209-cp02",
+      "name": "dissei/financial-judgment-cp02",
+      "path": "tasks/fab01-2209-cp02",
+      "version": "2.0.0"
+    },
+    {
+      "content_digest": "sha256:98cb4ea10781844604136451fba91e235a86c7391f45923f26177855fe8af74c",
+      "instance_id": "fab01-2209-st06",
+      "name": "dissei/financial-judgment-st06",
+      "path": "tasks/fab01-2209-st06",
+      "version": "2.0.0"
+    }
+  ],
+  "version": "2.0.0"
+}

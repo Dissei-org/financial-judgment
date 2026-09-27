@@ -1,0 +1,315 @@
+slug: what-diagnosis-should-you-make-of-company-ci-s-recent-margin-p
+category: diagnostic
+anchor: 2021-12
+complexity: medium_analysis
+score_weight: 1.0
+tier_basis: decision_optimal_ex_ante
+fact_bindings:
+- F005
+- F021
+- F077
+- F078
+question: What diagnosis should you make of Company CI recent margin pressure at the anchor?
+prompt_template: 'You are evaluating the case at the 2021-12 anchor. Use only the case materials available
+  at that anchor.
+
+
+  Timeline:
+
+  {timeline}
+
+
+  Exhibits:
+
+  {exhibits}
+
+
+  Sources:
+
+  {sources}
+
+
+  What diagnosis should you make of Company CI recent margin pressure at the anchor?
+
+  '
+pld:
+  excellent: Diagnoses the margin pressure as a timing-driven price-cost issue while testing that diagnosis
+    against historical margins, share evidence, and limits in the available record.
+  adequate: Identifies the likely price-cost timing diagnosis and supports it with the historical financial
+    exhibit, but gives less depth on evidentiary limits or alternative explanations.
+  inadequate: Discusses margin pressure in generic terms or overstates one exhibit, with weak separation
+    between temporary pass-through lag and structural impairment.
+  failing: Misdiagnoses the issue, relies on post-anchor information, or provides a finance/deal answer
+    rather than a margin-pressure diagnosis.
+level_exemplars:
+  excellent: 'One possible excellent response would diagnose Company CI recent margin pressure primarily
+    as a price-cost timing problem rather than a clear sign of structural deterioration. The historical
+    financial exhibit shows margins compressing recently after a longer period in which the business had
+    supported healthy profitability, so the first question is not whether the company suddenly lost its
+    franchise, but why price realization lagged cost movement. The most persuasive case-specific explanation
+    is the contract structure described in the materials: long-term OEM arrangements with infrequent price
+    adjustment terms can cause costs to hit the income statement before price increases catch up. That
+    fits a temporary margin squeeze better than a demand-collapse story.
+
+
+    The response would still be careful. It would not treat "temporary" as "immaterial" or "automatically
+    reversible." A proper diagnosis would ask whether the lag is repeatable whenever input costs move
+    quickly, whether customers accept catch-up pricing, and whether the historical margin profile is a
+    reliable guide after the most recent disruption. It would also use the North American segment-share
+    exhibit as a Person AU-check: Company CI identified share position, with the chart note that Company
+    CI corresponds to Company CI, makes an immediate competitive-displacement diagnosis less convincing,
+    though share evidence alone does not prove pricing power. A strong answer would conclude that the
+    anchor evidence supports a recoverable pass-through lag diagnosis, with residual risk around contract
+    cadence, input-cost volatility, and the need to validate the mechanism through customer and procurement
+    diligence.
+
+    '
+  adequate: 'One possible adequate response would say that Company CI margin pressure should be diagnosed
+    mainly as a lag between cost inflation and contractual price recovery, not as proof that the underlying
+    franchise had broken. The historical financial exhibit is the starting point. It shows a profitable
+    business with recent compression in both gross and EBITDA margins after earlier years with stronger
+    margin performance. That pattern matters because a respondent should not treat the latest margin movement
+    as an isolated accounting datapoint; it has to be read against the longer history of the business.
+    The recent decline is real, but the table does not by itself establish a permanent loss of demand,
+    a sudden collapse in operating execution, or a failed market position.
+
+
+    The case-specific mechanism is the long-term OEM contract structure. The materials state that Company
+    CI margins declined over the past two years primarily because long-term contracts had infrequent price
+    adjustment terms. At the anchor, that points toward a price-cost timing diagnosis: costs rose or moved
+    faster than Company CI could reset prices, so reported margins were pressured before pricing could
+    catch up. The answer should therefore frame the issue as potentially recoverable, while still treating
+    it as a diligence item. The analyst should ask how often contracts reset, whether customers have historically
+    accepted increases, and whether the recent compression reflects a normal lag or a recurring weakness
+    in pricing terms.
+
+
+    An adequate response would also avoid overcalling a competitive impairment. The segment-share exhibit,
+    together with the note that Company CI corresponds to Company CI, indicates a significant North American
+    position across the relevant segments. That does not prove margins will rebound, but it makes a diagnosis
+    based solely on share loss or commoditization too aggressive from the anchor evidence. The better
+    conclusion is balanced: Company CI appears to have suffered margin pressure from pass-through lag
+    under its contract structure, not from a fully evidenced structural loss of competitiveness, and the
+    next diligence step is to validate the pricing-lag mechanics rather than assume either full recovery
+    or permanent deterioration.
+
+
+    It would also keep the income-statement reading disciplined. Gross margin pressure and EBITDA margin
+    pressure should be treated as related but not identical signals, because one points more directly
+    to price-cost pressure while the other can also reflect overhead absorption or operating expenses.
+    An adequate answer need not rebuild the model, but it should show that the diagnosis comes from the
+    margin stack and the exhibit narrative together.
+
+    '
+  inadequate: 'One possible inadequate response would notice that margins have been under pressure but
+    would give an underdeveloped or generic explanation. It might say that Company CI profitability looks
+    worse and that inflation probably hurt the company, but it would not make the contractual pass-through
+    lag the central diagnosis. It might cite the historical financial exhibit only as evidence that margins
+    went down, without asking whether the decline is unusual relative to the longer record or whether
+    both gross and EBITDA margins tell the same story. This response would be directionally on topic,
+    but it would leave the judge unsure whether the respondent understands why the pressure happened.
+
+
+    The same answer might also overstate market-share evidence. It could mention that Company CI appears
+    prominent in the North American segment-share chart, but use that as a shortcut to declare the pressure
+    harmless. That is too loose. Segment share can make a competitive-displacement story less likely,
+    but it does not by itself prove that pricing will catch up or that customers will accept increases.
+    The answer might also fail to separate a temporary timing lag from a recurring contractual weakness.
+    As a result, it would be a partial diagnosis: it sees margin pressure and gestures toward cost inflation,
+    but it does not clearly connect the pressure to contract reset mechanics or define what needs to be
+    diligenced before relying on recovery.
+
+    '
+  failing: 'One possible failing response would misread the assignment as a deal-financing or valuation
+    question and spend most of the answer on later transaction terms, future projections, or debt capacity.
+    It might claim that the margin issue is solved because later forecasts show improvement, or that it
+    is primarily a covenant or leverage issue, neither of which is an anchor-appropriate diagnosis of
+    recent operating margin pressure. Another failing response would assert that Company CI margins prove
+    the business is structurally impaired without engaging the historical financial exhibit or the contract-pricing
+    explanation available in the materials.
+
+
+    A failing answer could also rely on information dated after the anchor as if it were known at the
+    time. That would contaminate the diagnosis because the question asks what should be concluded at the
+    2021-12 anchor. The worst version would combine hindsight with unsupported certainty: it would say
+    that margins are permanently broken, that the business has no pricing power, or that future deal structures
+    conclusively validate the pressure, without grounding those claims in the pre-anchor timeline and
+    exhibits. Such a response would not give a usable diagnosis for an investor at the anchor.
+
+    '
+criteria:
+- tier: critical
+  weight: 25
+  criterion: Identifies the core diagnosis as contractual price-cost timing pressure rather than structural
+    franchise impairment.
+  binds_to: F021
+  pass_condition: Diagnoses the margin pressure as primarily caused by a lag between cost movement and
+    price resets under Company CI long-term OEM contract structure. The response does not need exact contractual
+    mechanics, but it must make pass-through timing the central explanation.
+  partial_condition: Recognizes that cost inflation or pricing lag contributed to margin pressure, but
+    treats it as only a generic inflation issue or gives equal weight to unsupported structural explanations.
+  references:
+  - exhibits/2_Company CI_historical_financial_performance_million.json
+  - F021
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 12
+  criterion: Uses the historical financial table to calibrate recent compression against Company CI longer
+    margin record.
+  binds_to: 2021-12
+  pass_condition: Interprets the recent margin decline in Exhibit 2 against the broader historical pattern,
+    so the diagnosis is based on trend context rather than a single-period observation.
+  partial_condition: Mentions that margins declined, but does not use the historical record to calibrate
+    whether the decline indicates a temporary compression or a deeper break.
+  references:
+  - exhibits/2_Company CI_historical_financial_performance_million.json
+  - 2021-12
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 11
+  criterion: Separates gross-margin pressure from EBITDA-margin pressure when reading the margin stack.
+  binds_to: 2021-12
+  pass_condition: Uses the gross profit and adjusted EBITDA margin rows as distinct evidence about where
+    pressure appears in the income statement.
+  partial_condition: Discusses profitability decline in general terms, but does not distinguish gross-margin
+    pressure from EBITDA-margin pressure.
+  references:
+  - exhibits/2_Company CI_historical_financial_performance_million.json
+  - 2021-12
+  discriminates:
+  - excellent
+  - adequate
+- tier: important
+  weight: 11
+  criterion: Uses the contract-pricing explanation in the exhibit narrative as evidence for recoverability.
+  binds_to: F021
+  pass_condition: Treats infrequent price adjustment terms as evidence that some margin pressure may reverse
+    or normalize when pricing catches up.
+  partial_condition: Mentions contract pricing, but does not explain why the timing of price adjustment
+    matters for recoverability.
+  references:
+  - exhibits/2_Company CI_historical_financial_performance_million.json
+  - F021
+  discriminates:
+  - excellent
+  - adequate
+- tier: important
+  weight: 10
+  criterion: Uses the North American segment-share exhibit to avoid overdiagnosing immediate competitive
+    displacement.
+  binds_to: F077
+  pass_condition: Draws on the segment-share exhibit to argue that recent margin pressure is not, by itself,
+    strong evidence of sudden share loss or competitive collapse.
+  partial_condition: Mentions market share or competitive position, but does not connect it to the margin-pressure
+    diagnosis.
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F077
+  discriminates:
+  - excellent
+  - adequate
+- tier: important
+  weight: 10
+  criterion: Recognizes that the Company CI label in the share exhibit must be mapped to Company CI before
+    using the chart.
+  binds_to: F078
+  pass_condition: Correctly treats the Company CI portion of the North American segment-share exhibit
+    as Company CI when reasoning about competitive position.
+  partial_condition: Uses the share chart ambiguously or discusses segment position without making clear
+    that Company CI corresponds to Company CI.
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F078
+  discriminates:
+  - inadequate
+  - failing
+- tier: optional
+  weight: 5
+  criterion: Frames the diagnosis as a diligence hypothesis rather than a settled forecast.
+  binds_to: F021
+  pass_condition: States that the price-cost timing diagnosis should be tested through customer contract,
+    procurement, and pricing diligence before underwriting full margin recovery.
+  references:
+  - F021
+  discriminates:
+  - excellent
+  - adequate
+- tier: optional
+  weight: 4
+  criterion: Connects Company CI market-leader status to the plausibility of pricing recovery without
+    treating it as conclusive.
+  binds_to: F005
+  pass_condition: Uses Company CI market-leader position as supportive context for possible pricing power
+    while preserving uncertainty about actual pass-through.
+  references:
+  - F005
+  discriminates:
+  - excellent
+  - adequate
+- tier: pitfall
+  weight: -3
+  criterion: Avoids using information dated after 2021-12-31 — does not assert as fact events that occurred
+    after end of 2021-12-31.
+  binds_to: 2021-12
+  references:
+  - timelines/2021-12.md
+  discriminates:
+  - inadequate
+  - failing
+- tier: pitfall
+  weight: -2
+  criterion: Avoids relying on later forecasts or deal-structure materials to diagnose the margin pressure
+    at the 2021-12 anchor.
+  binds_to: 2021-12
+  references:
+  - timelines/2021-12.md
+  discriminates:
+  - inadequate
+  - failing
+- tier: pitfall
+  weight: -2
+  criterion: Avoids converting an operating margin diagnosis into a debt, covenant, or liquidity diagnosis
+    unsupported by the 2021-12 anchor materials.
+  binds_to: 2021-12
+  references:
+  - timelines/2021-12.md
+  discriminates:
+  - inadequate
+  - failing
+- tier: pitfall
+  weight: -2
+  criterion: Avoids concluding from margin compression alone that Company CI had lost competitive position.
+  binds_to: F077
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F077
+  discriminates:
+  - adequate
+  - inadequate
+aggregation:
+  strategy: implicit
+  critical_tier_veto: true
+  contradiction_check:
+    enabled: true
+    prompt: Does any claim in the response contradict the reference answer?
+    judge: cheap
+verifiers_compile_hint:
+  pattern: Sequential([Gate(WeightedSum(critical)), JudgeRubric(graded)])
+  critical_indices:
+  - 0
+  graded_indices:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11

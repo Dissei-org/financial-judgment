@@ -1,0 +1,80 @@
+# Local candidate; not a remote publication receipt.
+# These are actual local Harbor content hashes, not uploaded dependencies.
+# Run locally with: harbor run --path ./tasks (see USAGE.md).
+schema_version = "1.0"
+
+[dataset]
+name = "dissei/financial-judgment-full"
+version = "2.0.0"
+description = "Seven runnable point-in-time financial judgment tasks with evidence, a separate verifier and historical evaluation records."
+keywords = [ "finance", "financial-analysis", "point-in-time", "llm-judge",]
+[[dataset.authors]]
+name = "Dissei"
+email = "tech@dissei.credit"
+
+
+[[tasks]]
+name = "dissei/financial-judgment-dg04"
+digest = "sha256:182de8e2addb5e7bb1058d14714e2357292eb21bf40230d43ac263542ba09d1b"
+
+[[tasks]]
+name = "dissei/financial-judgment-pr02"
+digest = "sha256:42fb548ee4889d45c5e668d9a62b5e1cb6e575ac133823d925191879f2b7dd9c"
+
+[[tasks]]
+name = "dissei/financial-judgment-ex01"
+digest = "sha256:3c962c5ff3e9bd324e96db90ba910b4a37507844432442488f423784a407014d"
+
+[[tasks]]
+name = "dissei/financial-judgment-qn02"
+digest = "sha256:9e5ebfdd6bbb9a0530d69756cbc718e5e9d1d0cf53ebaef4993a7e5b170c0a71"
+
+[[tasks]]
+name = "dissei/financial-judgment-cf01"
+digest = "sha256:ff469e2b8870484e84bcef1d082e2ee7c3eec1c95e8b2a8e7354ff4149657abe"
+
+[[tasks]]
+name = "dissei/financial-judgment-cp02"
+digest = "sha256:95e61b083e13f84a122a1a5dc9acb9a20d411a671384b5b0b309ab9eab0f9dd1"
+
+[[tasks]]
+name = "dissei/financial-judgment-st06"
+digest = "sha256:98cb4ea10781844604136451fba91e235a86c7391f45923f26177855fe8af74c"
+
+
+[[files]]
+path = "run-records.tar.gz"
+digest = "sha256:9561bad56a4f1a38df716239055dd9d2ad09dc7582eaddb628e18a6c1904910a"
+
+[[files]]
+path = "run-index.json"
+digest = "sha256:9aa3fb40b5dfa27fd28f9aa6a33c5779aa3da9fc419d8daafb28b6430822666c"
+
+[[files]]
+path = "evaluation-protocol.json"
+digest = "sha256:b69830157447797e54d39e6449653280ac061d95d0ca56551d2a4ffe225a580f"
+
+[[files]]
+path = "image-inventory.json"
+digest = "sha256:9e1162a62f4cd99fe7f61b727c4d4f645cb0280fcf00b64b77d0cc2591d9ee21"
+
+[[files]]
+path = "redaction-summary.json"
+digest = "sha256:dd6b08ab3ca10335559bb5c0b25d11500b1083289d054d456cd7fb30d50e07ac"
+
+[[files]]
+path = "USAGE.md"
+digest = "sha256:b958e16656eb61442710ca5387910a9571f64b8559d1fc8b836f52b39f84e097"
+
+[[files]]
+path = "LICENSE.md"
+digest = "sha256:a3bf4097d2e43f586147ec13f423365ee07f97a673f4664c8d7b2f39cbcd00cb"
+
+[[files]]
+path = "CHANGELOG.md"
+digest = "sha256:b972f8a1a2bfc1fa0bff41a6d0e141c6faba638f6291fa82d3bd0aea90899bc8"
+
+[[files]]
+path = "publication-plan.md"
+digest = "sha256:f083bca9804e91ba0639077e5089dfbdb08f28b100de6c0dbeb69cae74cf6669"
+

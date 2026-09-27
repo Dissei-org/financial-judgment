@@ -1,0 +1,1947 @@
+{
+  "title": "Dissei Financial Judgment — Research Run Index",
+  "dataset": "dissei/financial-judgment-full",
+  "scope": "Seven evaluated financial-analysis tasks. Includes all original and recovery attempts from the recorded comparison plus separate execution QA; no new runs performed.",
+  "run_jobs": [
+    {
+      "job_id": "job-001",
+      "job_name": "job-001",
+      "category": "model_evaluation",
+      "url": "runs/job-001",
+      "archive_prefix": "runs/job-001",
+      "trial_count": 7,
+      "trial_ids": [
+        "trial-001",
+        "trial-002",
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007"
+      ],
+      "labels": [
+        "model_evaluation"
+      ]
+    },
+    {
+      "job_id": "job-002",
+      "job_name": "job-002",
+      "category": "model_evaluation",
+      "url": "runs/job-002",
+      "archive_prefix": "runs/job-002",
+      "trial_count": 7,
+      "trial_ids": [
+        "trial-008",
+        "trial-009",
+        "trial-010",
+        "trial-011",
+        "trial-012",
+        "trial-013",
+        "trial-014"
+      ],
+      "labels": [
+        "model_evaluation"
+      ]
+    },
+    {
+      "job_id": "job-003",
+      "job_name": "job-003",
+      "category": "execution_QA_not_model_score",
+      "url": "runs/job-003",
+      "archive_prefix": "runs/job-003",
+      "trial_count": 7,
+      "trial_ids": [
+        "trial-015",
+        "trial-016",
+        "trial-017",
+        "trial-018",
+        "trial-019",
+        "trial-020",
+        "trial-021"
+      ],
+      "labels": [
+        "execution_QA_not_model_score",
+        "no_op_QA"
+      ]
+    },
+    {
+      "job_id": "job-004",
+      "job_name": "job-004",
+      "category": "model_evaluation",
+      "url": "runs/job-004",
+      "archive_prefix": "runs/job-004",
+      "trial_count": 7,
+      "trial_ids": [
+        "trial-022",
+        "trial-023",
+        "trial-024",
+        "trial-025",
+        "trial-026",
+        "trial-027",
+        "trial-028"
+      ],
+      "labels": [
+        "model_evaluation",
+        "historical_baseline_not_current_frontier"
+      ]
+    },
+    {
+      "job_id": "job-005",
+      "job_name": "job-005",
+      "category": "model_evaluation",
+      "url": "runs/job-005",
+      "archive_prefix": "runs/job-005",
+      "trial_count": 7,
+      "trial_ids": [
+        "trial-034",
+        "trial-035",
+        "trial-036",
+        "trial-037",
+        "trial-038",
+        "trial-039",
+        "trial-040"
+      ],
+      "labels": [
+        "model_evaluation"
+      ]
+    },
+    {
+      "job_id": "job-006",
+      "job_name": "job-006",
+      "category": "model_evaluation",
+      "url": "runs/job-006",
+      "archive_prefix": "runs/job-006",
+      "trial_count": 5,
+      "trial_ids": [
+        "trial-029",
+        "trial-030",
+        "trial-031",
+        "trial-032",
+        "trial-033"
+      ],
+      "labels": [
+        "model_evaluation",
+        "infrastructure_recovery"
+      ]
+    },
+    {
+      "job_id": "job-007",
+      "job_name": "job-007",
+      "category": "model_evaluation",
+      "url": "runs/job-007",
+      "archive_prefix": "runs/job-007",
+      "trial_count": 7,
+      "trial_ids": [
+        "trial-043",
+        "trial-044",
+        "trial-045",
+        "trial-046",
+        "trial-047",
+        "trial-048",
+        "trial-049"
+      ],
+      "labels": [
+        "model_evaluation"
+      ]
+    },
+    {
+      "job_id": "job-008",
+      "job_name": "job-008",
+      "category": "model_evaluation",
+      "url": "runs/job-008",
+      "archive_prefix": "runs/job-008",
+      "trial_count": 1,
+      "trial_ids": [
+        "trial-042"
+      ],
+      "labels": [
+        "model_evaluation",
+        "infrastructure_recovery"
+      ]
+    },
+    {
+      "job_id": "job-009",
+      "job_name": "job-009",
+      "category": "model_evaluation",
+      "url": "runs/job-009",
+      "archive_prefix": "runs/job-009",
+      "trial_count": 1,
+      "trial_ids": [
+        "trial-041"
+      ],
+      "labels": [
+        "model_evaluation",
+        "infrastructure_recovery",
+        "interrupted_recovery"
+      ]
+    },
+    {
+      "job_id": "job-010",
+      "job_name": "job-010",
+      "category": "model_evaluation",
+      "url": "runs/job-010",
+      "archive_prefix": "runs/job-010",
+      "trial_count": 7,
+      "trial_ids": [
+        "trial-050",
+        "trial-051",
+        "trial-052",
+        "trial-053",
+        "trial-054",
+        "trial-055",
+        "trial-056"
+      ],
+      "labels": [
+        "model_evaluation"
+      ]
+    },
+    {
+      "job_id": "job-011",
+      "job_name": "job-011",
+      "category": "model_evaluation",
+      "url": "runs/job-011",
+      "archive_prefix": "runs/job-011",
+      "trial_count": 7,
+      "trial_ids": [
+        "trial-057",
+        "trial-058",
+        "trial-059",
+        "trial-060",
+        "trial-061",
+        "trial-062",
+        "trial-063"
+      ],
+      "labels": [
+        "model_evaluation"
+      ]
+    },
+    {
+      "job_id": "job-012",
+      "job_name": "job-012",
+      "category": "execution_QA_not_model_score",
+      "url": "runs/job-012",
+      "archive_prefix": "runs/job-012",
+      "trial_count": 7,
+      "trial_ids": [
+        "trial-064",
+        "trial-065",
+        "trial-066",
+        "trial-067",
+        "trial-068",
+        "trial-069",
+        "trial-070"
+      ],
+      "labels": [
+        "execution_QA_not_model_score",
+        "reference_answer_QA",
+        "deterministic_stub_judge_QA_not_model_score"
+      ]
+    },
+    {
+      "job_id": "job-013",
+      "job_name": "job-013",
+      "category": "execution_QA_not_model_score",
+      "url": "runs/job-013",
+      "archive_prefix": "runs/job-013",
+      "trial_count": 1,
+      "trial_ids": [
+        "trial-071"
+      ],
+      "labels": [
+        "execution_QA_not_model_score",
+        "judge_outage_QA",
+        "deterministic_stub_judge_QA_not_model_score"
+      ]
+    },
+    {
+      "job_id": "job-014",
+      "job_name": "job-014",
+      "category": "execution_QA_not_model_score",
+      "url": "runs/job-014",
+      "archive_prefix": "runs/job-014",
+      "trial_count": 1,
+      "trial_ids": [
+        "trial-072"
+      ],
+      "labels": [
+        "execution_QA_not_model_score",
+        "missing_judge_QA"
+      ]
+    },
+    {
+      "job_id": "job-015",
+      "job_name": "job-015",
+      "category": "execution_QA_not_model_score",
+      "url": "runs/job-015",
+      "archive_prefix": "runs/job-015",
+      "trial_count": 7,
+      "trial_ids": [
+        "trial-073",
+        "trial-074",
+        "trial-075",
+        "trial-076",
+        "trial-077",
+        "trial-078",
+        "trial-079"
+      ],
+      "labels": [
+        "execution_QA_not_model_score",
+        "no_op_QA",
+        "deterministic_stub_judge_QA_not_model_score"
+      ]
+    },
+    {
+      "job_id": "job-016",
+      "job_name": "job-016",
+      "category": "execution_QA_not_model_score",
+      "url": "runs/job-016",
+      "archive_prefix": "runs/job-016",
+      "trial_count": 7,
+      "trial_ids": [
+        "trial-080",
+        "trial-081",
+        "trial-082",
+        "trial-083",
+        "trial-084",
+        "trial-085",
+        "trial-086"
+      ],
+      "labels": [
+        "execution_QA_not_model_score",
+        "reference_answer_QA",
+        "deterministic_stub_judge_QA_not_model_score"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "trial_id": "trial-068",
+      "job_id": "job-012",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-012/fab01-2209-cf01__trial-068",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.7338461538461538,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:15:51.105196Z",
+      "finished_at": "2026-09-24T13:16:21.957032Z"
+    },
+    {
+      "trial_id": "trial-004",
+      "job_id": "job-001",
+      "task_package": "dissei/fab01-2206-qn02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-001/fab01-2206-qn02__trial-004",
+      "selection": {
+        "model_id": "claude-fable-5-1",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.4333333333333333,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:06:42.955092Z",
+      "finished_at": "2026-09-24T22:09:00.790530Z"
+    },
+    {
+      "trial_id": "trial-039",
+      "job_id": "job-005",
+      "task_package": "dissei/fab01-2209-cp02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-005/fab01-2209-cp02__trial-039",
+      "selection": null,
+      "category": "model_evaluation",
+      "reward": null,
+      "submitted": null,
+      "exception_type": "AuthenticationError",
+      "started_at": "2026-09-24T19:57:56.692461Z",
+      "finished_at": "2026-09-24T19:58:23.577079Z"
+    },
+    {
+      "trial_id": "trial-056",
+      "job_id": "job-010",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-010/fab01-2209-st06__trial-056",
+      "selection": {
+        "model_id": "gpt-6-astra",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.2981621621621621,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:27:39.541102Z",
+      "finished_at": "2026-09-24T18:30:38.410849Z"
+    },
+    {
+      "trial_id": "trial-031",
+      "job_id": "job-006",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-006/fab01-2209-cf01__trial-031",
+      "selection": {
+        "model_id": "gemini-3.8-flash",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T20:20:14.051380Z",
+      "finished_at": "2026-09-24T20:24:56.753465Z"
+    },
+    {
+      "trial_id": "trial-073",
+      "job_id": "job-015",
+      "task_package": "dissei/fab01-2112-dg04",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-015/fab01-2112-dg04__trial-073",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:12:06.919823Z",
+      "finished_at": "2026-09-24T13:12:36.294406Z"
+    },
+    {
+      "trial_id": "trial-067",
+      "job_id": "job-012",
+      "task_package": "dissei/fab01-2206-qn02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-012/fab01-2206-qn02__trial-067",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.9,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:17:21.378820Z",
+      "finished_at": "2026-09-24T13:17:51.745784Z"
+    },
+    {
+      "trial_id": "trial-060",
+      "job_id": "job-011",
+      "task_package": "dissei/fab01-2206-qn02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-011/fab01-2206-qn02__trial-060",
+      "selection": {
+        "model_id": "kimi-k3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.3466666666666667,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:33:44.171479Z",
+      "finished_at": "2026-09-24T22:35:55.852932Z"
+    },
+    {
+      "trial_id": "trial-048",
+      "job_id": "job-007",
+      "task_package": "dissei/fab01-2209-cp02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-007/fab01-2209-cp02__trial-048",
+      "selection": {
+        "model_id": "glm-5.3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.5218181818181817,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T23:10:53.959418Z",
+      "finished_at": "2026-09-24T23:17:23.642296Z"
+    },
+    {
+      "trial_id": "trial-041",
+      "job_id": "job-009",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-009/fab01-2209-cf01__trial-041",
+      "selection": null,
+      "category": "model_evaluation",
+      "reward": null,
+      "submitted": null,
+      "exception_type": "RuntimeError",
+      "started_at": "2026-09-24T23:56:15.977448Z",
+      "finished_at": "2026-09-25T00:24:36.176739Z"
+    },
+    {
+      "trial_id": "trial-078",
+      "job_id": "job-015",
+      "task_package": "dissei/fab01-2209-cp02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-015/fab01-2209-cp02__trial-078",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:13:04.493571Z",
+      "finished_at": "2026-09-24T13:13:30.959612Z"
+    },
+    {
+      "trial_id": "trial-065",
+      "job_id": "job-012",
+      "task_package": "dissei/fab01-2112-pr02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-012/fab01-2112-pr02__trial-065",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.7799999999999999,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:15:51.202337Z",
+      "finished_at": "2026-09-24T13:16:21.505125Z"
+    },
+    {
+      "trial_id": "trial-080",
+      "job_id": "job-016",
+      "task_package": "dissei/fab01-2112-dg04",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-016/fab01-2112-dg04__trial-080",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.7799999999999999,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:12:06.920404Z",
+      "finished_at": "2026-09-24T13:12:38.302617Z"
+    },
+    {
+      "trial_id": "trial-037",
+      "job_id": "job-005",
+      "task_package": "dissei/fab01-2206-qn02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-005/fab01-2206-qn02__trial-037",
+      "selection": null,
+      "category": "model_evaluation",
+      "reward": null,
+      "submitted": null,
+      "exception_type": "AuthenticationError",
+      "started_at": "2026-09-24T19:57:02.954291Z",
+      "finished_at": "2026-09-24T19:57:29.730475Z"
+    },
+    {
+      "trial_id": "trial-009",
+      "job_id": "job-002",
+      "task_package": "dissei/fab01-2112-pr02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-002/fab01-2112-pr02__trial-009",
+      "selection": {
+        "model_id": "claude-opus-5-5",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.7094117647058823,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T21:37:58.522717Z",
+      "finished_at": "2026-09-24T21:42:44.492175Z"
+    },
+    {
+      "trial_id": "trial-055",
+      "job_id": "job-010",
+      "task_package": "dissei/fab01-2209-cp02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-010/fab01-2209-cp02__trial-055",
+      "selection": {
+        "model_id": "gpt-6-astra",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.7454545454545454,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:24:50.352057Z",
+      "finished_at": "2026-09-24T18:27:39.519256Z"
+    },
+    {
+      "trial_id": "trial-001",
+      "job_id": "job-001",
+      "task_package": "dissei/fab01-2112-dg04",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-001/fab01-2112-dg04__trial-001",
+      "selection": {
+        "model_id": "claude-fable-5-1",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.788235294117647,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T21:58:48.828351Z",
+      "finished_at": "2026-09-24T22:01:41.331751Z"
+    },
+    {
+      "trial_id": "trial-084",
+      "job_id": "job-016",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-016/fab01-2209-cf01__trial-084",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.7338461538461538,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:12:06.775261Z",
+      "finished_at": "2026-09-24T13:12:38.416128Z"
+    },
+    {
+      "trial_id": "trial-007",
+      "job_id": "job-001",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-001/fab01-2209-st06__trial-007",
+      "selection": {
+        "model_id": "claude-fable-5-1",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.44895752895752894,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:15:52.555327Z",
+      "finished_at": "2026-09-24T22:19:30.246272Z"
+    },
+    {
+      "trial_id": "trial-051",
+      "job_id": "job-010",
+      "task_package": "dissei/fab01-2112-pr02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-010/fab01-2112-pr02__trial-051",
+      "selection": {
+        "model_id": "gpt-6-astra",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.7338461538461538,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:14:29.832600Z",
+      "finished_at": "2026-09-24T18:16:54.809184Z"
+    },
+    {
+      "trial_id": "trial-029",
+      "job_id": "job-006",
+      "task_package": "dissei/fab01-2206-ex01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-006/fab01-2206-ex01__trial-029",
+      "selection": {
+        "model_id": "gemini-3.8-flash",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T20:07:56.073487Z",
+      "finished_at": "2026-09-24T20:14:57.319517Z"
+    },
+    {
+      "trial_id": "trial-064",
+      "job_id": "job-012",
+      "task_package": "dissei/fab01-2112-dg04",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-012/fab01-2112-dg04__trial-064",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.7799999999999999,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:16:21.971514Z",
+      "finished_at": "2026-09-24T13:16:51.443663Z"
+    },
+    {
+      "trial_id": "trial-043",
+      "job_id": "job-007",
+      "task_package": "dissei/fab01-2112-dg04",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-007/fab01-2112-dg04__trial-043",
+      "selection": {
+        "model_id": "glm-5.3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.4892307692307692,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:25:48.281105Z",
+      "finished_at": "2026-09-24T22:28:43.244806Z"
+    },
+    {
+      "trial_id": "trial-070",
+      "job_id": "job-012",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-012/fab01-2209-st06__trial-070",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.7453846153846153,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:16:51.459862Z",
+      "finished_at": "2026-09-24T13:17:22.643894Z"
+    },
+    {
+      "trial_id": "trial-063",
+      "job_id": "job-011",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-011/fab01-2209-st06__trial-063",
+      "selection": {
+        "model_id": "kimi-k3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.23073529411764704,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:43:37.567298Z",
+      "finished_at": "2026-09-24T22:47:27.893994Z"
+    },
+    {
+      "trial_id": "trial-045",
+      "job_id": "job-007",
+      "task_package": "dissei/fab01-2206-ex01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-007/fab01-2206-ex01__trial-045",
+      "selection": {
+        "model_id": "glm-5.3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.2284873949579832,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:33:30.138769Z",
+      "finished_at": "2026-09-24T22:37:45.916984Z"
+    },
+    {
+      "trial_id": "trial-059",
+      "job_id": "job-011",
+      "task_package": "dissei/fab01-2206-ex01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-011/fab01-2206-ex01__trial-059",
+      "selection": {
+        "model_id": "kimi-k3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.2340188383045526,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:30:34.160382Z",
+      "finished_at": "2026-09-24T22:33:44.157836Z"
+    },
+    {
+      "trial_id": "trial-021",
+      "job_id": "job-003",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-003/fab01-2209-st06__trial-021",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T15:29:16.711474Z",
+      "finished_at": "2026-09-24T15:29:47.537725Z"
+    },
+    {
+      "trial_id": "trial-015",
+      "job_id": "job-003",
+      "task_package": "dissei/fab01-2112-dg04",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-003/fab01-2112-dg04__trial-015",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T15:25:59.951984Z",
+      "finished_at": "2026-09-24T15:26:33.609846Z"
+    },
+    {
+      "trial_id": "trial-025",
+      "job_id": "job-004",
+      "task_package": "dissei/fab01-2206-qn02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-004/fab01-2206-qn02__trial-025",
+      "selection": {
+        "model_id": "gemini-3.1-pro-preview",
+        "score_row_status": "hide"
+      },
+      "category": "model_evaluation",
+      "reward": 0.3466666666666667,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:41:43.714821Z",
+      "finished_at": "2026-09-24T18:44:16.529283Z"
+    },
+    {
+      "trial_id": "trial-026",
+      "job_id": "job-004",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-004/fab01-2209-cf01__trial-026",
+      "selection": {
+        "model_id": "gemini-3.1-pro-preview",
+        "score_row_status": "hide"
+      },
+      "category": "model_evaluation",
+      "reward": 0.46411764705882347,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:44:16.545316Z",
+      "finished_at": "2026-09-24T18:46:48.637793Z"
+    },
+    {
+      "trial_id": "trial-034",
+      "job_id": "job-005",
+      "task_package": "dissei/fab01-2112-dg04",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-005/fab01-2112-dg04__trial-034",
+      "selection": {
+        "model_id": "gemini-3.8-flash",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.6305882352941177,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T19:33:43.194124Z",
+      "finished_at": "2026-09-24T19:38:35.320531Z"
+    },
+    {
+      "trial_id": "trial-044",
+      "job_id": "job-007",
+      "task_package": "dissei/fab01-2112-pr02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-007/fab01-2112-pr02__trial-044",
+      "selection": {
+        "model_id": "glm-5.3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.5707692307692307,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:28:43.259802Z",
+      "finished_at": "2026-09-24T22:33:30.125047Z"
+    },
+    {
+      "trial_id": "trial-047",
+      "job_id": "job-007",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-007/fab01-2209-cf01__trial-047",
+      "selection": null,
+      "category": "model_evaluation",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": "AgentTimeoutError",
+      "started_at": "2026-09-24T22:40:19.262630Z",
+      "finished_at": "2026-09-24T23:10:53.943720Z"
+    },
+    {
+      "trial_id": "trial-077",
+      "job_id": "job-015",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-015/fab01-2209-cf01__trial-077",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:12:06.774817Z",
+      "finished_at": "2026-09-24T13:12:35.507362Z"
+    },
+    {
+      "trial_id": "trial-071",
+      "job_id": "job-013",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-013/fab01-2209-st06__trial-071",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": null,
+      "submitted": null,
+      "exception_type": "RewardFileNotFoundError",
+      "started_at": "2026-09-24T13:12:40.455044Z",
+      "finished_at": "2026-09-24T13:13:28.882041Z"
+    },
+    {
+      "trial_id": "trial-017",
+      "job_id": "job-003",
+      "task_package": "dissei/fab01-2206-ex01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-003/fab01-2206-ex01__trial-017",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T15:27:10.992844Z",
+      "finished_at": "2026-09-24T15:27:42.340790Z"
+    },
+    {
+      "trial_id": "trial-075",
+      "job_id": "job-015",
+      "task_package": "dissei/fab01-2206-ex01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-015/fab01-2206-ex01__trial-075",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:12:35.528178Z",
+      "finished_at": "2026-09-24T13:13:03.488450Z"
+    },
+    {
+      "trial_id": "trial-042",
+      "job_id": "job-008",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-008/fab01-2209-cf01__trial-042",
+      "selection": {
+        "model_id": "glm-5.3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.608,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-25T00:33:33.518578Z",
+      "finished_at": "2026-09-25T00:46:07.736889Z"
+    },
+    {
+      "trial_id": "trial-022",
+      "job_id": "job-004",
+      "task_package": "dissei/fab01-2112-dg04",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-004/fab01-2112-dg04__trial-022",
+      "selection": {
+        "model_id": "gemini-3.1-pro-preview",
+        "score_row_status": "hide"
+      },
+      "category": "model_evaluation",
+      "reward": 0.2446153846153846,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:30:59.797412Z",
+      "finished_at": "2026-09-24T18:35:32.349385Z"
+    },
+    {
+      "trial_id": "trial-016",
+      "job_id": "job-003",
+      "task_package": "dissei/fab01-2112-pr02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-003/fab01-2112-pr02__trial-016",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T15:26:33.634134Z",
+      "finished_at": "2026-09-24T15:27:10.971856Z"
+    },
+    {
+      "trial_id": "trial-086",
+      "job_id": "job-016",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-016/fab01-2209-st06__trial-086",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.7453846153846153,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:13:08.407466Z",
+      "finished_at": "2026-09-24T13:13:37.286531Z"
+    },
+    {
+      "trial_id": "trial-006",
+      "job_id": "job-001",
+      "task_package": "dissei/fab01-2209-cp02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-001/fab01-2209-cp02__trial-006",
+      "selection": {
+        "model_id": "claude-fable-5-1",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.7454545454545454,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:12:19.787452Z",
+      "finished_at": "2026-09-24T22:15:52.526116Z"
+    },
+    {
+      "trial_id": "trial-038",
+      "job_id": "job-005",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-005/fab01-2209-cf01__trial-038",
+      "selection": null,
+      "category": "model_evaluation",
+      "reward": null,
+      "submitted": null,
+      "exception_type": "AuthenticationError",
+      "started_at": "2026-09-24T19:57:29.756966Z",
+      "finished_at": "2026-09-24T19:57:56.669356Z"
+    },
+    {
+      "trial_id": "trial-008",
+      "job_id": "job-002",
+      "task_package": "dissei/fab01-2112-dg04",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-002/fab01-2112-dg04__trial-008",
+      "selection": {
+        "model_id": "claude-opus-5-5",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.7094117647058823,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T21:35:15.284755Z",
+      "finished_at": "2026-09-24T21:37:58.497962Z"
+    },
+    {
+      "trial_id": "trial-030",
+      "job_id": "job-006",
+      "task_package": "dissei/fab01-2206-qn02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-006/fab01-2206-qn02__trial-030",
+      "selection": {
+        "model_id": "gemini-3.8-flash",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T20:14:57.344828Z",
+      "finished_at": "2026-09-24T20:20:14.022645Z"
+    },
+    {
+      "trial_id": "trial-020",
+      "job_id": "job-003",
+      "task_package": "dissei/fab01-2209-cp02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-003/fab01-2209-cp02__trial-020",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T15:28:45.790497Z",
+      "finished_at": "2026-09-24T15:29:16.689123Z"
+    },
+    {
+      "trial_id": "trial-069",
+      "job_id": "job-012",
+      "task_package": "dissei/fab01-2209-cp02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-012/fab01-2209-cp02__trial-069",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.9,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:16:51.083450Z",
+      "finished_at": "2026-09-24T13:17:21.358141Z"
+    },
+    {
+      "trial_id": "trial-081",
+      "job_id": "job-016",
+      "task_package": "dissei/fab01-2112-pr02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-016/fab01-2112-pr02__trial-081",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.7799999999999999,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:13:37.303004Z",
+      "finished_at": "2026-09-24T13:14:05.125772Z"
+    },
+    {
+      "trial_id": "trial-061",
+      "job_id": "job-011",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-011/fab01-2209-cf01__trial-061",
+      "selection": {
+        "model_id": "kimi-k3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.5249999999999999,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:35:55.868368Z",
+      "finished_at": "2026-09-24T22:40:55.956376Z"
+    },
+    {
+      "trial_id": "trial-036",
+      "job_id": "job-005",
+      "task_package": "dissei/fab01-2206-ex01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-005/fab01-2206-ex01__trial-036",
+      "selection": null,
+      "category": "model_evaluation",
+      "reward": null,
+      "submitted": null,
+      "exception_type": "RewardFileNotFoundError",
+      "started_at": "2026-09-24T19:43:42.518152Z",
+      "finished_at": "2026-09-24T19:57:02.932732Z"
+    },
+    {
+      "trial_id": "trial-027",
+      "job_id": "job-004",
+      "task_package": "dissei/fab01-2209-cp02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-004/fab01-2209-cp02__trial-027",
+      "selection": {
+        "model_id": "gemini-3.1-pro-preview",
+        "score_row_status": "hide"
+      },
+      "category": "model_evaluation",
+      "reward": 0.07714285714285712,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:46:48.656009Z",
+      "finished_at": "2026-09-24T18:49:47.071377Z"
+    },
+    {
+      "trial_id": "trial-076",
+      "job_id": "job-015",
+      "task_package": "dissei/fab01-2206-qn02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-015/fab01-2206-qn02__trial-076",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:12:36.308494Z",
+      "finished_at": "2026-09-24T13:13:04.477146Z"
+    },
+    {
+      "trial_id": "trial-012",
+      "job_id": "job-002",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-002/fab01-2209-cf01__trial-012",
+      "selection": {
+        "model_id": "claude-opus-5-5",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.5963636363636363,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T21:47:53.625021Z",
+      "finished_at": "2026-09-24T21:52:11.386632Z"
+    },
+    {
+      "trial_id": "trial-062",
+      "job_id": "job-011",
+      "task_package": "dissei/fab01-2209-cp02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-011/fab01-2209-cp02__trial-062",
+      "selection": {
+        "model_id": "kimi-k3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.6171428571428571,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:40:55.974080Z",
+      "finished_at": "2026-09-24T22:43:37.551876Z"
+    },
+    {
+      "trial_id": "trial-018",
+      "job_id": "job-003",
+      "task_package": "dissei/fab01-2206-qn02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-003/fab01-2206-qn02__trial-018",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T15:27:42.361861Z",
+      "finished_at": "2026-09-24T15:28:13.278339Z"
+    },
+    {
+      "trial_id": "trial-019",
+      "job_id": "job-003",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-003/fab01-2209-cf01__trial-019",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T15:28:13.302108Z",
+      "finished_at": "2026-09-24T15:28:45.766097Z"
+    },
+    {
+      "trial_id": "trial-033",
+      "job_id": "job-006",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-006/fab01-2209-st06__trial-033",
+      "selection": {
+        "model_id": "gemini-3.8-flash",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T20:33:45.890427Z",
+      "finished_at": "2026-09-24T20:40:23.706845Z"
+    },
+    {
+      "trial_id": "trial-058",
+      "job_id": "job-011",
+      "task_package": "dissei/fab01-2112-pr02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-011/fab01-2112-pr02__trial-058",
+      "selection": {
+        "model_id": "kimi-k3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.5517647058823529,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:28:11.080958Z",
+      "finished_at": "2026-09-24T22:30:34.145790Z"
+    },
+    {
+      "trial_id": "trial-049",
+      "job_id": "job-007",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-007/fab01-2209-st06__trial-049",
+      "selection": {
+        "model_id": "glm-5.3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.2251185770750988,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T23:17:23.657117Z",
+      "finished_at": "2026-09-24T23:24:37.741006Z"
+    },
+    {
+      "trial_id": "trial-014",
+      "job_id": "job-002",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-002/fab01-2209-st06__trial-014",
+      "selection": {
+        "model_id": "claude-opus-5-5",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.22942105263157891,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T21:55:27.820720Z",
+      "finished_at": "2026-09-24T21:58:24.837936Z"
+    },
+    {
+      "trial_id": "trial-074",
+      "job_id": "job-015",
+      "task_package": "dissei/fab01-2112-pr02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-015/fab01-2112-pr02__trial-074",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:13:30.132154Z",
+      "finished_at": "2026-09-24T13:13:56.563642Z"
+    },
+    {
+      "trial_id": "trial-010",
+      "job_id": "job-002",
+      "task_package": "dissei/fab01-2206-ex01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-002/fab01-2206-ex01__trial-010",
+      "selection": {
+        "model_id": "claude-opus-5-5",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.2284873949579832,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T21:42:44.515199Z",
+      "finished_at": "2026-09-24T21:45:33.087120Z"
+    },
+    {
+      "trial_id": "trial-011",
+      "job_id": "job-002",
+      "task_package": "dissei/fab01-2206-qn02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-002/fab01-2206-qn02__trial-011",
+      "selection": {
+        "model_id": "claude-opus-5-5",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.4333333333333333,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T21:45:33.110672Z",
+      "finished_at": "2026-09-24T21:47:53.598510Z"
+    },
+    {
+      "trial_id": "trial-046",
+      "job_id": "job-007",
+      "task_package": "dissei/fab01-2206-qn02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-007/fab01-2206-qn02__trial-046",
+      "selection": {
+        "model_id": "glm-5.3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.5,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:37:45.930973Z",
+      "finished_at": "2026-09-24T22:40:19.247204Z"
+    },
+    {
+      "trial_id": "trial-082",
+      "job_id": "job-016",
+      "task_package": "dissei/fab01-2206-ex01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-016/fab01-2206-ex01__trial-082",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.7328571428571429,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:12:38.316017Z",
+      "finished_at": "2026-09-24T13:13:09.923523Z"
+    },
+    {
+      "trial_id": "trial-057",
+      "job_id": "job-011",
+      "task_package": "dissei/fab01-2112-dg04",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-011/fab01-2112-dg04__trial-057",
+      "selection": {
+        "model_id": "kimi-k3",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.0,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:25:48.281172Z",
+      "finished_at": "2026-09-24T22:28:11.065808Z"
+    },
+    {
+      "trial_id": "trial-013",
+      "job_id": "job-002",
+      "task_package": "dissei/fab01-2209-cp02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-002/fab01-2209-cp02__trial-013",
+      "selection": {
+        "model_id": "claude-opus-5-5",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.7454545454545454,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T21:52:11.414008Z",
+      "finished_at": "2026-09-24T21:55:27.791514Z"
+    },
+    {
+      "trial_id": "trial-005",
+      "job_id": "job-001",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-001/fab01-2209-cf01__trial-005",
+      "selection": {
+        "model_id": "claude-fable-5-1",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.6687931034482759,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:09:00.816654Z",
+      "finished_at": "2026-09-24T22:12:19.758847Z"
+    },
+    {
+      "trial_id": "trial-040",
+      "job_id": "job-005",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-005/fab01-2209-st06__trial-040",
+      "selection": null,
+      "category": "model_evaluation",
+      "reward": null,
+      "submitted": null,
+      "exception_type": "AuthenticationError",
+      "started_at": "2026-09-24T19:58:23.600120Z",
+      "finished_at": "2026-09-24T19:58:50.235559Z"
+    },
+    {
+      "trial_id": "trial-083",
+      "job_id": "job-016",
+      "task_package": "dissei/fab01-2206-qn02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-016/fab01-2206-qn02__trial-083",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.9,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:12:38.429009Z",
+      "finished_at": "2026-09-24T13:13:08.388848Z"
+    },
+    {
+      "trial_id": "trial-035",
+      "job_id": "job-005",
+      "task_package": "dissei/fab01-2112-pr02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-005/fab01-2112-pr02__trial-035",
+      "selection": {
+        "model_id": "gemini-3.8-flash",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T19:38:35.348652Z",
+      "finished_at": "2026-09-24T19:43:42.491794Z"
+    },
+    {
+      "trial_id": "trial-002",
+      "job_id": "job-001",
+      "task_package": "dissei/fab01-2112-pr02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-001/fab01-2112-pr02__trial-002",
+      "selection": {
+        "model_id": "claude-fable-5-1",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.7094117647058823,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:01:41.355110Z",
+      "finished_at": "2026-09-24T22:04:04.930682Z"
+    },
+    {
+      "trial_id": "trial-003",
+      "job_id": "job-001",
+      "task_package": "dissei/fab01-2206-ex01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-001/fab01-2206-ex01__trial-003",
+      "selection": {
+        "model_id": "claude-fable-5-1",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.45697478991596635,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T22:04:04.955618Z",
+      "finished_at": "2026-09-24T22:06:42.931687Z"
+    },
+    {
+      "trial_id": "trial-054",
+      "job_id": "job-010",
+      "task_package": "dissei/fab01-2209-cf01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-010/fab01-2209-cf01__trial-054",
+      "selection": {
+        "model_id": "gpt-6-astra",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.5319999999999999,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:21:36.904257Z",
+      "finished_at": "2026-09-24T18:24:50.328113Z"
+    },
+    {
+      "trial_id": "trial-072",
+      "job_id": "job-014",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-014/fab01-2209-st06__trial-072",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": null,
+      "submitted": null,
+      "exception_type": "RewardFileNotFoundError",
+      "started_at": "2026-09-24T13:12:40.446212Z",
+      "finished_at": "2026-09-24T13:13:10.950350Z"
+    },
+    {
+      "trial_id": "trial-066",
+      "job_id": "job-012",
+      "task_package": "dissei/fab01-2206-ex01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-012/fab01-2206-ex01__trial-066",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.7328571428571429,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:16:21.519708Z",
+      "finished_at": "2026-09-24T13:16:51.068266Z"
+    },
+    {
+      "trial_id": "trial-053",
+      "job_id": "job-010",
+      "task_package": "dissei/fab01-2206-qn02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-010/fab01-2206-qn02__trial-053",
+      "selection": {
+        "model_id": "gpt-6-astra",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.4,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:19:41.941458Z",
+      "finished_at": "2026-09-24T18:21:36.886620Z"
+    },
+    {
+      "trial_id": "trial-032",
+      "job_id": "job-006",
+      "task_package": "dissei/fab01-2209-cp02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-006/fab01-2209-cp02__trial-032",
+      "selection": {
+        "model_id": "gemini-3.8-flash",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T20:24:56.780767Z",
+      "finished_at": "2026-09-24T20:33:45.846230Z"
+    },
+    {
+      "trial_id": "trial-024",
+      "job_id": "job-004",
+      "task_package": "dissei/fab01-2206-ex01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-004/fab01-2206-ex01__trial-024",
+      "selection": {
+        "model_id": "gemini-3.1-pro-preview",
+        "score_row_status": "hide"
+      },
+      "category": "model_evaluation",
+      "reward": 0.2284873949579832,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:38:32.524385Z",
+      "finished_at": "2026-09-24T18:41:43.699487Z"
+    },
+    {
+      "trial_id": "trial-050",
+      "job_id": "job-010",
+      "task_package": "dissei/fab01-2112-dg04",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-010/fab01-2112-dg04__trial-050",
+      "selection": {
+        "model_id": "gpt-6-astra",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.7338461538461538,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:11:01.808930Z",
+      "finished_at": "2026-09-24T18:14:29.816382Z"
+    },
+    {
+      "trial_id": "trial-028",
+      "job_id": "job-004",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-004/fab01-2209-st06__trial-028",
+      "selection": {
+        "model_id": "gemini-3.1-pro-preview",
+        "score_row_status": "hide"
+      },
+      "category": "model_evaluation",
+      "reward": 0.3058947368421052,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:49:47.087232Z",
+      "finished_at": "2026-09-24T18:55:18.159861Z"
+    },
+    {
+      "trial_id": "trial-052",
+      "job_id": "job-010",
+      "task_package": "dissei/fab01-2206-ex01",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-010/fab01-2206-ex01__trial-052",
+      "selection": {
+        "model_id": "gpt-6-astra",
+        "score_row_status": "display"
+      },
+      "category": "model_evaluation",
+      "reward": 0.2284873949579832,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:16:54.825328Z",
+      "finished_at": "2026-09-24T18:19:41.923666Z"
+    },
+    {
+      "trial_id": "trial-023",
+      "job_id": "job-004",
+      "task_package": "dissei/fab01-2112-pr02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-004/fab01-2112-pr02__trial-023",
+      "selection": {
+        "model_id": "gemini-3.1-pro-preview",
+        "score_row_status": "hide"
+      },
+      "category": "model_evaluation",
+      "reward": 0.5199999999999999,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T18:35:32.363115Z",
+      "finished_at": "2026-09-24T18:38:32.510482Z"
+    },
+    {
+      "trial_id": "trial-079",
+      "job_id": "job-015",
+      "task_package": "dissei/fab01-2209-st06",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-015/fab01-2209-st06__trial-079",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.0,
+      "submitted": 0.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:13:03.509508Z",
+      "finished_at": "2026-09-24T13:13:30.118858Z"
+    },
+    {
+      "trial_id": "trial-085",
+      "job_id": "job-016",
+      "task_package": "dissei/fab01-2209-cp02",
+      "task_digest": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+      "archive_directory": "runs/job-016/fab01-2209-cp02__trial-085",
+      "selection": null,
+      "category": "execution_QA_not_model_score",
+      "reward": 0.9,
+      "submitted": 1.0,
+      "exception_type": null,
+      "started_at": "2026-09-24T13:13:09.944357Z",
+      "finished_at": "2026-09-24T13:13:38.273457Z"
+    }
+  ],
+  "score_rows": [
+    {
+      "metadata": {
+        "run": "runs/job-010",
+        "agent": "Terminus-2 / Harbor 0.23.0",
+        "judge": "Gemini 3.1 Pro / low / 1 vote",
+        "model": "GPT-6 Astra",
+        "status": "Complete — provisional",
+        "model_id": "gpt-6-astra",
+        "provider": "OpenAI"
+      },
+      "metrics": {
+        "score": 52.45,
+        "errors": 0,
+        "graded": 7,
+        "strategic": 29.82,
+        "submitted": 7,
+        "diagnostic": 73.38,
+        "predictive": 73.38,
+        "comparative": 74.55,
+        "explanatory": 22.85,
+        "quantitative": 40,
+        "parser_errors": 0,
+        "counterfactual": 53.2,
+        "turn_limit_hits": 0,
+        "recovered_trials": 0
+      },
+      "status": "display",
+      "trial_ids": [
+        "trial-056",
+        "trial-055",
+        "trial-051",
+        "trial-054",
+        "trial-053",
+        "trial-050",
+        "trial-052"
+      ]
+    },
+    {
+      "metadata": {
+        "run": "runs/job-006",
+        "agent": "Terminus-2 / Harbor 0.23.0",
+        "judge": "Gemini 3.1 Pro / low / 1 vote",
+        "model": "Gemini 3.8 Flash",
+        "status": "Protocol-limited: 1/7 submitted; 6 turn limits; 5 infrastructure retries",
+        "model_id": "gemini-3.8-flash",
+        "provider": "Google",
+        "original_run": "runs/job-005"
+      },
+      "metrics": {
+        "score": 9.01,
+        "errors": 0,
+        "graded": 7,
+        "strategic": 0,
+        "submitted": 1,
+        "diagnostic": 63.06,
+        "predictive": 0,
+        "comparative": 0,
+        "explanatory": 0,
+        "quantitative": 0,
+        "parser_errors": 50,
+        "counterfactual": 0,
+        "turn_limit_hits": 6,
+        "recovered_trials": 5
+      },
+      "status": "display",
+      "trial_ids": [
+        "trial-031",
+        "trial-029",
+        "trial-034",
+        "trial-030",
+        "trial-033",
+        "trial-035",
+        "trial-032"
+      ]
+    },
+    {
+      "metadata": {
+        "run": "runs/job-002",
+        "agent": "Terminus-2 / Harbor 0.23.0",
+        "judge": "Gemini 3.1 Pro / low / 1 vote",
+        "model": "Claude Opus 5.5",
+        "status": "Complete — provisional",
+        "model_id": "claude-opus-5-5",
+        "provider": "Anthropic"
+      },
+      "metrics": {
+        "score": 52.17,
+        "errors": 0,
+        "graded": 7,
+        "strategic": 22.94,
+        "submitted": 7,
+        "diagnostic": 70.94,
+        "predictive": 70.94,
+        "comparative": 74.55,
+        "explanatory": 22.85,
+        "quantitative": 43.33,
+        "parser_errors": 0,
+        "counterfactual": 59.64,
+        "turn_limit_hits": 0,
+        "recovered_trials": 0
+      },
+      "status": "display",
+      "trial_ids": [
+        "trial-009",
+        "trial-008",
+        "trial-012",
+        "trial-014",
+        "trial-010",
+        "trial-011",
+        "trial-013"
+      ]
+    },
+    {
+      "metadata": {
+        "run": "runs/job-001",
+        "agent": "Terminus-2 / Harbor 0.23.0",
+        "judge": "Gemini 3.1 Pro / low / 1 vote",
+        "model": "Claude Fable 5.1",
+        "status": "Complete — job summary repaired after SSH disconnect; no trial reruns",
+        "model_id": "claude-fable-5-1",
+        "provider": "Anthropic"
+      },
+      "metrics": {
+        "score": 60.73,
+        "errors": 0,
+        "graded": 7,
+        "strategic": 44.9,
+        "submitted": 7,
+        "diagnostic": 78.82,
+        "predictive": 70.94,
+        "comparative": 74.55,
+        "explanatory": 45.7,
+        "quantitative": 43.33,
+        "parser_errors": 0,
+        "counterfactual": 66.88,
+        "turn_limit_hits": 0,
+        "recovered_trials": 0
+      },
+      "status": "display",
+      "trial_ids": [
+        "trial-004",
+        "trial-001",
+        "trial-007",
+        "trial-006",
+        "trial-005",
+        "trial-002",
+        "trial-003"
+      ]
+    },
+    {
+      "metadata": {
+        "run": "runs/job-011",
+        "agent": "Terminus-2 / Harbor 0.23.0",
+        "judge": "Gemini 3.1 Pro / low / 1 vote",
+        "model": "Kimi K3",
+        "status": "Complete — provisional",
+        "model_id": "kimi-k3",
+        "provider": "Moonshot AI"
+      },
+      "metrics": {
+        "score": 35.79,
+        "errors": 0,
+        "graded": 7,
+        "strategic": 23.07,
+        "submitted": 7,
+        "diagnostic": 0,
+        "predictive": 55.18,
+        "comparative": 61.71,
+        "explanatory": 23.4,
+        "quantitative": 34.67,
+        "parser_errors": 0,
+        "counterfactual": 52.5,
+        "turn_limit_hits": 0,
+        "recovered_trials": 0
+      },
+      "status": "display",
+      "trial_ids": [
+        "trial-060",
+        "trial-063",
+        "trial-059",
+        "trial-061",
+        "trial-062",
+        "trial-058",
+        "trial-057"
+      ]
+    },
+    {
+      "metadata": {
+        "run": "runs/job-008",
+        "agent": "Terminus-2 / Harbor 0.23.0",
+        "judge": "Gemini 3.1 Pro / low / 1 vote",
+        "model": "GLM-5.3",
+        "status": "Complete — one task recovered after relay timeouts; earlier recovery interrupted by VM limit; 1 corrected parser error",
+        "model_id": "glm-5.3",
+        "provider": "Z.ai",
+        "original_run": "runs/job-007",
+        "interrupted_run": "runs/job-009"
+      },
+      "metrics": {
+        "score": 44.91,
+        "errors": 0,
+        "graded": 7,
+        "strategic": 22.51,
+        "submitted": 7,
+        "diagnostic": 48.92,
+        "predictive": 57.08,
+        "comparative": 52.18,
+        "explanatory": 22.85,
+        "quantitative": 50,
+        "parser_errors": 1,
+        "counterfactual": 60.8,
+        "turn_limit_hits": 0,
+        "recovered_trials": 1
+      },
+      "status": "display",
+      "trial_ids": [
+        "trial-048",
+        "trial-043",
+        "trial-045",
+        "trial-044",
+        "trial-042",
+        "trial-049",
+        "trial-046"
+      ]
+    },
+    {
+      "metadata": {
+        "run": "runs/job-004",
+        "agent": "Terminus-2 / Harbor 0.23.0",
+        "judge": "Gemini 3.1 Pro / low / 1 vote",
+        "model": "Gemini 3.1 Pro (historical)",
+        "status": "Historical baseline — not current frontier",
+        "model_id": "gemini-3.1-pro-preview",
+        "provider": "Google"
+      },
+      "metrics": {
+        "score": 31.24,
+        "errors": 0,
+        "graded": 7,
+        "strategic": 30.59,
+        "diagnostic": 24.46,
+        "predictive": 52,
+        "comparative": 7.71,
+        "explanatory": 22.85,
+        "quantitative": 34.67,
+        "counterfactual": 46.41
+      },
+      "status": "hide",
+      "trial_ids": [
+        "trial-025",
+        "trial-026",
+        "trial-022",
+        "trial-027",
+        "trial-024",
+        "trial-028",
+        "trial-023"
+      ]
+    }
+  ],
+  "counts": {
+    "jobs": 16,
+    "trial_attempts": 86,
+    "model_jobs": 10,
+    "selected_trial_outcomes": 49,
+    "displayed_models": 6,
+    "historical_models": 1
+  },
+  "access_note": "Records are included in this local public-distribution candidate. Native historical jobs remain separate private resources; no access grant or publication is implied.",
+  "integrity_note": "This is a transparently redacted historical derivative. Numerical outcomes, model identities, evidence, submitted answers, evaluator explanations, and attempt-selection labels are preserved. Internal source excerpts and private operational details are visibly redacted. Neutral identifiers replace job/trial identifiers. export-manifest.json hashes and sizes describe these derivative members, not original files. Historical configurations are documentary, not executable dependencies.",
+  "records_archive": {
+    "path": "run-records.tar.gz",
+    "sha256": "9561bad56a4f1a38df716239055dd9d2ad09dc7582eaddb628e18a6c1904910a",
+    "bytes": 5008972,
+    "members": 1520,
+    "manifest_path": "export-manifest.json",
+    "manifest_sha256": "f37a2993a87cb5e05b966dc2b14b36b640891120e9f59280fa8dea3ad98ae33d"
+  }
+}

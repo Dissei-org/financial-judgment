@@ -1,0 +1,255 @@
+slug: how-does-company-ci-s-entry-valuation-compare-with-the-multipl
+category: comparative
+anchor: 2022-09
+complexity: medium_analysis
+score_weight: 1
+tier_basis: decision_optimal_ex_ante
+fact_bindings:
+- F041
+- F069
+- F072
+- F073
+- F074
+- F075
+question: Company ED is negotiating to acquire Company CI at a $14 billion enterprise value. Measured
+  against how public equity markets value comparable HVAC manufacturers, is that entry price attractive?
+prompt_template: 'You are advising Company ED deal team on the proposed Company CI from Company BR as
+  of the deal-table discussions. Using only the case material provided, assess Company CI $14 billion
+  entry valuation against the multiples of publicly traded HVAC manufacturers, and reach a view on whether
+  the entry price is attractive.
+
+
+  Ground every claim in the case evidence. Commit to a clear conclusion and explain the reasoning that
+  supports it.
+
+
+  Timeline:
+
+  {timeline}
+
+
+  Exhibits:
+
+  {exhibits}
+
+
+  Sources:
+
+  {sources}'
+pld:
+  excellent: Commits to a clear positioning of the entry multiple versus HVAC OEM peers and to an attractiveness
+    verdict, and reconciles the two by showing the comparable-to-cheaper multiple is largely warranted
+    by Company CI weaker earnings-growth profile rather than a standalone bargain.
+  adequate: Correctly compares the entry multiple to HVAC OEM peers and identifies the adverse EBITDA-growth
+    differential, commits to a verdict, but reconciles the multiple and growth only loosely or leaves
+    some figures approximate.
+  inadequate: Notes the multiple and growth data but Company CI's higher revenue growth with earnings
+    growth, leans on the wrong benchmark, or fails to commit to a clear attractiveness verdict.
+  failing: Offers a generic sector or sponsor-quality take with no grounded peer-multiple comparison,
+    or relies on information about how the deal turned out after the anchor.
+level_exemplars:
+  excellent: 'On the entry multiple, Company CI is being taken private at roughly 12.4x LTM / 13.4x NTM
+    Adjusted EBITDA on a headline basis, or about 10.4x / 11.3x pro forma for identified synergies. That
+    sits essentially in line with — and on a pro-forma basis modestly below — the ~12.9x LTM / ~13.2x
+    NTM commanded by publicly traded HVAC OEM peers, and well below the ~19x LTM carried by higher-growth
+    comparable margin industrials. On a pure multiple screen the price therefore looks unremarkable rather
+    than rich. The growth differential reframes that read: Company CI two-year forward EBITDA growth of
+    ~3.3% badly trails the ~7.2% peer average, and its five-year historical EBITDA growth of ~1.9% versus
+    ~8.4% is worse still — even though Company CI revenue has grown faster than peers (~5.2% vs ~2.1%),
+    margin compression from slow contractual price pass-through means that revenue lead has not reached
+    the EBITDA line. A slower-compounding asset should trade at a discount, so the comparable-to-slightly-cheaper
+    multiple is largely warranted compensation for weaker earnings growth, not a free bargain. My most-likely
+    verdict: the entry price is fairly-to-fully priced given the growth profile — attractive only if Company
+    ED can convert margin resilience, non-discretionary replacement demand, and identified cost savings
+    into growth the public comps do not yet reflect. The HVAC OEM set, not the pricier industrials, is
+    the right benchmark; anchoring to industrials would overstate the discount.'
+  adequate: 'Company CI entry multiple is about 12.4x LTM and 13.4x NTM EBITDA on a headline basis, and
+    around 10.4x / 11.3x pro forma. The publicly traded HVAC OEM peers trade at roughly 12.9x LTM and
+    13.2x NTM, so Company CI is being bought at a level broadly in line with those peers, and a little
+    cheaper once the pro-forma adjustment is applied. Against the comparable margin industrials at close
+    to 19x LTM the deal looks much cheaper, but those industrials are faster-growing and are not the closest
+    benchmark, so the HVAC OEM set is the more relevant comparison. On growth, Company CI looks weaker
+    than the HVAC OEM peers on earnings: its two-year forward EBITDA growth is about 3.3% against roughly
+    7.2% for peers, and its historical EBITDA growth of about 1.9% is well below the peer 8.4%. Company
+    CI revenue growth of about 5.2% is actually higher than the peer 2.1%, but that has not translated
+    into faster EBITDA growth because margins have been compressed by slow contractual price pass-through.
+    Putting these together, the roughly in-line multiple is largely explained by the weaker earnings-growth
+    profile: a business that compounds EBITDA more slowly should trade at a discount, so paying a peer-like
+    multiple is not obviously a bargain. My most-likely conclusion is that the entry price is fairly priced
+    rather than clearly attractive on the comparison alone; it becomes attractive only if the cost savings
+    and resilient replacement demand deliver upside the public peers do not price. The comparison therefore
+    turns less on the headline multiple and more on whether Company CI slower growth is temporary or structural.
+    I would not call it expensive, but the growth gap means the modest multiple is warranted rather than
+    a discount to intrinsic value.'
+  inadequate: Company CI is being bought at around 12–13x EBITDA, which is roughly where HVAC companies
+    trade, so the valuation seems fair. Company CI actually grows revenue faster than the HVAC peers —
+    about 5.2% versus 2.1% — which suggests it is a better business, so paying a similar multiple could
+    even be a good deal. The industrials comps trade near 19x, so relative to those Company CI looks quite
+    cheap and the discount is real. Overall the price seems reasonable and probably attractive given the
+    faster growth, though a lot depends on where the economy goes. It is hard to say definitively whether
+    it is attractive without more detail on the eventual exit multiple.
+  failing: Company CI is a compressor maker being carved out of Company BR. HVAC is a growing market because
+    of electrification and climate demand, so almost any HVAC asset is attractive to own. Company ED is
+    a large, disciplined firm and generally makes money on its deals, so the entry price is probably fine.
+    Public HVAC stocks have performed well, which shows the sector is strong, and the transaction ultimately
+    worked out well for the sponsor. On that basis I would say the entry price is attractive because the
+    sector has good long-term tailwinds.
+criteria:
+- tier: critical
+  weight: 30
+  criterion: Commits to a most-likely characterization of how Company CI entry EBITDA multiple sits relative
+    to publicly traded HVAC OEM peers.
+  binds_to: F074
+  pass_condition: Commits categorically to a single most-likely characterization of Company CI entry EBITDA
+    multiple relative to publicly traded HVAC OEM peers, choosing one of {below peers, roughly in line
+    with peers, above peers}.
+  partial_condition: Gestures at the relative positioning of the entry multiple versus HVAC OEM peers
+    but hedges across more than one characterization without committing, or anchors the comparison to
+    a non-HVAC benchmark instead.
+  references:
+  - exhibits/8_public_comparable_companies.json
+  - F074
+  discriminates:
+  - adequate
+  - inadequate
+- tier: critical
+  weight: 30
+  criterion: Commits to a most-likely verdict on whether the entry price is attractive.
+  binds_to: F073
+  pass_condition: Commits categorically to a single most-likely verdict on whether the ~$14bn entry price
+    (F041) is attractive, choosing one of {attractive, fairly-to-fully priced given the growth profile,
+    unattractive}.
+  partial_condition: Reaches a directional lean on attractiveness but leaves it conditional or unstated,
+    or bases the verdict solely on the headline multiple without reference to the peer comparison.
+  references:
+  - exhibits/8_public_comparable_companies.json
+  - F073
+  - F041
+  discriminates:
+  - excellent
+  - adequate
+- tier: important
+  weight: 12
+  criterion: Surfaces the specific entry-versus-peer multiple figures.
+  binds_to: F074
+  pass_condition: Identifies Company CI entry multiple of ~12.4x LTM / ~13.4x NTM headline (~10.4x / ~11.3x
+    pro forma) (F074, F075) against HVAC OEM averages of ~12.9x LTM and ~13.2x NTM (F074, F075).
+  partial_condition: Cites some but not all of the relevant entry-versus-peer multiples, or gives approximate
+    figures without distinguishing Company CI entry multiple from the peer average.
+  references:
+  - exhibits/8_public_comparable_companies.json
+  - F074
+  - F075
+  discriminates:
+  - excellent
+  - adequate
+- tier: important
+  weight: 12
+  criterion: Identifies that Company CI EBITDA growth trails the HVAC OEM peer average.
+  binds_to: F073
+  pass_condition: States that Company CI EBITDA growth is materially below the HVAC OEM peer average,
+    e.g. ~3.3% two-year forward versus ~7.2% (F073) and ~1.9% five-year historical versus ~8.4% (F072).
+  partial_condition: Notes that Company CI grows more slowly than peers but supplies no magnitude, or
+    cites only one growth horizon.
+  references:
+  - exhibits/8_public_comparable_companies.json
+  - F073
+  - F072
+  discriminates:
+  - excellent
+  - adequate
+- tier: important
+  weight: 12
+  criterion: Reconciles the entry multiple to the growth profile.
+  binds_to: F073
+  pass_condition: Links the comparable-to-discounted entry multiple to Company CI weaker earnings-growth
+    profile (F073), concluding that a lower multiple is at least partly warranted compensation for slower
+    growth rather than a standalone bargain.
+  partial_condition: Observes both the multiple and the growth gap but stops short of connecting them,
+    treating the relative cheapness and the slower growth as independent facts.
+  references:
+  - exhibits/8_public_comparable_companies.json
+  - F073
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 12
+  criterion: Selects the appropriate benchmark set for the comparison.
+  binds_to: F074
+  pass_condition: Treats the HVAC OEM set as the apt valuation benchmark and recognizes that the higher-multiple
+    comparable margin industrials set (~19.0x LTM, F074) would overstate any apparent discount if used
+    as the primary comparison.
+  partial_condition: Mentions the industrials comp set but does not weigh its appropriateness relative
+    to the HVAC OEM peers.
+  references:
+  - exhibits/8_public_comparable_companies.json
+  - F074
+  discriminates:
+  - adequate
+  - inadequate
+- tier: optional
+  weight: 5
+  criterion: Distinguishes the headline entry multiple from the pro-forma multiple.
+  binds_to: F074
+  pass_condition: Separates the headline entry multiple from the pro-forma multiple (~12.4x vs ~10.4x
+    LTM, F074) and notes the attractiveness read depends on which basis is used.
+  references:
+  - exhibits/8_public_comparable_companies.json
+  - F074
+  discriminates:
+  - excellent
+  - adequate
+- tier: pitfall
+  weight: -2
+  criterion: Avoids using information dated after 2022-09-30 — does not assert as fact events that occurred
+    after end of 2022-09-30.
+  binds_to: 2022-09
+  references:
+  - timelines/2022-09.md
+  discriminates:
+  - inadequate
+  - failing
+- tier: pitfall
+  weight: -2
+  criterion: Characterizes the headline entry multiple as unambiguously cheap or a bargain without adjusting
+    for Company CI slower growth profile.
+  binds_to: F073
+  references:
+  - exhibits/8_public_comparable_companies.json
+  - F073
+  discriminates:
+  - inadequate
+  - failing
+- tier: pitfall
+  weight: -2
+  criterion: Company CI's above-peer revenue growth (~5.2% vs ~2.1%, F069) with above-peer earnings growth,
+    when EBITDA growth actually lags the peers.
+  binds_to: F069
+  references:
+  - exhibits/8_public_comparable_companies.json
+  - F069
+  discriminates:
+  - inadequate
+  - failing
+aggregation:
+  strategy: implicit
+  critical_tier_veto: true
+  contradiction_check:
+    enabled: true
+    prompt: Does any claim in the response contradict the reference answer?
+    judge: cheap
+verifiers_compile_hint:
+  pattern: Sequential([Gate(WeightedSum(critical)), JudgeRubric(graded)])
+  critical_indices:
+  - 0
+  - 1
+  graded_indices:
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9

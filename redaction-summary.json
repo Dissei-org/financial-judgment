@@ -1,0 +1,5816 @@
+{
+  "format_version": 1,
+  "dataset": "dissei/financial-judgment-full",
+  "scope": "Complete historical-record derivative; no fresh model evaluation.",
+  "counts": {
+    "jobs": 16,
+    "trial_attempts": 86,
+    "model_jobs": 10,
+    "selected_trial_outcomes": 49,
+    "displayed_models": 6,
+    "historical_models": 1,
+    "archive_members": 1520
+  },
+  "jobs": [
+    {
+      "job_id": "job-001",
+      "labels": [
+        "model_evaluation"
+      ],
+      "selected_model_ids": [
+        "claude-fable-5-1"
+      ],
+      "trial_count": 7
+    },
+    {
+      "job_id": "job-002",
+      "labels": [
+        "model_evaluation"
+      ],
+      "selected_model_ids": [
+        "claude-opus-5-5"
+      ],
+      "trial_count": 7
+    },
+    {
+      "job_id": "job-003",
+      "labels": [
+        "execution_QA_not_model_score",
+        "no_op_QA"
+      ],
+      "selected_model_ids": [],
+      "trial_count": 7
+    },
+    {
+      "job_id": "job-004",
+      "labels": [
+        "model_evaluation",
+        "historical_baseline_not_current_frontier"
+      ],
+      "selected_model_ids": [
+        "gemini-3.1-pro-preview"
+      ],
+      "trial_count": 7
+    },
+    {
+      "job_id": "job-005",
+      "labels": [
+        "model_evaluation"
+      ],
+      "selected_model_ids": [
+        "gemini-3.8-flash"
+      ],
+      "trial_count": 7
+    },
+    {
+      "job_id": "job-006",
+      "labels": [
+        "model_evaluation",
+        "infrastructure_recovery"
+      ],
+      "selected_model_ids": [
+        "gemini-3.8-flash"
+      ],
+      "trial_count": 5
+    },
+    {
+      "job_id": "job-007",
+      "labels": [
+        "model_evaluation"
+      ],
+      "selected_model_ids": [
+        "glm-5.3"
+      ],
+      "trial_count": 7
+    },
+    {
+      "job_id": "job-008",
+      "labels": [
+        "model_evaluation",
+        "infrastructure_recovery"
+      ],
+      "selected_model_ids": [
+        "glm-5.3"
+      ],
+      "trial_count": 1
+    },
+    {
+      "job_id": "job-009",
+      "labels": [
+        "model_evaluation",
+        "infrastructure_recovery",
+        "interrupted_recovery"
+      ],
+      "selected_model_ids": [],
+      "trial_count": 1
+    },
+    {
+      "job_id": "job-010",
+      "labels": [
+        "model_evaluation"
+      ],
+      "selected_model_ids": [
+        "gpt-6-astra"
+      ],
+      "trial_count": 7
+    },
+    {
+      "job_id": "job-011",
+      "labels": [
+        "model_evaluation"
+      ],
+      "selected_model_ids": [
+        "kimi-k3"
+      ],
+      "trial_count": 7
+    },
+    {
+      "job_id": "job-012",
+      "labels": [
+        "execution_QA_not_model_score",
+        "reference_answer_QA",
+        "deterministic_stub_judge_QA_not_model_score"
+      ],
+      "selected_model_ids": [],
+      "trial_count": 7
+    },
+    {
+      "job_id": "job-013",
+      "labels": [
+        "execution_QA_not_model_score",
+        "judge_outage_QA",
+        "deterministic_stub_judge_QA_not_model_score"
+      ],
+      "selected_model_ids": [],
+      "trial_count": 1
+    },
+    {
+      "job_id": "job-014",
+      "labels": [
+        "execution_QA_not_model_score",
+        "missing_judge_QA"
+      ],
+      "selected_model_ids": [],
+      "trial_count": 1
+    },
+    {
+      "job_id": "job-015",
+      "labels": [
+        "execution_QA_not_model_score",
+        "no_op_QA",
+        "deterministic_stub_judge_QA_not_model_score"
+      ],
+      "selected_model_ids": [],
+      "trial_count": 7
+    },
+    {
+      "job_id": "job-016",
+      "labels": [
+        "execution_QA_not_model_score",
+        "reference_answer_QA",
+        "deterministic_stub_judge_QA_not_model_score"
+      ],
+      "selected_model_ids": [],
+      "trial_count": 7
+    }
+  ],
+  "redaction_categories": {
+    "internal_source_excerpt": "Internal implementation excerpts or lineage prose were replaced with explicit redaction notices; no substitute dialogue was authored.",
+    "identity_pseudonymization": "Original job/trial identifiers were replaced with stable neutral pseudonyms.",
+    "local_paths": "Local usernames and host paths were replaced with stable neutral pseudonyms; portable task paths remain.",
+    "container": "Original container identifiers were replaced with neutral pseudonyms.",
+    "network": "Private endpoints and network topology were withheld.",
+    "job_links": "Native historical job URLs were replaced with archive-local references.",
+    "historical_fingerprint": "Original implementation and private package fingerprints were withheld; records are not repinned to the new evaluator.",
+    "historical_version_label": "Historical prompt labels use distinct neutral aliases, not the public evaluator version.",
+    "historical_metric_rename": "Legacy metric names were renamed to neutral dissei_ names without changing values.",
+    "historical_key_rename": "Private identifiers in JSON keys were replaced with deterministic neutral aliases; associated containers and numerical outcomes are retained.",
+    "credentials": "Credential fields remain redacted.",
+    "text_sanitization": "Representations were decoded and sanitized consistently; terminal display escapes were normalized."
+  },
+  "files": [
+    {
+      "path": "evaluation-protocol.json",
+      "categories": [
+        "historical_fingerprint",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "run-index.json",
+      "categories": [
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "job_links",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-dg04__trial-001/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-dg04__trial-001/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-dg04__trial-001/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-dg04__trial-001/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-dg04__trial-001/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-dg04__trial-001/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-dg04__trial-001/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-dg04__trial-001/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-pr02__trial-002/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-pr02__trial-002/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-pr02__trial-002/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-pr02__trial-002/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-pr02__trial-002/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-pr02__trial-002/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-pr02__trial-002/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2112-pr02__trial-002/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-ex01__trial-003/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-ex01__trial-003/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-ex01__trial-003/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-ex01__trial-003/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-ex01__trial-003/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-ex01__trial-003/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-ex01__trial-003/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-ex01__trial-003/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-qn02__trial-004/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-qn02__trial-004/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-qn02__trial-004/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-qn02__trial-004/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-qn02__trial-004/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-qn02__trial-004/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-qn02__trial-004/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2206-qn02__trial-004/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cf01__trial-005/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cf01__trial-005/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cf01__trial-005/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cf01__trial-005/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cf01__trial-005/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cf01__trial-005/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cf01__trial-005/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cf01__trial-005/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cp02__trial-006/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cp02__trial-006/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cp02__trial-006/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cp02__trial-006/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cp02__trial-006/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cp02__trial-006/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cp02__trial-006/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-cp02__trial-006/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-st06__trial-007/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-st06__trial-007/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-st06__trial-007/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-st06__trial-007/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-st06__trial-007/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-st06__trial-007/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-st06__trial-007/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/fab01-2209-st06__trial-007/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-001/job.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-001/result.json",
+      "categories": [
+        "historical_key_rename",
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-002/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-dg04__trial-008/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-dg04__trial-008/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-dg04__trial-008/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-dg04__trial-008/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-dg04__trial-008/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-dg04__trial-008/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-dg04__trial-008/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-dg04__trial-008/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-pr02__trial-009/agent/recording.cast",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-pr02__trial-009/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-pr02__trial-009/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-pr02__trial-009/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-pr02__trial-009/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-pr02__trial-009/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-pr02__trial-009/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2112-pr02__trial-009/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-ex01__trial-010/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-ex01__trial-010/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-ex01__trial-010/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-ex01__trial-010/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-ex01__trial-010/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-ex01__trial-010/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-ex01__trial-010/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-ex01__trial-010/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-qn02__trial-011/agent/recording.cast",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-qn02__trial-011/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-qn02__trial-011/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-qn02__trial-011/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-qn02__trial-011/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-qn02__trial-011/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-qn02__trial-011/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2206-qn02__trial-011/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cf01__trial-012/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cf01__trial-012/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cf01__trial-012/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cf01__trial-012/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cf01__trial-012/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cf01__trial-012/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cf01__trial-012/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cf01__trial-012/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cp02__trial-013/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cp02__trial-013/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cp02__trial-013/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cp02__trial-013/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cp02__trial-013/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cp02__trial-013/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cp02__trial-013/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-cp02__trial-013/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-st06__trial-014/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-st06__trial-014/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-st06__trial-014/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-st06__trial-014/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-st06__trial-014/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-st06__trial-014/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-st06__trial-014/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/fab01-2209-st06__trial-014/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-002/job.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-002/result.json",
+      "categories": [
+        "historical_key_rename",
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-003/config.json",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2112-dg04__trial-015/config.json",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2112-dg04__trial-015/lock.json",
+      "categories": [
+        "historical_fingerprint",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2112-dg04__trial-015/result.json",
+      "categories": [
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2112-dg04__trial-015/trial.log",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2112-pr02__trial-016/config.json",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2112-pr02__trial-016/lock.json",
+      "categories": [
+        "historical_fingerprint",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2112-pr02__trial-016/result.json",
+      "categories": [
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2112-pr02__trial-016/trial.log",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2206-ex01__trial-017/config.json",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2206-ex01__trial-017/lock.json",
+      "categories": [
+        "historical_fingerprint",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2206-ex01__trial-017/result.json",
+      "categories": [
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2206-ex01__trial-017/trial.log",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2206-qn02__trial-018/config.json",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2206-qn02__trial-018/lock.json",
+      "categories": [
+        "historical_fingerprint",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2206-qn02__trial-018/result.json",
+      "categories": [
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2206-qn02__trial-018/trial.log",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2209-cf01__trial-019/config.json",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2209-cf01__trial-019/lock.json",
+      "categories": [
+        "historical_fingerprint",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2209-cf01__trial-019/result.json",
+      "categories": [
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2209-cf01__trial-019/trial.log",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2209-cp02__trial-020/config.json",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2209-cp02__trial-020/lock.json",
+      "categories": [
+        "historical_fingerprint",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2209-cp02__trial-020/result.json",
+      "categories": [
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2209-cp02__trial-020/trial.log",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2209-st06__trial-021/config.json",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2209-st06__trial-021/lock.json",
+      "categories": [
+        "historical_fingerprint",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2209-st06__trial-021/result.json",
+      "categories": [
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/fab01-2209-st06__trial-021/trial.log",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/job.log",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/lock.json",
+      "categories": [
+        "historical_fingerprint",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-003/result.json",
+      "categories": [
+        "historical_key_rename",
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-004/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-dg04__trial-022/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-dg04__trial-022/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-dg04__trial-022/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-dg04__trial-022/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-dg04__trial-022/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-dg04__trial-022/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-dg04__trial-022/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-dg04__trial-022/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-pr02__trial-023/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-pr02__trial-023/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-pr02__trial-023/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-pr02__trial-023/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-pr02__trial-023/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-pr02__trial-023/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-pr02__trial-023/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2112-pr02__trial-023/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-ex01__trial-024/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-ex01__trial-024/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-ex01__trial-024/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-ex01__trial-024/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-ex01__trial-024/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-ex01__trial-024/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-ex01__trial-024/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-ex01__trial-024/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-qn02__trial-025/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-qn02__trial-025/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-qn02__trial-025/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-qn02__trial-025/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-qn02__trial-025/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-qn02__trial-025/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-qn02__trial-025/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2206-qn02__trial-025/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cf01__trial-026/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cf01__trial-026/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cf01__trial-026/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cf01__trial-026/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cf01__trial-026/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cf01__trial-026/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cf01__trial-026/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cf01__trial-026/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cp02__trial-027/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cp02__trial-027/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cp02__trial-027/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cp02__trial-027/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cp02__trial-027/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cp02__trial-027/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cp02__trial-027/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-cp02__trial-027/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-st06__trial-028/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-st06__trial-028/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-st06__trial-028/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-st06__trial-028/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-st06__trial-028/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-st06__trial-028/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-st06__trial-028/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/fab01-2209-st06__trial-028/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-004/job.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-004/result.json",
+      "categories": [
+        "historical_key_rename",
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-005/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-dg04__trial-034/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-dg04__trial-034/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-dg04__trial-034/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-dg04__trial-034/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-dg04__trial-034/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-dg04__trial-034/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-dg04__trial-034/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-dg04__trial-034/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-pr02__trial-035/agent/recording.cast",
+      "categories": [
+        "container",
+        "internal_source_excerpt",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-pr02__trial-035/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "internal_source_excerpt",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-pr02__trial-035/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-pr02__trial-035/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-pr02__trial-035/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-pr02__trial-035/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2112-pr02__trial-035/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-ex01__trial-036/agent/recording.cast",
+      "categories": [
+        "container",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-ex01__trial-036/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-ex01__trial-036/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-ex01__trial-036/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-ex01__trial-036/exception.txt",
+      "categories": [
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-ex01__trial-036/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-ex01__trial-036/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-ex01__trial-036/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-qn02__trial-037/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-qn02__trial-037/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-qn02__trial-037/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-qn02__trial-037/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-qn02__trial-037/exception.txt",
+      "categories": [
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-qn02__trial-037/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-qn02__trial-037/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2206-qn02__trial-037/trial.log",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cf01__trial-038/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cf01__trial-038/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cf01__trial-038/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cf01__trial-038/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cf01__trial-038/exception.txt",
+      "categories": [
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cf01__trial-038/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cf01__trial-038/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cf01__trial-038/trial.log",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cp02__trial-039/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cp02__trial-039/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cp02__trial-039/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cp02__trial-039/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cp02__trial-039/exception.txt",
+      "categories": [
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cp02__trial-039/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cp02__trial-039/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-cp02__trial-039/trial.log",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-st06__trial-040/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-st06__trial-040/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-st06__trial-040/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-st06__trial-040/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-st06__trial-040/exception.txt",
+      "categories": [
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-st06__trial-040/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-st06__trial-040/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/fab01-2209-st06__trial-040/trial.log",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/job.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-005/result.json",
+      "categories": [
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-006/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-ex01__trial-029/agent/recording.cast",
+      "categories": [
+        "container",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-ex01__trial-029/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-ex01__trial-029/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-ex01__trial-029/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-ex01__trial-029/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-ex01__trial-029/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-ex01__trial-029/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-qn02__trial-030/agent/recording.cast",
+      "categories": [
+        "container",
+        "internal_source_excerpt",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-qn02__trial-030/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "internal_source_excerpt",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-qn02__trial-030/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-qn02__trial-030/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-qn02__trial-030/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-qn02__trial-030/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2206-qn02__trial-030/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cf01__trial-031/agent/recording.cast",
+      "categories": [
+        "container",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cf01__trial-031/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cf01__trial-031/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cf01__trial-031/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cf01__trial-031/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cf01__trial-031/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cf01__trial-031/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cp02__trial-032/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cp02__trial-032/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cp02__trial-032/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cp02__trial-032/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cp02__trial-032/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cp02__trial-032/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-cp02__trial-032/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-st06__trial-033/agent/recording.cast",
+      "categories": [
+        "container",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-st06__trial-033/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-st06__trial-033/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-st06__trial-033/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-st06__trial-033/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-st06__trial-033/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/fab01-2209-st06__trial-033/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/job.log",
+      "categories": [
+        "container",
+        "internal_source_excerpt",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-006/result.json",
+      "categories": [
+        "historical_key_rename",
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-007/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-dg04__trial-043/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-dg04__trial-043/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-dg04__trial-043/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-dg04__trial-043/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-dg04__trial-043/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-dg04__trial-043/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-dg04__trial-043/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-dg04__trial-043/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-pr02__trial-044/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-pr02__trial-044/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-pr02__trial-044/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-pr02__trial-044/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-pr02__trial-044/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-pr02__trial-044/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-pr02__trial-044/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2112-pr02__trial-044/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-ex01__trial-045/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-ex01__trial-045/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-ex01__trial-045/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-ex01__trial-045/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-ex01__trial-045/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-ex01__trial-045/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-ex01__trial-045/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-ex01__trial-045/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-qn02__trial-046/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-qn02__trial-046/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-qn02__trial-046/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-qn02__trial-046/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-qn02__trial-046/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-qn02__trial-046/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-qn02__trial-046/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2206-qn02__trial-046/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cf01__trial-047/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cf01__trial-047/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cf01__trial-047/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cf01__trial-047/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cf01__trial-047/exception.txt",
+      "categories": [
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cf01__trial-047/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cf01__trial-047/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cf01__trial-047/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cp02__trial-048/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cp02__trial-048/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cp02__trial-048/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cp02__trial-048/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cp02__trial-048/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cp02__trial-048/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cp02__trial-048/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-cp02__trial-048/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-st06__trial-049/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-st06__trial-049/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-st06__trial-049/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-st06__trial-049/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-st06__trial-049/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-st06__trial-049/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-st06__trial-049/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/fab01-2209-st06__trial-049/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-007/job.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-007/result.json",
+      "categories": [
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-008/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-008/fab01-2209-cf01__trial-042/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-008/fab01-2209-cf01__trial-042/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-008/fab01-2209-cf01__trial-042/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-008/fab01-2209-cf01__trial-042/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-008/fab01-2209-cf01__trial-042/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-008/fab01-2209-cf01__trial-042/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-008/fab01-2209-cf01__trial-042/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-008/fab01-2209-cf01__trial-042/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-008/job.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-008/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-008/result.json",
+      "categories": [
+        "historical_key_rename",
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-009/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-009/fab01-2209-cf01__trial-041/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-009/fab01-2209-cf01__trial-041/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-009/fab01-2209-cf01__trial-041/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-009/fab01-2209-cf01__trial-041/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-009/fab01-2209-cf01__trial-041/exception.txt",
+      "categories": [
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-009/fab01-2209-cf01__trial-041/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-009/fab01-2209-cf01__trial-041/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-009/fab01-2209-cf01__trial-041/trial.log",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-009/job.log",
+      "categories": [
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-009/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-009/result.json",
+      "categories": [
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-010/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-dg04__trial-050/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-dg04__trial-050/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-dg04__trial-050/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-dg04__trial-050/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-dg04__trial-050/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-dg04__trial-050/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-dg04__trial-050/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-dg04__trial-050/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-pr02__trial-051/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-pr02__trial-051/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-pr02__trial-051/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-pr02__trial-051/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-pr02__trial-051/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-pr02__trial-051/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-pr02__trial-051/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2112-pr02__trial-051/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-ex01__trial-052/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-ex01__trial-052/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-ex01__trial-052/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-ex01__trial-052/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-ex01__trial-052/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-ex01__trial-052/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-ex01__trial-052/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-ex01__trial-052/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-qn02__trial-053/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-qn02__trial-053/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-qn02__trial-053/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-qn02__trial-053/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-qn02__trial-053/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-qn02__trial-053/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-qn02__trial-053/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2206-qn02__trial-053/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cf01__trial-054/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cf01__trial-054/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cf01__trial-054/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cf01__trial-054/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cf01__trial-054/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cf01__trial-054/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cf01__trial-054/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cf01__trial-054/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cp02__trial-055/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cp02__trial-055/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cp02__trial-055/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cp02__trial-055/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cp02__trial-055/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cp02__trial-055/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cp02__trial-055/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-cp02__trial-055/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-st06__trial-056/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-st06__trial-056/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-st06__trial-056/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-st06__trial-056/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-st06__trial-056/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-st06__trial-056/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-st06__trial-056/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/fab01-2209-st06__trial-056/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-010/job.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-010/result.json",
+      "categories": [
+        "historical_key_rename",
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-011/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-dg04__trial-057/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-dg04__trial-057/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-dg04__trial-057/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-dg04__trial-057/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-dg04__trial-057/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-dg04__trial-057/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-dg04__trial-057/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-dg04__trial-057/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-pr02__trial-058/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-pr02__trial-058/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-pr02__trial-058/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-pr02__trial-058/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-pr02__trial-058/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-pr02__trial-058/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-pr02__trial-058/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2112-pr02__trial-058/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-ex01__trial-059/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-ex01__trial-059/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-ex01__trial-059/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-ex01__trial-059/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-ex01__trial-059/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-ex01__trial-059/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-ex01__trial-059/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-ex01__trial-059/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-qn02__trial-060/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-qn02__trial-060/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-qn02__trial-060/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-qn02__trial-060/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-qn02__trial-060/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-qn02__trial-060/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-qn02__trial-060/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2206-qn02__trial-060/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cf01__trial-061/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cf01__trial-061/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cf01__trial-061/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cf01__trial-061/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cf01__trial-061/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cf01__trial-061/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cf01__trial-061/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cf01__trial-061/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cp02__trial-062/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cp02__trial-062/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cp02__trial-062/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cp02__trial-062/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cp02__trial-062/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cp02__trial-062/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cp02__trial-062/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-cp02__trial-062/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-st06__trial-063/agent/recording.cast",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-st06__trial-063/agent/terminus_2.pane",
+      "categories": [
+        "container",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-st06__trial-063/agent/trajectory.json",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "internal_source_excerpt",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-st06__trial-063/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-st06__trial-063/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-st06__trial-063/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-st06__trial-063/trial.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/fab01-2209-st06__trial-063/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-011/job.log",
+      "categories": [
+        "container",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-011/result.json",
+      "categories": [
+        "historical_key_rename",
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-012/config.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2112-dg04__trial-064/config.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2112-dg04__trial-064/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2112-dg04__trial-064/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2112-dg04__trial-064/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2112-dg04__trial-064/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2112-pr02__trial-065/config.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2112-pr02__trial-065/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2112-pr02__trial-065/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2112-pr02__trial-065/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2112-pr02__trial-065/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2206-ex01__trial-066/config.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2206-ex01__trial-066/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2206-ex01__trial-066/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2206-ex01__trial-066/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2206-ex01__trial-066/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2206-qn02__trial-067/config.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2206-qn02__trial-067/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2206-qn02__trial-067/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2206-qn02__trial-067/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2206-qn02__trial-067/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-cf01__trial-068/config.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-cf01__trial-068/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-cf01__trial-068/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-cf01__trial-068/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-cf01__trial-068/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-cp02__trial-069/config.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-cp02__trial-069/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-cp02__trial-069/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-cp02__trial-069/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-cp02__trial-069/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-st06__trial-070/config.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-st06__trial-070/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-st06__trial-070/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-st06__trial-070/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/fab01-2209-st06__trial-070/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-012/job.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-012/result.json",
+      "categories": [
+        "historical_key_rename",
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-013/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-013/fab01-2209-st06__trial-071/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-013/fab01-2209-st06__trial-071/exception.txt",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-013/fab01-2209-st06__trial-071/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-013/fab01-2209-st06__trial-071/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-013/fab01-2209-st06__trial-071/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-013/job.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-013/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-013/result.json",
+      "categories": [
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-014/config.json",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-014/fab01-2209-st06__trial-072/config.json",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-014/fab01-2209-st06__trial-072/exception.txt",
+      "categories": [
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-014/fab01-2209-st06__trial-072/lock.json",
+      "categories": [
+        "historical_fingerprint",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-014/fab01-2209-st06__trial-072/result.json",
+      "categories": [
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-014/fab01-2209-st06__trial-072/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-014/job.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-014/lock.json",
+      "categories": [
+        "historical_fingerprint",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-014/result.json",
+      "categories": [
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-015/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2112-dg04__trial-073/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2112-dg04__trial-073/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2112-dg04__trial-073/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2112-dg04__trial-073/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2112-pr02__trial-074/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2112-pr02__trial-074/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2112-pr02__trial-074/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2112-pr02__trial-074/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2206-ex01__trial-075/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2206-ex01__trial-075/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2206-ex01__trial-075/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2206-ex01__trial-075/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2206-qn02__trial-076/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2206-qn02__trial-076/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2206-qn02__trial-076/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2206-qn02__trial-076/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2209-cf01__trial-077/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2209-cf01__trial-077/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2209-cf01__trial-077/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2209-cf01__trial-077/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2209-cp02__trial-078/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2209-cp02__trial-078/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2209-cp02__trial-078/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2209-cp02__trial-078/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2209-st06__trial-079/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2209-st06__trial-079/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2209-st06__trial-079/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/fab01-2209-st06__trial-079/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/job.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-015/result.json",
+      "categories": [
+        "identity_pseudonymization"
+      ]
+    },
+    {
+      "path": "runs/job-016/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2112-dg04__trial-080/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2112-dg04__trial-080/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2112-dg04__trial-080/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2112-dg04__trial-080/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2112-dg04__trial-080/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2112-pr02__trial-081/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2112-pr02__trial-081/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2112-pr02__trial-081/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2112-pr02__trial-081/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2112-pr02__trial-081/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2206-ex01__trial-082/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2206-ex01__trial-082/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2206-ex01__trial-082/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2206-ex01__trial-082/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2206-ex01__trial-082/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2206-qn02__trial-083/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2206-qn02__trial-083/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2206-qn02__trial-083/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2206-qn02__trial-083/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2206-qn02__trial-083/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-cf01__trial-084/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-cf01__trial-084/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-cf01__trial-084/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-cf01__trial-084/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-cf01__trial-084/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-cp02__trial-085/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-cp02__trial-085/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-cp02__trial-085/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-cp02__trial-085/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-cp02__trial-085/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-st06__trial-086/config.json",
+      "categories": [
+        "credentials",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-st06__trial-086/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-st06__trial-086/result.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "identity_pseudonymization",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-st06__trial-086/trial.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/fab01-2209-st06__trial-086/verifier/score_breakdown.json",
+      "categories": [
+        "historical_fingerprint"
+      ]
+    },
+    {
+      "path": "runs/job-016/job.log",
+      "categories": [
+        "container",
+        "identity_pseudonymization",
+        "local_paths",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/lock.json",
+      "categories": [
+        "credentials",
+        "historical_fingerprint",
+        "local_paths",
+        "network",
+        "text_sanitization"
+      ]
+    },
+    {
+      "path": "runs/job-016/result.json",
+      "categories": [
+        "identity_pseudonymization"
+      ]
+    }
+  ],
+  "integrity": {
+    "evaluation-protocol.json": {
+      "sha256": "b69830157447797e54d39e6449653280ac061d95d0ca56551d2a4ffe225a580f",
+      "bytes": 5069
+    },
+    "run-index.json": {
+      "sha256": "9aa3fb40b5dfa27fd28f9aa6a33c5779aa3da9fc419d8daafb28b6430822666c",
+      "bytes": 65733
+    },
+    "run-records.tar.gz": {
+      "sha256": "9561bad56a4f1a38df716239055dd9d2ad09dc7582eaddb628e18a6c1904910a",
+      "bytes": 5008972
+    }
+  },
+  "limitations": [
+    "Redactions are visible omissions, not verbatim unmodified transcripts or invented dialogue.",
+    "The full evaluator, rubrics, judge prompts, and reference answers remain inspectable in the runnable package. Authoring IP protection is not an inference-proof guarantee.",
+    "Distinctive financial facts and third-party source notices remain; reidentification may be possible.",
+    "Historical no-op/reference-answer QA, recovery attempts, failures, and historical-baseline labels are not current model results.",
+    "Archive/header metadata is normalized. Historical event timestamps and all recorded numeric outcome scalars remain unchanged."
+  ]
+}

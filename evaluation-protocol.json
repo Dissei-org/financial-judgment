@@ -1,0 +1,102 @@
+{
+  "dataset": "dissei/financial-judgment-full",
+  "source_dataset_name_recorded_in_runs": "[REDACTED: historical private dataset identity.]",
+  "source_dataset_digest_recorded_in_runs": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+  "source_listing_retired": true,
+  "task_pins": {
+    "dissei/fab01-2112-dg04": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+    "dissei/fab01-2112-pr02": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+    "dissei/fab01-2206-ex01": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+    "dissei/fab01-2206-qn02": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+    "dissei/fab01-2209-cf01": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+    "dissei/fab01-2209-cp02": "[REDACTED: historical package fingerprint; not a derivative dependency.]",
+    "dissei/fab01-2209-st06": "[REDACTED: historical package fingerprint; not a derivative dependency.]"
+  },
+  "harbor_version": "0.23.0",
+  "agent": "terminus-2",
+  "max_agent_turns": 40,
+  "max_output_tokens_per_request": 16384,
+  "agent_reasoning": "high",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_reasoning": "low",
+  "judge_votes": 1,
+  "task_time_limit_seconds": 1800,
+  "dataroom_call_budget": 20,
+  "attempt_selection": "One selected outcome per task. Preserve genuine non-submission zeros, exclude unresolved trial errors from aggregate comparisons, retain all infrastructure recovery attempts. No successful trial rerun to improve a score.",
+  "model_routes": [
+    {
+      "model_id": "claude-fable-5-1",
+      "provider": "Anthropic",
+      "status": "completed",
+      "endpoint": "[REDACTED: private infrastructure detail.]",
+      "transport": "[REDACTED: private infrastructure detail.]",
+      "model_pinning": "x-no-failover=true; fallbacks=null; native returned model must match",
+      "note": "All seven trials completed; SSH connection closed before aggregate finalization. Native Harbor resume rebuilt the job summary with zero trial reruns; all result-file hashes preserved."
+    },
+    {
+      "model_id": "claude-opus-5-5",
+      "provider": "Anthropic",
+      "status": "completed",
+      "endpoint": "[REDACTED: private infrastructure detail.]",
+      "transport": "[REDACTED: private infrastructure detail.]",
+      "model_pinning": "x-no-failover=true; fallbacks=null; native returned model must match",
+      "note": null
+    },
+    {
+      "model_id": "gpt-6-astra",
+      "provider": "OpenAI",
+      "status": "completed",
+      "endpoint": "[REDACTED: private infrastructure detail.]",
+      "transport": null,
+      "model_pinning": null,
+      "note": null
+    },
+    {
+      "model_id": "gemini-3.1-pro-preview",
+      "provider": "Google",
+      "status": "historical",
+      "endpoint": "[REDACTED: private infrastructure detail.]",
+      "transport": null,
+      "model_pinning": null,
+      "note": null
+    },
+    {
+      "model_id": "gemini-3.8-flash",
+      "provider": "Google",
+      "status": "completed_protocol_limited",
+      "endpoint": "[REDACTED: private infrastructure detail.]",
+      "transport": null,
+      "model_pinning": null,
+      "note": "One submission from seven selected attempts; six 40-turn-limit non-submissions and 50 JSON parser errors. Five infrastructure-failed tasks retried in a separately preserved job."
+    },
+    {
+      "model_id": "glm-5.3",
+      "provider": "Z.ai",
+      "status": "completed_after_infrastructure_recovery",
+      "endpoint": "[REDACTED: private infrastructure detail.]",
+      "transport": "[REDACTED: private infrastructure detail.]",
+      "model_pinning": "x-no-failover=true; returned model glm-5.3 required",
+      "note": "Six original graded submissions preserved. One transport-timeout task recovered after an intervening recovery attempt was interrupted by the VM runtime limit. All three attempts retained; no successful task rerun."
+    },
+    {
+      "model_id": "kimi-k3",
+      "provider": "Moonshot AI",
+      "status": "completed",
+      "endpoint": "[REDACTED: private infrastructure detail.]",
+      "transport": "[REDACTED: private infrastructure detail.]",
+      "model_pinning": "x-no-failover=true; native alias k3 required ([REDACTED: private infrastructure detail.])",
+      "note": null
+    },
+    {
+      "model_id": "grok-4.7",
+      "provider": "xAI",
+      "status": "blocked",
+      "endpoint": null,
+      "transport": null,
+      "model_pinning": null,
+      "note": null
+    }
+  ],
+  "reproduction_note": "These are sanitized historical records, not runnable connection settings. Numerical results, model identities, run settings, and selection labels are retained. Private endpoints, source fingerprints, and original package pins are withheld. Use the current task manifests and USAGE.md for the clean runnable package; supply your own model and judge access. No new financial-model evaluation is claimed.",
+  "record_type": "sanitized_historical_evaluation_protocol"
+}

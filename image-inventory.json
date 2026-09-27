@@ -1,0 +1,135 @@
+{
+  "archive_format": "docker-save OCI multi-platform index, gzip",
+  "base_image": "python:3.11-slim@sha256:da047cb8f9d1d98e5c070f5300ba9f7274e33b8fc0e5be5ed88740aed1b95ba9",
+  "binaries_included": true,
+  "dataset": "dissei/financial-judgment-full",
+  "images": [
+    {
+      "anchor": "2021-12",
+      "archive_bytes": 313590734,
+      "archive_filename": "images/financial-judgment-2021-12.tar.gz",
+      "archive_sha256": "5f945820221ca7b3972b3044b2c5ac337eb6e39b0aff6e56bd1e7dfabb932edf",
+      "index_digest": "sha256:caf60288cbee25b23e266ad4ba4db4e18d6f4e8aea468e88727e60ca06601978",
+      "local_ref": "dissei/financial-judgment-2021-12:20260927-clean",
+      "observed_versions": {
+        "linux/amd64": {
+          "bundled_agent_cli": null,
+          "node": "v20.19.2",
+          "npm": "9.2.0",
+          "packages": {
+            "PyYAML": "6.0.3",
+            "httpx": "0.28.1",
+            "openai": "2.54.0"
+          },
+          "python": "3.11.16"
+        },
+        "linux/arm64": {
+          "bundled_agent_cli": null,
+          "node": "v20.19.2",
+          "npm": "9.2.0",
+          "packages": {
+            "PyYAML": "6.0.3",
+            "httpx": "0.28.1",
+            "openai": "2.54.0"
+          },
+          "python": "3.11.16"
+        }
+      },
+      "platform_configs": {
+        "linux/amd64": "sha256:945948f3e5ba2609d6ac932c77cac89fc74ba9de568030d8c0ce0ec7be5f698b",
+        "linux/arm64": "sha256:485946c500e4430e6d414ed2b5b23956e8e45b37394c42d55aca14318091ea9b"
+      },
+      "platform_manifests": {
+        "linux/amd64": "sha256:d0bf8a4213270bb0d92f3cae7e99e1d18e9cab983a849daeb5d7f1506dfd8de3",
+        "linux/arm64": "sha256:5774e672a349b68bff45dd8d4c8b1650d9545796fca57a2c2d7e8f829315521b"
+      }
+    },
+    {
+      "anchor": "2022-06",
+      "archive_bytes": 313589145,
+      "archive_filename": "images/financial-judgment-2022-06.tar.gz",
+      "archive_sha256": "f61750f2e4a1e84a3f5c80293c8758e7304d564808e92d16b7e62ba8b6180675",
+      "index_digest": "sha256:931935fc2f1da10f93c69e1ca5acded8d0090629265f0233237ee57918acdfe3",
+      "local_ref": "dissei/financial-judgment-2022-06:20260927-clean",
+      "observed_versions": {
+        "linux/amd64": {
+          "bundled_agent_cli": null,
+          "node": "v20.19.2",
+          "npm": "9.2.0",
+          "packages": {
+            "PyYAML": "6.0.3",
+            "httpx": "0.28.1",
+            "openai": "2.54.0"
+          },
+          "python": "3.11.16"
+        },
+        "linux/arm64": {
+          "bundled_agent_cli": null,
+          "node": "v20.19.2",
+          "npm": "9.2.0",
+          "packages": {
+            "PyYAML": "6.0.3",
+            "httpx": "0.28.1",
+            "openai": "2.54.0"
+          },
+          "python": "3.11.16"
+        }
+      },
+      "platform_configs": {
+        "linux/amd64": "sha256:a74b1760cc7cd09094c23f9cb0215da2f9dc5fb720972dba2824e6b753aa5ffc",
+        "linux/arm64": "sha256:56942661c39beeafc80a2b195c8ce6efe326c4cf1e8df516cc6ebbfb90489de8"
+      },
+      "platform_manifests": {
+        "linux/amd64": "sha256:c7d70aee1c08e8e3897fb1b65a6a5babc1233df5578424c3cad80ba6d6f917bf",
+        "linux/arm64": "sha256:0647d38cca1cafd0c42283831ad558b1856675b219fa0d3459bad56f6d87fe09"
+      }
+    },
+    {
+      "anchor": "2022-09",
+      "archive_bytes": 313685566,
+      "archive_filename": "images/financial-judgment-2022-09.tar.gz",
+      "archive_sha256": "b82a59b92f2bb1285cefff6923d01e9b5b3c7d3d1283173f991e0f4f66f39d6a",
+      "index_digest": "sha256:84e489e63cfdfa9eb42a958133bf3a5fae4cf6df0eede82a01110597a0200fe5",
+      "local_ref": "dissei/financial-judgment-2022-09:20260927-clean",
+      "observed_versions": {
+        "linux/amd64": {
+          "bundled_agent_cli": null,
+          "node": "v20.19.2",
+          "npm": "9.2.0",
+          "packages": {
+            "PyYAML": "6.0.3",
+            "httpx": "0.28.1",
+            "openai": "2.54.0"
+          },
+          "python": "3.11.16"
+        },
+        "linux/arm64": {
+          "bundled_agent_cli": null,
+          "node": "v20.19.2",
+          "npm": "9.2.0",
+          "packages": {
+            "PyYAML": "6.0.3",
+            "httpx": "0.28.1",
+            "openai": "2.54.0"
+          },
+          "python": "3.11.16"
+        }
+      },
+      "platform_configs": {
+        "linux/amd64": "sha256:38a8a4c78675adcfcd18369b87fc2b7bf71982d7fd17f926205faf99d23a9714",
+        "linux/arm64": "sha256:21eedba9b61341483644fdf224f94df2ddc449dc1fc46b072c7ba35ca4e2bc56"
+      },
+      "platform_manifests": {
+        "linux/amd64": "sha256:51545b81da98bb79323c29522ae73a3305840f8174b623cad1c12d1ef39d3fdf",
+        "linux/arm64": "sha256:18efd8b84b0c97c72359faf36c10ac42f4430b5d0c553da726cea4e0e8593502"
+      }
+    }
+  ],
+  "python_packages": {
+    "PyYAML": "6.0.3",
+    "httpx": "0.28.1",
+    "openai": "2.54.0"
+  },
+  "status": "built",
+  "version": "2.0.0"
+}

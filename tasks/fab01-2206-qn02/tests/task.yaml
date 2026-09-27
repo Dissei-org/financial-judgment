@@ -1,0 +1,249 @@
+slug: what-does-the-segment-share-exhibit-imply-about-company-ci-s-r
+category: quantitative
+anchor: 2022-06
+complexity: medium_analysis
+score_weight: 1.0
+tier_basis: outcome_aligned
+fact_bindings:
+- F005
+- F010
+- F014
+- F023
+- F024
+- F077
+- F078
+question: What does the segment-share exhibit imply about Company CI relative market position?
+prompt_template: 'Use the case materials below to answer the question. Make a defensible inference from
+  the exhibit and explain the evidence you rely on.
+
+
+  Timeline:
+
+  {timeline}
+
+
+  Exhibits:
+
+  {exhibits}
+
+
+  Sources:
+
+  {sources}
+
+  '
+pld:
+  excellent: A top response reads the exhibit accurately, converts it into a clear relative-position inference,
+    and calibrates the implication using the case's market and geographic context.
+  adequate: An adequate response identifies Company CI as the shown business, recognizes a leading North
+    American position, and gives enough exhibit-based reasoning to support that inference.
+  inadequate: An inadequate response stays on topic but misreads part of the exhibit, overgeneralizes
+    the implication, or gives only thin support for the market-position conclusion.
+  failing: A failing response misses the exhibit's basic mapping or substitutes unsupported claims, post-anchor
+    information, or generic market commentary for the case evidence.
+level_exemplars:
+  excellent: 'One possible excellent response would say that the segment-share exhibit points to Company
+    CI as a leading North American compressor franchise rather than a niche participant. It would first
+    make clear that the exhibit''s Company CI bars refer to Company CI, then read the bars against the
+    other named suppliers in each displayed segment. The strongest implication is that Company CI had
+    a particularly commanding position in residential HVAC and still appeared to be one of the leading
+    suppliers across Product F, refrigeration, and transport. The response would avoid treating the chart
+    as a single corporate market-share number; it would instead infer relative rank and breadth across
+    the displayed segments. It would also calibrate why this matters for the investment case: North America
+    represented 71% of Company CI trade sales, so the North American exhibit speaks to a core part of
+    the business, while residential and Product F plus refrigeration represented 85% of revenue, so the
+    shown end markets overlap heavily with Company CI economic base. A strong answer would add that the
+    exhibit is consistent with the broader case description of Company CI as a market leader in scroll
+    compressor technology and a global leader in scroll compressors and controls, while still noting that
+    the chart is North America-specific and estimated from segment bars.
+
+    '
+  adequate: 'One possible adequate response would conclude that the segment-share exhibit implies Company
+    CI held a leading relative position in the North American compressor markets shown. It would identify
+    Company CI as Company CI and use the display as a relative-share chart, not as a general statement
+    that Company CI owned the whole market. The answer would probably describe Company CI as especially
+    strong in residential HVAC and as a major or leading participant in the other displayed segments,
+    where several named competitors and captive suppliers also appear. It would recognize that the inference
+    is about segment position and rank: Company CI is not merely present in the chart, but consistently
+    appears at or near the front of the share stack across the displayed categories. It would also explain
+    why the exhibit matters economically by connecting it to the company''s exposure: North America accounted
+    for 71% of Company CI trade sales, making the regional segment-share evidence relevant to the business
+    rather than peripheral. A better adequate answer might also mention that the displayed segments line
+    up with Company CI main served markets, because residential and Product F plus refrigeration accounted
+    for 85% of revenue. The response would remain careful about scope. It would not claim a precise global
+    market share, would not treat Company CI as a competitor, and would not rely on later deal developments.
+    It would avoid overreading the exhibit as proof of pricing power or future returns by itself; instead,
+    it would treat the chart as one strong piece of competitive-position evidence that needs to be read
+    alongside the market descriptions elsewhere in the case. It may lack the nuance of an excellent response,
+    for example by not discussing uneven strength across all displayed end markets or by only briefly
+    tying the chart to the broader evidence that Company CI was a leader in scroll compressor technology,
+    but it would still reach the right central inference from the exhibit.
+
+    '
+  inadequate: 'One possible inadequate response would say that Company CI looked like a meaningful player
+    in North American HVAC and refrigeration, but it would give a thin or partly muddled reading of the
+    exhibit. It might notice that Company CI appears prominently, yet fail to explain that Company CI
+    is the label used for Company CI. It might refer to the bars as showing strong market share without
+    comparing Company CI position to the named competitors within each segment. The answer might also
+    overstate the chart as proving global dominance or understate it as showing only generic participation.
+    It could mention that Company CI operated in important end markets, but not connect the exhibit to
+    North America''s 71% share of trade sales or the concentration of revenue in HVAC and refrigeration.
+    Such a response is on the right subject and may contain a plausible directional conclusion, but it
+    does not give the judge enough evidence that the respondent actually used the segment-share exhibit
+    carefully.
+
+    '
+  failing: 'One possible failing response would not recover the market-position implication from the segment-share
+    exhibit. It might treat Company CI as a separate competitor, ignore the exhibit''s segment structure,
+    or discuss Company ED firm scale instead of Company CI competitive position. Another failing response
+    might invent a precise global market-share figure, assume the chart covers all geographies, or make
+    claims about later financing and ownership outcomes as though they were available at the anchor. It
+    might simply state that the market was attractive without identifying why the exhibit suggests Company
+    CI was relatively advantaged. Even if it mentions HVAC or refrigeration, it would not connect the
+    visible segment-share evidence to a defensible conclusion about Company CI relative standing.
+
+    '
+criteria:
+- tier: critical
+  weight: 25
+  criterion: Infers Company CI relative leadership from the segment-share exhibit.
+  binds_to: F005
+  pass_condition: Concludes from the segment-share exhibit that Company CI, via the Company CI label,
+    occupied a leading relative position across the displayed North American segments.
+  partial_condition: Describes Company CI as meaningful or competitive, but leaves the leadership implication
+    weaker or confined to one displayed segment.
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F005
+  - F078
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 10
+  criterion: Correctly maps the exhibit label to the company.
+  binds_to: F078
+  pass_condition: Correctly maps the Company CI label in Exhibit 1 to Company CI.
+  partial_condition: Uses Exhibit 1 but leaves the Company CI-to-Company CI mapping implicit or ambiguous.
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F078
+  discriminates:
+  - inadequate
+  - failing
+- tier: important
+  weight: 9
+  criterion: Reads the exhibit as relative segment-share evidence.
+  binds_to: F077
+  pass_condition: Treats Exhibit 1 as a segment-by-segment relative-share display rather than as a companywide
+    market-size table.
+  partial_condition: Recognizes that the exhibit concerns market share, but blurs segment-level evidence
+    with companywide scale.
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F077
+  discriminates:
+  - adequate
+  - inadequate
+- tier: important
+  weight: 9
+  criterion: Calibrates the breadth of Company CI position across displayed end markets.
+  binds_to: F077
+  pass_condition: Characterizes Company CI shown position as broad-based but uneven across the displayed
+    segments.
+  partial_condition: Recognizes strength in at least one displayed segment, but does not calibrate the
+    breadth or unevenness across the chart.
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F077
+  discriminates:
+  - excellent
+  - adequate
+- tier: important
+  weight: 8
+  criterion: Explains the relevance of the North American scope.
+  binds_to: F014
+  pass_condition: Explains why the North American share evidence is material by noting that North America
+    represented 71% of Company CI trade sales (F014).
+  partial_condition: Notes that the exhibit is North America-specific, but does not connect that scope
+    to Company CI trade-sales exposure.
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F014
+  discriminates:
+  - excellent
+  - adequate
+- tier: optional
+  weight: 4
+  criterion: Connects the displayed segments to Company CI main served markets.
+  binds_to: F023
+  pass_condition: Situates the displayed segments within Company CI main served markets by noting residential
+    and Product F plus refrigeration generated 85% of revenue (F023).
+  references:
+  - F023
+  discriminates:
+  - excellent
+  - adequate
+- tier: optional
+  weight: 3
+  criterion: Uses the domestic-supplier fact as corroborating context.
+  binds_to: F024
+  pass_condition: Notes that Company CI status as the only domestic U.S. residential-compressor supplier
+    corroborates the residential-HVAC implication.
+  references:
+  - F024
+  discriminates:
+  - excellent
+  - adequate
+- tier: pitfall
+  weight: -2
+  criterion: Avoids using information dated after 2022-06-30 — does not assert as fact events that occurred
+    after end of 2022-06-30.
+  binds_to: 2022-06
+  references:
+  - timelines/2022-06.md
+  discriminates:
+  - inadequate
+  - failing
+- tier: pitfall
+  weight: -2
+  criterion: Avoids treating Company CI as a competitor separate from Company CI.
+  binds_to: F078
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F078
+  discriminates:
+  - inadequate
+  - failing
+- tier: pitfall
+  weight: -2
+  criterion: Avoids converting a North American segment-share exhibit into an unsupported global market-share
+    claim.
+  binds_to: F077
+  references:
+  - exhibits/1_Company CI_north_american_segment_share_as_of_2021.json
+  - F077
+  discriminates:
+  - adequate
+  - inadequate
+aggregation:
+  strategy: implicit
+  critical_tier_veto: true
+  contradiction_check:
+    enabled: true
+    prompt: Does any claim in the response contradict the reference answer?
+    judge: cheap
+verifiers_compile_hint:
+  pattern: Sequential([Gate(WeightedSum(critical)), JudgeRubric(graded)])
+  critical_indices:
+  - 0
+  graded_indices:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
