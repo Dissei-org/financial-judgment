@@ -1,16 +1,16 @@
-# Dissei Financial Judgment — Full Evaluation Package
+# Dissei Financial Judgment
 
-**Version 2.0.0 is published:** [GitHub release](https://github.com/Dissei-org/financial-judgment/releases/tag/v2.0.0) and [Harbor dataset](https://hub.harborframework.com/datasets/dissei/financial-judgment-full) are public. The [Hugging Face mirror](https://huggingface.co/datasets/Dissei-Data/Dissei-Financial-Judgment) is public with manual gating: log in and receive approved access before downloading its files or using the gated viewer.
+[Harbor](https://hub.harborframework.com/datasets/dissei/financial-judgment-full) · [GitHub](https://github.com/Dissei-org/financial-judgment) · [Website](https://dissei.ai) · [Hugging Face](https://huggingface.co/datasets/Dissei-Data/Dissei-Financial-Judgment)
 
-Financial Judgment evaluates whether an agent can identify what matters in a financial situation, connect evidence to a conclusion, and distinguish support from uncertainty. This is the **complete seven-task evaluation package**, not question previews: all instructions, evidence, 79 rubric criteria, judge prompts, scoring implementation, reference answers, dataroom tools and separate verifier are included. Delivery has two required parts: minimal Harbor task files and three Docker image archives containing the runtime and evidence.
+Dissei explores financial reasoning and analysis behind institutional investment and credit decisions: interpreting evidence, weighing trade-offs and reaching well-supported conclusions.
 
-**Start here:** [Quickstart](#quickstart) · [Full run guide](https://github.com/Dissei-org/financial-judgment/blob/main/USAGE.md) · [GitHub release](https://github.com/Dissei-org/financial-judgment/releases/tag/v2.0.0) · [Hugging Face files — login + approved access](https://huggingface.co/datasets/Dissei-Data/Dissei-Financial-Judgment/tree/main) · [Harbor dataset](https://hub.harborframework.com/datasets/dissei/financial-judgment-full)
+Seven tasks follow one completed private-equity deal at three dates: December 2021, June 2022 and September 2022. Each asks for a written judgment based on dated evidence and has a task-specific rubric. Version 2.0.0 includes all instructions, evidence, 79 rubric criteria, judge prompts, scoring code, reference answers, dataroom tools and a separate verifier.
 
 ## Quickstart
 
-### Download the complete release
+### Download the release
 
-Use Git, the GitHub CLI (`gh`), Docker with Compose support and `uv`. Start in a parent directory where `financial-judgment-v2.0.0` does not already exist. This sequence clones into a new directory and downloads only the three image archives; it does not overwrite an existing checkout or use `--clobber`.
+You need Git, the GitHub CLI (`gh`), Docker with Compose support and `uv`, on a host supporting `linux/amd64` or `linux/arm64`. Start in a parent directory where `financial-judgment-v2.0.0` does not already exist. These commands clone the task files into a new directory and download the three Docker image archives containing the runtime and evidence:
 
 ```bash
 git clone --branch v2.0.0 --depth 1 \
@@ -20,9 +20,9 @@ gh release download v2.0.0 --repo Dissei-org/financial-judgment \
   --pattern 'financial-judgment-*.tar.gz' --dir images
 ```
 
-Continue only after the clone and all downloads succeed. The repository provides `tasks/`, `images/SHA256SUMS`, the run guide and historical attachments; the release assets provide runtime and evidence. **A source-only clone or image-only download is not runnable.** Docker accepts these compressed archives directly: do not unpack them as task folders.
+Continue after the clone and all downloads succeed. Both parts are required: the repository provides `tasks/`, `images/SHA256SUMS`, the run guide and historical attachments; the image archives provide the runtime and evidence. Docker loads the compressed archives directly. Keep them under `images/` rather than unpacking them as task folders.
 
-Direct image downloads, if you are not using `gh`: save each archive below under the cloned repository's `images/` directory. The matching [SHA256SUMS](https://github.com/Dissei-org/financial-judgment/releases/download/v2.0.0/SHA256SUMS) is already included at `images/SHA256SUMS`; [image-inventory.json](https://github.com/Dissei-org/financial-judgment/releases/download/v2.0.0/image-inventory.json) records image/platform digests. Do not overwrite files from a different release.
+For direct downloads, save each archive below under the cloned repository's `images/` directory. The matching [SHA256SUMS](https://github.com/Dissei-org/financial-judgment/releases/download/v2.0.0/SHA256SUMS) is already included at `images/SHA256SUMS`; [image-inventory.json](https://github.com/Dissei-org/financial-judgment/releases/download/v2.0.0/image-inventory.json) records image/platform digests. Keep files from different releases separate.
 
 | Snapshot | Docker image archive | SHA-256 |
 |---|---|---|
@@ -30,9 +30,9 @@ Direct image downloads, if you are not using `gh`: save each archive below under
 | 2022-06 | [financial-judgment-2022-06.tar.gz](https://github.com/Dissei-org/financial-judgment/releases/download/v2.0.0/financial-judgment-2022-06.tar.gz) | `f61750f2e4a1e84a3f5c80293c8758e7304d564808e92d16b7e62ba8b6180675` |
 | 2022-09 | [financial-judgment-2022-09.tar.gz](https://github.com/Dissei-org/financial-judgment/releases/download/v2.0.0/financial-judgment-2022-09.tar.gz) | `b82a59b92f2bb1285cefff6923d01e9b5b3c7d3d1283173f991e0f4f66f39d6a` |
 
-The same release is available through [Hugging Face files](https://huggingface.co/datasets/Dissei-Data/Dissei-Financial-Judgment/tree/main), but that mirror requires Hugging Face login and approved access. GitHub and Harbor public downloads do not require Hugging Face access. Downloading the package does not provision a hosted job, provider account or judge.
+The [GitHub release](https://github.com/Dissei-org/financial-judgment/releases/tag/v2.0.0) and [Harbor dataset](https://hub.harborframework.com/datasets/dissei/financial-judgment-full) are public. The same release is available through [Hugging Face files](https://huggingface.co/datasets/Dissei-Data/Dissei-Financial-Judgment/tree/main), with login and manually approved access required for downloads and the gated viewer. Hugging Face approval applies only to that mirror.
 
-Run these commands from the full package directory containing both `tasks/` and `images/`. If downloaded separately, combine the minimal task files and the three image assets into that layout first; a source-only download or image-only download is insufficient. You need Docker with Compose support and `uv`; use a host that supports `linux/amd64` or `linux/arm64`. No environment rebuild context is needed: load the supplied images, then run the tasks below.
+Run the remaining commands from the package directory containing both `tasks/` and `images/`. If you downloaded the files separately, arrange them in that layout first. Use the supplied images directly; no environment rebuild is needed. You provide the Docker host, agent/provider access and judge credentials.
 
 ### 1. Install Harbor and load the supplied images
 
@@ -51,9 +51,9 @@ docker load --input images/financial-judgment-2022-09.tar.gz
 
 ### 2. Configure your judge
 
-Set `DISSEI_JUDGE_BASE_URL` to your OpenAI-compatible API base URL and `DISSEI_JUDGE_MODEL` to your chosen judge model. Supply `DISSEI_JUDGE_API_KEY` through your normal secret-management workflow; it may be empty only for an intentionally unauthenticated endpoint. The endpoint must be reachable from inside Docker, not just from the host.
+Set `DISSEI_JUDGE_BASE_URL` to your OpenAI-compatible API base URL and `DISSEI_JUDGE_MODEL` to your chosen judge model. Supply `DISSEI_JUDGE_API_KEY` through your normal secret-management workflow; it may be empty only for an intentionally unauthenticated endpoint. The endpoint must be reachable from inside Docker.
 
-**The following runs send evidence, answers and grading material to your chosen provider and may incur charges.** Use an authorized endpoint. Harbor's saved configuration and process arguments can contain credentials: keep run directories private and do not enable shell tracing.
+These runs send evidence, answers and grading material to your chosen provider and may incur charges. Use an authorized endpoint. Harbor's saved configuration and process arguments can contain credentials: keep run directories private and do not enable shell tracing.
 
 ### 3. Run one included reference solution
 
@@ -65,7 +65,7 @@ harbor run --path ./tasks/fab01-2209-st06 \
   --ve DISSEI_JUDGE_API_KEY="${DISSEI_JUDGE_API_KEY:-}"
 ```
 
-This executes the supplied reference answer and grades it; it is not a model benchmark or a guarantee of full reward. To run all seven reference solutions, replace the path with `./tasks`.
+This executes and grades the supplied reference answer. Use it to check your setup; the reference answer can receive less than full reward. To run all seven reference solutions, replace the path with `./tasks`. Step 4 runs your agent for a model evaluation.
 
 ### 4. Evaluate your agent on all seven tasks
 
@@ -80,10 +80,9 @@ harbor run --path ./tasks \
   --ve DISSEI_JUDGE_API_KEY="${DISSEI_JUDGE_API_KEY:-}"
 ```
 
-Here `-n 1` limits concurrency to one trial and `-k 1` selects one attempt per task. Inspect the job directory printed by Harbor: each trial's `verifier/reward.json`, `verifier/score_breakdown.json` and `verifier/integrity.json`, together with its exception state. Missing required judge configuration and reported graded/contradiction unavailability produce errors without a reward. A reward file does not prove every judge role succeeded: inspect per-criterion `unavailable` flags and the inherited limitation below.
+Here `-n 1` limits concurrency to one trial and `-k 1` selects one attempt per task. Inspect the job directory printed by Harbor: each trial's `verifier/reward.json`, `verifier/score_breakdown.json` and `verifier/integrity.json`, together with its exception state. Missing required judge configuration and top-level `graded_unavailable` or `contradiction_unavailable` flags produce errors without a reward. Per-role failures can still produce a reward, so also inspect each criterion's `unavailable` flag and the judge-failure limitation below.
 
-These are local setup commands, not exact historical replication settings. No Harbor Hub login or public registry upload is required after loading the supplied images. For optional judge settings, network configuration, dataroom commands and troubleshooting, see [the full run guide](https://github.com/Dissei-org/financial-judgment/blob/main/USAGE.md).
-
+These commands cover local setup. Historical settings are recorded separately in `evaluation-protocol.json`. After loading the supplied images, local runs require neither a Harbor Hub login nor a public registry upload. For optional judge settings, network configuration, dataroom commands and troubleshooting, see [the full run guide](https://github.com/Dissei-org/financial-judgment/blob/main/USAGE.md).
 
 ## Package at a glance
 
@@ -100,13 +99,13 @@ These are local setup commands, not exact historical replication settings. No Ha
 | Current historical comparison | 42 selected outcomes: six models × seven tasks |
 | License category | Other / restricted; see [LICENSE.md](https://github.com/Dissei-org/financial-judgment/blob/v2.0.0/LICENSE.md) |
 
-## Included evaluation, excluded authoring
+## Evaluation materials and access
 
-Recipients can inspect the evaluator source, judge prompts, rubric criteria and reference answers. Runtime source and evidence are supplied inside the Docker images and can be extracted by recipients; Docker packaging does not hide code. These assets reveal how answers are graded; their inclusion is intentional and necessary for a full, runnable evaluation. This release does **not** claim to hide grading methodology or make inference about task design impossible.
+The package includes evaluator source, judge prompts, rubric criteria and reference answers. Recipients can also extract the runtime source and evidence from the Docker images. These materials make the grading method available for inspection and can reveal aspects of task design.
 
-Task-authoring machinery, private production workflows and unnecessary authoring/build/orchestration modules are not included. The supplied runtime is limited to running the dataroom and evaluator. Private infrastructure addresses, local operator identities and revealing historical source excerpts are removed or visibly redacted from the derivative. Required copyright and third-party notices are retained.
+The runtime contains the dataroom and evaluator. Task-authoring machinery, private production workflows and unnecessary authoring, build and orchestration modules are excluded. Private infrastructure addresses, local operator identities and revealing historical source excerpts have been removed or visibly redacted. Required copyright and third-party notices are retained.
 
-A separate verifier isolates grading inputs from the task agent in an ordinary Harbor run. It is **not** an intellectual-property boundary against a recipient who controls the host or can read the downloaded package. Do not give the task agent access to the host-side `tests/`, `solution/` or historical answer archive when measuring performance.
+A separate verifier keeps grading inputs apart from the task agent during an ordinary Harbor run. A recipient who controls the host or downloaded package can still read them. When measuring agent performance, keep host-side `tests/`, `solution/` and the historical answer archive outside the task agent's access.
 
 ## Tasks
 
@@ -120,9 +119,9 @@ A separate verifier isolates grading inputs from the task agent in an ordinary H
 | [`fab01-2209-cp02`](https://github.com/Dissei-org/financial-judgment/tree/v2.0.0/tasks/fab01-2209-cp02) | 2022-09 | Comparative | Compare an entry price with relevant public-market evidence. | 10 |
 | [`fab01-2209-st06`](https://github.com/Dissei-org/financial-judgment/tree/v2.0.0/tasks/fab01-2209-st06) | 2022-09 | Strategic | Recommend and defend a diligence priority. | 10 |
 
-Each task is one question at one anchor date, not a multi-step workflow. All seven draw on the same transaction. The three snapshots contain timeline narratives, exhibits and primary-source documents. Financial facts, dates, figures and source notices are preserved, not perturbed to obtain a cleaner disclosure scan. Follow each task's original instructions and the dataroom's point-in-time retrieval behavior.
+Each task is one question at one anchor date. All seven draw on the same transaction. The three evidence snapshots contain timeline narratives, exhibits and primary-source documents, with the original financial facts, dates, figures and source notices preserved. Follow each task's instructions and the dataroom's point-in-time retrieval behavior.
 
-**Identity treatment.** The metadata uses `identity_tier = "name_suppressed"`: case names are suppressed while the original financial facts remain. Exact dates, amounts, market data, transaction structure and combinations of details can permit re-identification. This is not a guarantee of anonymity, irreversible de-identification or freedom from linkage to external sources.
+The metadata records `identity_tier = "name_suppressed"`: case names are suppressed while original financial facts remain. Exact dates, amounts, market data, transaction structure and combinations of details can permit re-identification or linkage to external sources. Names suppressed in this way do not guarantee anonymity or irreversible de-identification.
 
 ## Package layout
 
@@ -169,17 +168,19 @@ evaluation-protocol.json
 redaction-summary.json
 ```
 
-Each task has the same eight-file layout shown for `fab01-2112-dg04`: `instruction.md` is the agent prompt; `task.toml` selects the supplied image and defines execution and metadata; `tests/` contains the task YAML, rubric source and separate-verifier entry points; `solution/solve.sh` supplies the reference answer and oracle entry point. All seven tasks and all 79 criteria remain present. Harbor 0.23.0 requires an `environment/` directory: it contains only a one-line `Dockerfile` whose `FROM` references the corresponding supplied image. No runtime, evidence, wrappers, requirements or environment rebuild inputs are duplicated there.
+Each task uses the eight-file layout shown for `fab01-2112-dg04`. `instruction.md` is the agent prompt. `task.toml` selects the supplied image and defines execution and metadata. `tests/` contains the task YAML, rubric source and separate-verifier entry points. `solution/solve.sh` supplies the reference answer and oracle entry point. Together, the seven task packages contain all 79 criteria.
 
-The three image archives supply the dataroom and evaluator runtime at `/opt/dissei/runtime` and the dated evidence at `/corpus`. The task image does not include the task-specific rubric or reference solution. Harbor builds the separate verifier using `tests/Dockerfile` on top of the corresponding loaded image; this small verifier definition is retained, not a context for rebuilding the supplied environment. All grading assets remain accessible to the package recipient.
+Harbor 0.23.0 requires an `environment/` directory. Each contains only a one-line `Dockerfile` whose `FROM` references the corresponding supplied image. The package uses that image directly and omits environment rebuild inputs.
 
-`dataset.toml` describes the published registry dataset using clean task-package names and content digests measured from the minimal task packages. It is not a local-path manifest. The Docker archives alone are not a runnable Harbor dataset: both the images and the seven task packages are required. For the local mirror workflow documented here, use **`harbor run --path ./tasks`**, not the repository root. The [Harbor dataset](https://hub.harborframework.com/datasets/dissei/financial-judgment-full) and its seven task packages are public; the commands here do not assert hosted New Job support or validate a remote `--dataset` run. [USAGE.md](https://github.com/Dissei-org/financial-judgment/blob/main/USAGE.md) covers image loading, credentials and exact commands.
+The three image archives supply the dataroom and evaluator runtime at `/opt/dissei/runtime` and the dated evidence at `/corpus`. Task-specific rubrics and reference solutions are kept in the task packages, outside the task image. Harbor builds the separate verifier from `tests/Dockerfile` on top of the corresponding loaded image. That small build adds the verifier; it relies on the supplied environment image. All grading assets remain accessible to the package recipient.
 
-`.financial-judgment-owned.json` is a neutral file-hash inventory used to recognize this derivative's generated files; it contains no private authoring source or identity mapping.
+`dataset.toml` describes the published registry dataset, with task-package names and content digests measured from the minimal task packages. For the local task directories, use `harbor run --path ./tasks`. Both the task packages and loaded images are required. The [Harbor dataset](https://hub.harborframework.com/datasets/dissei/financial-judgment-full) and its seven task packages are public. Hosted New Job support and remote `--dataset` execution have not been validated by these local commands. [USAGE.md](https://github.com/Dissei-org/financial-judgment/blob/main/USAGE.md) covers image loading, credentials and exact commands.
+
+`.financial-judgment-owned.json` is a file-hash inventory used to recognize this derivative's generated files. It contains no private authoring source or identity mapping.
 
 ## Reward and verifier
 
-The evaluator preserves the original task-specific rubrics, judge prompts, scoring math and reference answers:
+The evaluator uses the original task-specific rubrics, judge prompts, scoring math and reference answers:
 
 - Critical criteria gate or scale the score according to which required claims are satisfied.
 - Graded assessment returns a holistic 0–10 judgment and per-criterion pass, partial or fail diagnostics; criterion weights guide the assessment.
@@ -187,21 +188,21 @@ The evaluator preserves the original task-specific rubrics, judge prompts, scori
 - A contradiction finding halves the score.
 - A retrieval modulator between 0.7 and 1.0 can reduce, but never increase, the answer score according to credited evidence retrieval.
 
-The verifier runs in a fresh container and receives only declared episode artifacts from the agent. It checks submission provenance, replays retrievals against its own corpus and enforces the dataroom call budget. A missing or invalid submission receives zero. Missing required judge configuration produces exit 3 without a reward. A scoring exception that reaches the entry point, or a breakdown with top-level `graded_unavailable` or `contradiction_unavailable`, produces exit 4 without a reward. These checks do not reject every per-role judge failure. See [USAGE.md](https://github.com/Dissei-org/financial-judgment/blob/main/USAGE.md) for error states and output files.
+The verifier runs in a fresh container and receives only declared episode artifacts from the agent. It checks submission provenance, replays retrievals against its own corpus and enforces the dataroom call budget. A missing or invalid submission receives zero. Missing required judge configuration produces exit 3 without a reward. A scoring exception that reaches the entry point, or a breakdown with top-level `graded_unavailable` or `contradiction_unavailable`, produces exit 4 without a reward. See [USAGE.md](https://github.com/Dissei-org/financial-judgment/blob/main/USAGE.md) for error states and output files.
 
-**Inherited judge-failure limitation, preserved rather than fixed:** unavailable critical verdicts are flagged in `critical_results` but excluded from the gate denominator; if no critical verdicts are available, `gate_score` defaults to **1.0**. Unavailable pitfall verdicts are flagged in `pitfall_results` and contribute no penalty. Neither per-row condition triggers the top-level unavailable check, so a critical-only or pitfall-only failure can still produce a reward. Missing or malformed graded criterion diagnostics can likewise coexist with a usable holistic score. With multiple judge votes, some unusable votes can be discarded while an aggregate verdict remains usable under the existing voting rules. Inspect diagnostics, not just process success or the headline reward. This release preserves those scoring semantics; it does not claim fail-closed handling of every judge failure or a new hardening fix.
+### Judge-failure limitation
 
-The measured capability combines evidence retrieval, financial reasoning, judged writing and harness control. It is not a pure financial-reasoning test. The historical agent protocol allowed 20 dataroom calls, 40 turns and 30 minutes per task. A model that never submits receives zero without an LLM grade.
+The inherited evaluator can return a reward when some judge roles are unavailable. Unavailable critical verdicts are flagged in `critical_results` and excluded from the gate denominator. If no critical verdicts are available, `gate_score` defaults to 1.0. Unavailable pitfall verdicts are flagged in `pitfall_results` and contribute zero penalty. Neither per-row condition triggers the top-level unavailable check, so a critical-only or pitfall-only failure can still produce a reward.
 
-### What the failure-case checks mean
+Missing or malformed graded criterion diagnostics can coexist with a usable holistic score. With multiple judge votes, unusable votes can be discarded while an aggregate verdict remains usable under the existing voting rules. Read the per-criterion diagnostics alongside the reward and process status. Version 2.0.0 retains these scoring rules and their failure-handling limits.
 
-The release checks deliberately injected failure and edge conditions; they were not 20 failed tests or spontaneous model failures. Ten scenarios ran on both `linux/amd64` and `linux/arm64`, comparing the original and cleaned runtime on `fab01-2209-cf01`. Separate reference-answer comparisons covered all seven tasks.
+Scores combine evidence retrieval, financial reasoning, judged writing and harness control. The historical agent protocol allowed 20 dataroom calls, 40 turns and 30 minutes per task. A model that never submits receives zero without an LLM grade.
 
-The responsibilities are distinct:
+### Failure-case checks
 
-- **Dataroom runtime:** tracks the retrieval budget and records evidence access and final submission.
-- **Dissei verifier:** checks submission integrity, replays retrievals against the corpus, rejects tampering and handles judge failures.
-- **Harbor:** runs the agent and verifier phases, transfers declared artifacts and records rewards or trial errors.
+Twenty failure-case comparisons covered ten deliberately injected scenarios on both `linux/amd64` and `linux/arm64`. They compared the original and cleaned runtime on `fab01-2209-cf01`; all comparisons matched. These were controlled checks of failure handling. Separate reference-answer comparisons covered all seven tasks.
+
+The dataroom runtime tracks the retrieval budget and records evidence access and final submission. The Dissei verifier checks submission integrity, replays retrievals against the corpus, rejects tampering and handles judge failures as described above. Harbor runs the agent and verifier phases, transfers declared artifacts and records rewards or trial errors.
 
 | Injected condition | Verified behavior |
 |---|---|
@@ -216,21 +217,21 @@ The responsibilities are distinct:
 | Answer file planted without submission | Reward 0; no judge call. |
 | Old reward file present, followed by configuration failure | Stale reward is not reused; verifier exits 3 with no reward file. |
 
-All comparisons matched the original behavior. Two additional cutoff checks confirmed that later-dated evidence remained inaccessible on both architectures.
+Two additional cutoff checks confirmed that later-dated evidence remained inaccessible on both architectures.
 
-The checked distinction is narrower than a blanket judge-failure guarantee: **an absent or invalid agent submission receives zero; the injected whole-endpoint outage and wholly unusable decisive verdicts produced errors without scores.** Per-role or per-criterion unavailability can still yield a reward as described above. These checks establish that sanitization preserved the tested execution rules, not that every judge failure is excluded from scoring. They do not establish that Harbor caused any historical model failure; that requires inspecting the particular recorded attempt.
+The comparisons establish that the cleaned runtime preserved the tested execution rules. An absent or invalid submission received zero; the injected whole-endpoint outage and wholly unusable decisive verdicts produced errors without scores. Per-role or per-criterion unavailability can still yield a reward as described above. Determining the cause of a historical model failure, including any role played by Harbor, requires inspecting that recorded attempt.
 
-## Preserved historical results
+## Historical results
 
 ### Preliminary comparison recorded on 2026-09-24–25 (UTC)
 
-The following numbers are **historical outcomes**, not a new evaluation of version 2.0.0. Their original task-version provenance and selection rules remain in the records. Sanitization and new package/image digests do not retroactively change the versions on which models ran.
+These results were recorded before version 2.0.0. The records retain their original task-version provenance and selection rules. The release's new package and image digests leave that historical provenance unchanged.
 
 The selected GLM-5.3 recovery completed at 2026-09-25T00:46:07Z; the other 41 selected outcomes completed on 2026-09-24 UTC.
 
 The comparison used Harbor 0.23.0, Terminus-2's JSON harness, high agent reasoning, 40 turns, a 16,384-token output limit per request and one selected outcome per task. The common judge was `gemini-3.1-pro-preview`, with low reasoning and one vote. Provider/model identities and parameters are retained; private endpoint details are redacted. Different provider clients can frame requests differently.
 
-Reward / 100 is the equal-weight mean of seven saved continuous task rewards, multiplied by 100. Means use unrounded rewards before display. This is not accuracy, a probability of correctness or a percentage of professional work completed.
+Reward / 100 is the equal-weight mean of seven saved continuous task rewards, multiplied by 100. Means use unrounded rewards before display. This measure describes reward under the specified rubric, harness and judge; it cannot be read as accuracy, probability of correctness or percentage of professional work completed.
 
 | Model | Reward / 100 | Submitted / 7 |
 |---|---|---|
@@ -252,37 +253,41 @@ Reward / 100 is the equal-weight mean of seven saved continuous task rewards, mu
 | `fab01-2209-st06` | 0.4490 | 0.2982 | 0.2294 | 0.2251 | 0.2307 | 0.0000 |
 | **Equal-weight mean** | **0.6073** | **0.5245** | **0.5217** | **0.4491** | **0.3579** | **0.0901** |
 
-**Selection and failures.** The 42 selected outcomes cover six models, not all 86 retained attempts. Genuine non-submission zeros are retained; unresolved trial exceptions are not converted into model-quality scores. Infrastructure recovery attempts remain linked in the sanitized records. No successful trial was rerun to seek a higher score.
+### Selection and failures
+
+The 42 selected outcomes cover six models within the 86 retained attempts. Genuine non-submission zeros are retained. Unresolved trial exceptions remain recorded as exceptions and are excluded from model-quality scores. Infrastructure recovery attempts remain linked in the sanitized records. No successful trial was rerun to seek a higher score.
 
 - Gemini 3.8 Flash submitted once; six selected attempts reached the 40-turn cap, and the JSON parser rejected 50 responses. Five infrastructure-failed tasks were retried, while the original valid submission and genuine no-submission zero were retained. Its score is protocol-limited.
 - GLM-5.3 retained six original successful outcomes. The remaining task's original timeout and interrupted recovery are preserved alongside the completed recovery, which scored 0.608 on `fab01-2209-cf01`.
-- Kimi K3's zero on `fab01-2112-dg04` is a judged critical-criterion failure, not a non-submission.
-- The separately labeled historical Gemini 3.1 Pro baseline has seven selected outcomes, seven submissions and mean reward 0.3124. It is not a seventh row in the six-model comparison above.
+- Kimi K3 submitted on `fab01-2112-dg04` and received zero for a judged critical-criterion failure.
+- The separately labeled historical Gemini 3.1 Pro baseline has seven selected outcomes, seven submissions and mean reward 0.3124. It sits outside the six-model comparison above.
 
-### Record scope and redaction
+### Records and redaction
 
-`run-records.tar.gz` preserves the full 16-job, 86-attempt audit scope, including the current comparison, historical baseline, failures, recoveries and separately labeled execution QA/no-op/stub runs. Numerical rewards, score breakdowns, model identities and selection relationships are retained. Archive content is a declared sanitized derivative, not a claim of byte-identical original logs.
+`run-records.tar.gz` contains sanitized records from all 16 jobs and 86 attempts: the current comparison, historical baseline, failures, recoveries and separately labeled execution QA/no-op/stub runs. Numerical rewards, score breakdowns, model identities and selection relationships are retained. The archive is a sanitized derivative of the original logs.
 
-`run-index.json` links stable pseudonymous jobs and trials to archive paths and selected outcomes. `evaluation-protocol.json` records historical settings and provenance; historical task digests are **not** executable dependencies of the new release. `redaction-summary.json` describes replaced identities, infrastructure and source excerpts. Redaction covers duplicated representations, including trajectories and terminal recordings. Original private records and the private identity mapping are not distributed. Native Harbor job pages are separate resources and are not made public by releasing this archive.
+`run-index.json` links stable pseudonymous jobs and trials to archive paths and selected outcomes. `evaluation-protocol.json` records historical settings and provenance; its historical task digests identify past runs and are not executable dependencies of this release. `redaction-summary.json` describes replaced identities, infrastructure and source excerpts. Redaction covers duplicated representations, including trajectories and terminal recordings. Original private records and the private identity mapping remain private. Native Harbor job pages have separate access controls.
 
-### Limits and local execution checks
+### Limits
 
-No new model benchmark results are claimed for this release. Deterministic local judge smoke runs are checks of dataroom, submission, verifier and scoring mechanics, **not** evidence that the judge correctly assesses finance or that historical rankings replicate. Release preparation does not establish a repeated-run variance estimate, contamination-free status or independent certification.
+Version 2.0.0 carries forward the historical results without a new model benchmark. Deterministic local judge smoke runs checked dataroom, submission, verifier and scoring mechanics. Finance-grading validity and replication of historical rankings remain unestablished by those checks. The release also provides no repeated-run variance estimate, contamination-free assurance or independent certification.
 
-This is a small, single-case pilot with one selected outcome per model/task. It does not measure general financial knowledge, spreadsheet/model-building skill or long-horizon workflows. Small score differences are not established as statistically significant. Public access to reference answers also matters when designing future uncontaminated evaluations; disclose prior exposure and keep independent holdouts separate.
+This small, single-case pilot has one selected outcome per model/task. Its scope excludes general financial knowledge, spreadsheet/model-building skill and long-horizon workflows. Scores reflect retrieval, writing and harness use alongside financial reasoning. The statistical significance of small score differences has not been established. Reference answers are public: disclose prior exposure when reporting future evaluations and keep independent holdouts separate.
 
 ## Running and rights
 
-Use your own Docker host, agent/provider access and judge credentials. No private proxy, Dissei-operated grading service or bundled commercial agent CLI is required. Model and judge calls can incur charges and transmit prompts, evidence or answers to your chosen provider; select endpoints and spending limits deliberately. Local runs do not automatically upload results.
+Run locally with your own Docker host, agent/provider access and judge credentials. A private proxy, Dissei-operated grading service and bundled commercial agent CLI are unnecessary. Downloading the package does not provision a hosted job, provider account or judge. Model and judge calls can incur charges and transmit prompts, evidence or answers to your chosen provider; select endpoints and spending limits deliberately. Local runs do not automatically upload results.
 
-The owner has confirmed authority to redistribute the included source material. That confirmation is **not** a blanket permissive license for downstream training, adaptation or redistribution. Copyright and source-specific notices remain effective. Public availability and permitted reuse are different questions; see [LICENSE.md](https://github.com/Dissei-org/financial-judgment/blob/v2.0.0/LICENSE.md), and obtain any rights not already granted by applicable terms. This full distribution is not limited to hosted-only evaluation or question previews.
+The owner has confirmed authority to redistribute the included source material. Downstream training, adaptation and redistribution remain subject to the applicable rights and terms. Copyright and source-specific notices remain effective. See [LICENSE.md](https://github.com/Dissei-org/financial-judgment/blob/v2.0.0/LICENSE.md), and obtain any rights not already granted. Public access alone grants no additional reuse rights.
 
 ## Published destinations and access
 
 - [GitHub repository](https://github.com/Dissei-org/financial-judgment) and [version 2.0.0 release](https://github.com/Dissei-org/financial-judgment/releases/tag/v2.0.0): public; task files and historical attachments are in the repository, and the three Docker archives are release assets.
 - [Harbor dataset](https://hub.harborframework.com/datasets/dissei/financial-judgment-full): public `dissei/financial-judgment-full@2.0.0`, with seven public task packages.
-- [Hugging Face files](https://huggingface.co/datasets/Dissei-Data/Dissei-Financial-Judgment/tree/main): public mirror with manual gating; login and approved access are required for file downloads and the gated viewer. This access control does not make the public GitHub or Harbor copies private.
+- [Hugging Face files](https://huggingface.co/datasets/Dissei-Data/Dissei-Financial-Judgment/tree/main): public mirror with manual gating; login and approved access are required for file downloads and the gated viewer. GitHub and Harbor copies remain publicly accessible.
 
-Existing private package/image histories and original records remain private and unchanged. [publication-plan.md](https://github.com/Dissei-org/financial-judgment/blob/v2.0.0/publication-plan.md) is retained as the pre-publication plan, not a statement that this release is still pending. Native Harbor job pages and interactive trajectories retain separate access controls.
+Existing private package/image histories and original records remain private and unchanged. [publication-plan.md](https://github.com/Dissei-org/financial-judgment/blob/v2.0.0/publication-plan.md) records the plan written before publication. Native Harbor job pages and interactive trajectories retain separate access controls.
+
+Run instructions: [Quickstart](#quickstart) · [Full run guide](https://github.com/Dissei-org/financial-judgment/blob/main/USAGE.md).
 
 Questions, licensing and private security reports: [tech@dissei.credit](mailto:tech@dissei.credit). When reporting a run, identify task and image digests, model identities, harness/judge settings, attempts, selection and failures. Do not publish credentials or unreviewed logs.
